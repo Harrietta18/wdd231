@@ -43,10 +43,12 @@ nav ul.open {
 
 nav a {
     display: block;
-    color: var(--text-on-dark);
+    background-color: #3E2723;
+    color: white;
     padding: 1rem;
     text-decoration: none;
-    border-bottom: 1px solid #5D4037;
+    text-align: center;
+    transition:0.3s;
 }
 
 /* Course Section Styling */
@@ -100,6 +102,7 @@ nav a {
 
 nav a:active {
     background-color: #EFEBE9;
+    font-weight: bold;
     color: #3E2723;
 }
 

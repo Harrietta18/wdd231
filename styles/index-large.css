@@ -22,6 +22,9 @@
         align-items: start; /* Prevents containers from stretching vertically */
     }
 
+   
+    
+
     /* About Me Section Layout */
     .about {
         grid-column: 1 / 2;
