@@ -92,7 +92,7 @@ nav a {
 /* Progress Colors */
 .course-card.completed {
     background-color: var(--completed-bg);
-    color: #0d47a1; /* Blue text for checkmark/code */
+    color: #0d47a1; 
 }
 
 .course-card.not-completed {

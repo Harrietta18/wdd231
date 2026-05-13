@@ -14,7 +14,7 @@
     /* Main Grid Layout */
     main {
         display: grid;
-        grid-template-columns: 2fr 1fr; /* 2 parts About Me, 1 part Student Photo */
+        grid-template-columns: 2fr 1fr; 
         gap: 30px;
         padding: 40px;
         max-width: 1200px;
@@ -23,7 +23,11 @@
     }
 
    
-    
+    .page-title {
+        grid-column: 1 / 3;
+        margin-bottom:20px ;
+        border-bottom: 2px solid #3E2723;
+    }
 
     /* About Me Section Layout */
     .about {
@@ -49,7 +53,7 @@
 
     .photo img {
         width: 100%;
-        max-width: 230px; /* Reduces size to match 17786290556287567683781042180854_7ef8eb.jpg */
+        max-width: 230px; 
         height: auto;
         display: block;
         margin: 0 auto;
@@ -85,4 +89,7 @@
         align-items: center;
         gap: 10px;
     }
+
+
+    
 }

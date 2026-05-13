@@ -32,7 +32,7 @@ function displayCourses(filteredList) {
         const card = document.createElement("div");
         card.className = `course-card ${course.completed ? 'completed' : 'not-completed'}`;
         
-        // Add checkmark if completed, matching 17786273018983243913720808544327_7fd6fc.jpg
+        
         const checkmark = course.completed ? '✔ ' : '';
         card.innerHTML = `<strong>${checkmark}${course.subject} ${course.number}</strong>`;
         
