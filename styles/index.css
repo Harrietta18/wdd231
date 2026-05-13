@@ -1,0 +1,109 @@
+:root {
+    --primary-color: #5D4037; /* Deep Brown */
+    --accent-color: #FFECB3;  /* Soft Cream/Amber */
+    --text-on-dark: #ffffff;
+    --text-on-light: #3E2723; /* Darker Brown */
+    --bg-color: #EFEBE9;      /* Very Light Brown/Grey */
+    --completed-bg: #D7CCC8;  /* Light Cocoa for completed courses */
+    --not-completed-bg: #3E2723; /* Dark Brown for remaining */
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-on-light);
+}
+
+header, footer {
+    background-color: var(--primary-color);
+    color: var(--text-on-dark);
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Nav styling */
+nav {
+    background-color: #3E2723;
+}
+
+nav ul {
+    list-style: none;
+    display: none; /* Hidden for mobile hamburger */
+}
+
+nav ul.open {
+    display: block;
+}
+
+nav a {
+    display: block;
+    color: var(--text-on-dark);
+    padding: 1rem;
+    text-decoration: none;
+    border-bottom: 1px solid #5D4037;
+}
+
+/* Course Section Styling */
+.courses h2 {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 1rem 0;
+}
+
+.filters button {
+    padding: 0.5rem 2rem;
+    background-color: #3E2723;
+    color: white;
+    border: none;
+    border-radius: 20px; /* Rounded pill shape from screenshot */
+    cursor: pointer;
+}
+
+.course-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 10px;
+}
+
+.course-card {
+    padding: 15px;
+    border: 1px solid #ccc;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Progress Colors */
+.course-card.completed {
+    background-color: var(--completed-bg);
+    color: #0d47a1; /* Blue text for checkmark/code */
+}
+
+.course-card.not-completed {
+    background-color: var(--not-completed-bg);
+    color: white;
+}
+
+nav a:active {
+    background-color: #EFEBE9;
+    color: #3E2723;
+}
+
+nav a:hover {
+    background-color: #ffffff;
+    color: #3E2723;
+}

@@ -1,0 +1,85 @@
+/* --- Desktop Layout (min-width: 768px) --- */
+@media (min-width: 768px) {
+    /* Horizontal Navigation */
+    nav ul {
+        display: flex;
+        justify-content: flex-start;
+        background-color: #3E2723; /* Dark brown */
+    }
+
+    #menu-toggle {
+        display: none; /* Hide hamburger menu on desktop */
+    }
+
+    /* Main Grid Layout */
+    main {
+        display: grid;
+        grid-template-columns: 2fr 1fr; /* 2 parts About Me, 1 part Student Photo */
+        gap: 30px;
+        padding: 40px;
+        max-width: 1200px;
+        margin: 0 auto;
+        align-items: start; /* Prevents containers from stretching vertically */
+    }
+
+    /* About Me Section Layout */
+    .about {
+        grid-column: 1 / 2;
+    }
+
+    .about p {
+        background-color: #ffffff;
+        padding: 25px;
+        border: 1px solid #d1d5db;
+        line-height: 1.8;
+        height: 100%;
+    }
+
+    /* Student Photo Section Layout */
+    .photo {
+        grid-column: 2 / 3;
+        background-color: #ffffff;
+        border: 1px solid #d1d5db;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .photo img {
+        width: 100%;
+        max-width: 230px; /* Reduces size to match 17786290556287567683781042180854_7ef8eb.jpg */
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        border-radius: 4px;
+    }
+
+    /* Section Headers (The Brown Labels) */
+    .about h2, .photo h2 {
+        background-color: #3E2723; /* Dark brown label */
+        color: #ffffff;
+        margin: -20px -20px 20px -20px; /* Pulls header to edges of the white box */
+        padding: 10px;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    /* Web Certificate Courses Layout */
+    .courses {
+        grid-column: 1 / 3; /* Spans across both columns */
+        margin-top: 20px;
+    }
+
+    .course-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 3 boxes per row */
+        gap: 15px;
+    }
+
+    /* Footer styling adjustment for desktop */
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}

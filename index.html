@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harrietta's Web Portfolio - WDD 231</title>
+    <meta name="description" content="Course home page for WDD 231 featuring course links and profile information.">
+    <!-- Requirement: Name rendered using a <span> tag -->
+    <meta name="author" content="<span>Erhurhe Harrietta</span>">
+    
+    <!-- Google Fonts API -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- External CSS Files -->
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/index-large.css">
+    
+    <script src="scripts/index.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <img src="images/logo.svg" alt="Site Logo" width="50">
+            <h1>Harrietta's Web Portfolio</h1>
+        </div>
+        <!-- Requirement: Hamburger icon for mobile -->
+        <button id="menu-toggle" aria-label="Open Menu">☰</button>
+    </header>
+
+    <nav>
+        <!-- Requirement: Three mandatory links -->
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="chamber/index.html">Chamber Project</a></li>
+            <li><a href="project/index.html">Final Project</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Layout matching desktop grid in 17786277475277285286865673911472_7fc77c.jpg -->
+        <section class="about">
+            <h2>About Me</h2>
+            <p>My name is Erhurhe Harrietta. I am a member of the Church of Jesus Christ of Latter-day Saints. I am currently pursuing my certificate in Web Development and enjoy creating functional, beautiful web experiences.</p>
+        </section>
+
+        <section class="photo">
+            <h2>My Photo</h2>
+            <img src="images/Harrietta.jpg" alt="Erhurhe Harrietta Profile Picture" loading="lazy">
+        </section>
+
+        <section class="courses">
+            <h2>Web Certificate Courses</h2>
+            
+            <div class="filters">
+                <button id="all">ALL</button>
+                <button id="cse">CSE</button>
+                <button id="wdd">WDD</button>
+            </div>
+            
+            <div class="course-list"></div>
+            
+            <p id="total-credits"></p>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Social Media links with icons -->
+        <div class="social">
+            <a href="https://Twitter.com/Harrietta" target="_blank" rel="noopener">
+                <img src="images/twitter-x.svg" alt="X (Twitter)">
+            </a>
+            <a href="https://github.com/Harrietta18" target="_blank" rel="noopener">
+                <img src="images/github.svg" alt="GitHub">
+            </a>
+            <a href="https://linkedin.com/in/Harrietta" target="_blank" rel="noopener">
+                <img src="images/linkedin.svg" alt="LinkedIn">
+            </a>
+        </div>
+
+        <div class="footer-info">
+            <p>
+                &copy;<span id="currentyear"></span> 🌸 Erhurhe Harrietta | Lagos, Nigeria
+            </p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+
+</body>
+</html>
