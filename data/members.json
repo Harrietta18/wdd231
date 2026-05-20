@@ -1,0 +1,72 @@
+[
+  {
+    "name": "Eko Atlantic Tech Hub",
+    "address": "14 Alpha Beach Road, Lekki Phase 1, Lagos",
+    "phone": "+234 1 440 8900",
+    "website": "https://ekoatlantictech.ng",
+    "image": "images/eko-tech.jpg",
+    "membershipLevel": 3,
+    "industry": "Technology & Innovation",
+    "founded": 2018
+  },
+  {
+    "name": "Victoria Island Financial Services",
+    "address": "82 Adetokunbo Ademola St, Victoria Island, Lagos",
+    "phone": "+234 1 271 3000",
+    "website": "https://vifinancial.com.ng",
+    "image": "images/vi-financial.jpg",
+    "membershipLevel": 3,
+    "industry": "Banking & Finance",
+    "founded": 2012
+  },
+  {
+    "name": "Ikeja Logistics & Freight",
+    "address": "45 Allen Avenue, Ikeja, Lagos",
+    "phone": "+234 803 555 1234",
+    "website": "https://ikejalogistics.ng",
+    "image": "images/ikeja-logistics.jpg",
+    "membershipLevel": 2,
+    "industry": "Transport & Shipping",
+    "founded": 2020
+  },
+  {
+    "name": "Lekki Creative Media Agency",
+    "address": "Plot 12, Admiralty Way, Lekki Phase 1, Lagos",
+    "phone": "+234 1 905 4411",
+    "website": "https://lekkicreatives.com",
+    "image": "images/lekki-media.jpg",
+    "membershipLevel": 2,
+    "industry": "Media & Marketing",
+    "founded": 2015
+  },
+  {
+    "name": "Balogun Market Wholesale Ventures",
+    "address": "55 Breadfruit Street, Lagos Island, Lagos",
+    "phone": "+234 802 331 9876",
+    "website": "https://balogunventures.ng",
+    "image": "images/balogun-market.jpg",
+    "membershipLevel": 1,
+    "industry": "Retail & Commerce",
+    "founded": 1998
+  },
+  {
+    "name": "Surulere Agro-Allied Exporters",
+    "address": "102 Adeniran Ogunsanya St, Surulere, Lagos",
+    "phone": "+234 1 774 2233",
+    "website": "https://surulereagro.com.ng",
+    "image": "images/surulere-agro.jpg",
+    "membershipLevel": 1,
+    "industry": "Agriculture & Export",
+    "founded": 2021
+  },
+  {
+    "name": "Yaba Tech Academy",
+    "address": "28 Herbert Macaulay Way, Yaba, Lagos",
+    "phone": "+234 812 345 6789",
+    "website": "https://yabatechacademy.edu.ng",
+    "image": "images/yaba-tech.jpg",
+    "membershipLevel": 2,
+    "industry": "Education & Training",
+    "founded": 2017
+  }
+]
