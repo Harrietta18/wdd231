@@ -1,4 +1,4 @@
-/* --- Base Clean Reset Styles --- */
+/* --- Base Reset Styles --- */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #F4F7F9;
@@ -23,27 +23,17 @@ header {
 }
 
 .logo-container img {
-    max-height: 60px;
+    max-height: 50px;
     width: auto;
 }
 
 .title-area h1 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     margin: 0;
     font-weight: 700;
-    letter-spacing: -0.5px;
 }
 
-.title-area .tagline {
-    font-size: 0.85rem;
-    color: #FF6B35;
-    margin: 0.2rem 0 0 0;
-    font-style: italic;
-    letter-spacing: 0.5px;
-    font-weight: 600;
-}
-
-/* --- Mobile Responsive Menu --- */
+/* --- Mobile Navigation --- */
 nav {
     margin-top: 1rem;
     background-color: #004085;
@@ -87,162 +77,137 @@ nav {
     font-weight: bold;
 }
 
-/* --- Main Layout --- */
+/* --- Main Structure --- */
 main {
     padding: 1.5rem;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-main h2 {
+.page-title {
+    text-align: center;
     color: #0056B3;
-    border-bottom: 3px solid #FF6B35;
-    padding-bottom: 0.3rem;
-    font-size: 1.4rem;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
 }
 
-/* Directory Button Controls */
 .directory-controls {
     display: flex;
-    gap: 0.5rem;
-    margin-bottom: 1.5rem;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
 }
 
 .directory-controls button {
     background-color: #FFFFFF;
     border: 2px solid #0056B3;
     color: #0056B3;
-    padding: 0.5rem 1rem;
+    padding: 0.6rem 1.2rem;
     font-weight: 600;
     border-radius: 6px;
     cursor: pointer;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease;
 }
 
-.directory-controls button:hover {
-    background-color: #0056B3;
-    color: #FFFFFF;
+.directory-controls button:hover, .active-toggle {
+    background-color: #0056B3 !important;
+    color: #FFFFFF !important;
 }
 
-/* --- Target Directory Elements --- */
-#directoryViewer {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-}
-
-/* Mock Design rules for the cards arriving later */
-.business-card {
-    background: #FFFFFF;
-    padding: 1.5rem;
-    border-radius: 8px;
-    border-top: 4px solid #0056B3;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.03);
-}
-
-/* --- Footer Area --- */
-footer {
-    background-color: #1C252C;
-    color: #D1D9E0;
-    padding: 2rem 1.5rem 1.5rem 1.5rem;
-    margin-top: 3rem;
-    font-size: 0.9rem;
-    text-align: center;
-}
-
-footer h3 {
-    color: #FFFFFF;
-    margin-top: 0;
-}
-
-footer hr {
-    border: 0;
-    height: 1px;
-    background: #004085;
-    margin: 1.5rem 0;
-}
-
-.footer-dev-info p {
-    margin: 0.4rem 0;
-}
-
-#currentYear, #lastModified {
-    color: #FF6B35;
-    font-weight: 600;
-}
-
-/* --- Grid View Layout Styles --- */
+/* --- Dynamic Directory Grid & List Layout Definitions --- */
 #directoryViewer.grid-layout {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1.5rem;
 }
 
-#directoryViewer.grid-layout .business-card {
+/* Structure matching how JS will output data into elements */
+#directoryViewer.grid-layout section {
     background: #FFFFFF;
     padding: 1.5rem;
     border-radius: 8px;
-    border-top: 5px solid #0056B3;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.04);
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+    border-top: 4px solid #0056B3;
 }
 
-#directoryViewer.grid-layout .business-card img {
-    width: 100%;
-    max-width: 150px;
+#directoryViewer.grid-layout section img {
+    max-width: 120px;
     height: auto;
     margin-bottom: 1rem;
-    object-fit: contain;
 }
 
-/* --- List View Layout Styles (Single Column Line Item) --- */
 #directoryViewer.list-layout {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
 }
 
-#directoryViewer.list-layout .business-card {
+#directoryViewer.list-layout section {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: #FFFFFF;
     padding: 0.8rem 1.5rem;
     border-radius: 4px;
-    border-left: 5px solid #0056B3;
-    border-top: none;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.02);
 }
 
-#directoryViewer.list-layout .business-card img {
-    display: none; /* Hide card images entirely in compact list view */
+#directoryViewer.list-layout section img {
+    display: none; /* Classmate site hides profile logos in line-list format */
 }
 
-#directoryViewer.list-layout .card-info {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 1rem;
-}
-
-#directoryViewer.list-layout .card-info h3 {
-    margin: 0;
-    font-size: 1.1rem;
-    flex: 1;
-    min-width: 200px;
-}
-
-#directoryViewer.list-layout .card-info p {
-    margin: 0;
+/* --- Footer Area Custom Layout --- */
+footer {
+    background-color: #1C252C;
+    color: #D1D9E0;
+    padding: 2rem 1.5rem;
+    margin-top: 4rem;
     font-size: 0.9rem;
 }
 
-/* Style for active button toggles */
-.active-toggle {
-    background-color: #0056B3 !important;
-    color: #FFFFFF !important;
+.footer-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    text-align: center;
+}
+
+.footer-contact h3 {
+    color: #FFFFFF;
+    margin: 0 0 0.5rem 0;
+}
+
+.footer-contact p {
+    margin: 0.2rem 0;
+}
+
+.footer-socials {
+    display: flex;
+    gap: 1rem;
+}
+
+.footer-socials img {
+    width: 24px;
+    height: 24px;
+    filter: invert(1); /* Turns dark SVG icons clean white automatically */
+}
+
+footer hr {
+    border: 0;
+    height: 1px;
+    background: #2C3A46;
+    margin: 1.5rem 0;
+}
+
+.footer-bottom {
+    text-align: center;
+}
+
+.footer-bottom p {
+    margin: 0.4rem 0;
 }
