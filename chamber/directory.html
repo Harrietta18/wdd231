@@ -8,26 +8,33 @@
     <meta name="description" content="Explore the official business directory for the Lagos Chamber of Commerce. Connect with top businesses and industries in Lagos, Nigeria.">
     <meta name="author" content="Erhurhe Harrietta">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
     <meta property="og:title" content="Lagos Chamber of Commerce | Business Directory" />
     <meta property="og:description" content="Explore the official business directory for the Lagos Chamber of Commerce. Connect with top businesses and industries in Lagos, Nigeria." />
-    <meta property="og:image" content="https://yourusername.github.io/wdd231/images/lagos-chamber-preview.jpg" />
-    <meta property="og:url" content="https://yourusername.github.io/wdd231/directory.html" />
+    <meta property="og:image" content="https://Harrietta18.github.io/wdd231/images/lagos-chamber-preview.jpg" />
+    <meta property="og:url" content="https://Harrietta18.github.io/wdd231/directory.html" />
     <meta property="og:type" content="website" />
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="styles/directory.css">
     <link rel="stylesheet" href="styles/larger.css">
-    
+
+    <script src="scripts/directory.js" defer></script> 
+</body>
 </head>
 <body>
 
     <header>
         <div class="logo-container">
-            <img src="images/logo.png" alt="Lagos Chamber of Commerce Logo">
+            <img src="images/lagos-chamber-logo.png" alt="Lagos Chamber of Commerce Logo">
             <div class="title-area">
-                <h1>Lagos Chamber of Commerce</h1>
+                <div class="site-title">Lagos Chamber of Commerce</div>
+                <p class="tagline">Driving Business Growth in Nigeria</p>
             </div>
         </div>
         
@@ -36,47 +43,31 @@
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="directory.html" class="active">Directory</a></li>
-                <li><a href="join.html">Join</a></li>
-                <li><a href="discover.html">Discover</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <h1 class="page-title">Lagos Chamber of Commerce Directory</h1>
+        <h1>Lagos Chamber Business Directory</h1>
         
         <div class="directory-controls">
-            <button id="gridViewBtn" class="active-toggle" title="Grid View">Grid View 🎚️</button>
+            <button id="gridViewBtn" title="Grid View">Grid View 🎚️</button>
             <button id="listViewBtn" title="List View">List View ☰</button>
         </div>
 
-        <article id="directoryViewer" class="grid-layout">
-            </article>
+        <div id="directoryViewer" class="grid-layout">
+            </div>
     </main>
 
     <footer>
-        <div class="footer-top">
-            <div class="footer-contact">
-                <h3>Lagos Chamber of Commerce</h3>
-                <p>18 Allen Avenue,</p>
-                <p>Ikeja, Lagos</p>
-                <p>info@lcc.org</p>
-                <p>(234) 555-2300</p>
-            </div>
-            
-            <div class="footer-socials">
-                <a href="https://x.com" target="_blank" rel="noopener"><img src="images/twitter-x.svg" alt="Twitter X"></a>
-                <a href="https://github.com" target="_blank" rel="noopener"><img src="images/github.svg" alt="GitHub"></a>
-                <a href="https://linkedin.com" target="_blank" rel="noopener"><img src="images/linkedin.svg" alt="LinkedIn"></a>
-            </div>
+        <div class="footer-contact">
+            <h3>Lagos Chamber of Commerce & Industry</h3>
+            <p>1 Idowu Taylor Street, Victoria Island, Lagos, Nigeria</p>
+            <p>info@lagoschamber.com | +234 1 234 5678</p>
         </div>
-        
         <hr>
-        
-        <div class="footer-bottom">
-            <p>WDD231 Class Project</p>
-            <p>Erhurhe Harrietta</p>
-            <p>&copy; <span id="currentYear"></span> Lagos Chamber of Commerce</p>
+        <div class="footer-dev-info">
+            <p>&copy; <span id="currentYear"></span> | Erhurhe Harrietta | WDD 231</p>
             <p id="lastModified"></p>
         </div>
     </footer>
