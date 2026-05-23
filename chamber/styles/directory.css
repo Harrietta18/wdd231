@@ -137,9 +137,6 @@ main h1 {
     color: #FFFFFF !important;
 }
 
-/* ==========================================================================
-   5. VIEW SELECTION ENGINE (GRID VS LIST)
-   ========================================================================== */
 
 /* --- Default Mobile Grid Cards Style --- */
 #directoryViewer.grid-layout {
