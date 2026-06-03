@@ -1,10 +1,10 @@
 // --- 1. Dynamic Footer Info Requirements ---
-document.getElementById("currentYear").textContent = new Date().getFullYear();
-document.getElementById("lastModified").textContent = `Last Modification: ${document.lastModified}`;
+document.getElementById("currentYearDisplay").textContent = new Date().getFullYear();
+document.getElementById("lastModifiedStamp").textContent = `Last Modification: ${document.lastModified}`;
 
 // --- 2. Data Fetch & Rendering Setup ---
 const dataUrl = "data/members.json";
-const directoryViewer = document.getElementById("directoryViewer");
+const directoryViewer = document.getElementById("directoryDisplayBox");
 
 async function fetchMembers() {
     try {
@@ -25,7 +25,7 @@ function renderDirectory(members) {
 
     members.forEach(member => {
         // Translate membership numbers into readable labels
-        let tierLabel = "Regular Member";
+        let tierLabel = "Standard Member";
         if (member.membershipLevel === 2) tierLabel = "Silver Partner";
         if (member.membershipLevel === 3) tierLabel = "Gold Partner";
 
@@ -49,25 +49,25 @@ function renderDirectory(members) {
 }
 
 // --- 3. View Switcher Toggle System (Grid vs. List) ---
-const gridViewBtn = document.getElementById("gridViewBtn");
-const listViewBtn = document.getElementById("listViewBtn");
+const gridViewBtn = document.getElementById("switchToGrid");
+const listViewBtn = document.getElementById("switchToList");
 
 gridViewBtn.addEventListener("click", () => {
-    directoryViewer.classList.add("grid-layout");
-    directoryViewer.classList.remove("list-layout");
+    directoryViewer.classList.add("grid-layout-active");
+    directoryViewer.classList.remove("list-layout-active");
     
     // Accessibility & UI updates
-    gridViewBtn.classList.add("active-toggle");
-    listViewBtn.classList.remove("active-toggle");
+    gridViewBtn.classList.add("active-state");
+    listViewBtn.classList.remove("active-state");
 });
 
 listViewBtn.addEventListener("click", () => {
-    directoryViewer.classList.add("list-layout");
-    directoryViewer.classList.remove("grid-layout");
+    directoryViewer.classList.add("list-layout-active");
+    directoryViewer.classList.remove("grid-layout-active");
     
     // Accessibility & UI updates
-    listViewBtn.classList.add("active-toggle");
-    gridViewBtn.classList.remove("active-toggle");
+    listViewBtn.classList.add("active-state");
+    gridViewBtn.classList.remove("active-state");
 });
 
 // Initialize directory load

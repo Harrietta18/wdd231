@@ -1,72 +1,72 @@
 [
   {
-    "name": "Eko Atlantic Tech Hub",
-    "address": "14 Alpha Beach Road, Lekki Phase 1, Lagos",
-    "phone": "+234 1 440 8900",
-    "website": "https://ekoatlantictech.ng",
-    "image": "images/eko.jpeg",
-    "membershipLevel": 3,
-    "industry": "Technology & Innovation",
-    "founded": 2018
-  },
-  {
-    "name": "Victoria Island Financial Services",
-    "address": "82 Adetokunbo Ademola St, Victoria Island, Lagos",
-    "phone": "+234 1 271 3000",
-    "website": "https://vifinancial.com.ng",
-    "image": "images/bank.jpeg",
-    "membershipLevel": 3,
-    "industry": "Banking & Finance",
-    "founded": 2012
-  },
-  {
-    "name": "Ikeja Logistics & Freight",
-    "address": "45 Allen Avenue, Ikeja, Lagos",
-    "phone": "+234 803 555 1234",
-    "website": "https://ikejalogistics.ng",
-    "image": "images/logistics.webp",
+    "name": "Eko Agro-Allied Ventures",
+    "address": "Plot 14, Industrial Estate, Ikorodu, Lagos",
+    "phone": "+234 1 440 2211",
+    "website": "https://example.com/ekoagro",
+    "image": "images/agriculture.webp",
     "membershipLevel": 2,
-    "industry": "Transport & Shipping",
-    "founded": 2020
-  },
-  {
-    "name": "Lekki Creative Media Agency",
-    "address": "Plot 12, Admiralty Way, Lekki Phase 1, Lagos",
-    "phone": "+234 1 905 4411",
-    "website": "https://lekkicreatives.com",
-    "image": "images/media.jpeg",
-    "membershipLevel": 2,
-    "industry": "Media & Marketing",
-    "founded": 2015
-  },
-  {
-    "name": "Balogun Market Wholesale Ventures",
-    "address": "55 Breadfruit Street, Lagos Island, Lagos",
-    "phone": "+234 802 331 9876",
-    "website": "https://balogunventures.ng",
-    "image": "images/market.jpeg",
-    "membershipLevel": 1,
-    "industry": "Retail & Commerce",
-    "founded": 1998
-  },
-  {
-    "name": "Surulere Agro-Allied Exporters",
-    "address": "102 Adeniran Ogunsanya St, Surulere, Lagos",
-    "phone": "+234 1 774 2233",
-    "website": "https://surulereagro.com.ng",
-    "image": "images/agro.jpeg",
-    "membershipLevel": 1,
     "industry": "Agriculture & Export",
+    "founded": 2017
+  },
+  {
+    "name": "Frontline Media & Marketing",
+    "address": "5B Admiralty Way, Lekki Phase 1, Lagos",
+    "phone": "+234 809 333 7788",
+    "website": "https://example.com/frontlinemedia",
+    "image": "images/media.webp",
+    "membershipLevel": 1,
+    "industry": "Media & Marketing",
     "founded": 2021
   },
   {
-    "name": "Yaba Tech Academy",
-    "address": "28 Herbert Macaulay Way, Yaba, Lagos",
-    "phone": "+234 812 345 6789",
-    "website": "https://yabatechacademy.edu.ng",
-    "image": "images/tech.jpeg",
+    "name": "Atlantic Trust Bank",
+    "address": "Akin Adesola Street, Victoria Island, Lagos",
+    "phone": "+234 1 270 4400",
+    "website": "https://example.com/atlantictrust",
+    "image": "images/banking.webp",
+    "membershipLevel": 3,
+    "industry": "Banking & Finance",
+    "founded": 2010
+  },
+  {
+    "name": "Yaba TechSpace Hub",
+    "address": "82 Herbert Macaulay Way, Yaba, Lagos",
+    "phone": "+234 812 555 9900",
+    "website": "https://example.com/yabatechspace",
+    "image": "images/techhub.webp",
+    "membershipLevel": 3,
+    "industry": "Technology & Innovation",
+    "founded": 2019
+  },
+  {
+    "name": "Eko Central Market Association",
+    "address": "Balogun Market Square, Lagos Island, Lagos",
+    "phone": "+234 1 888 1122",
+    "website": "https://example.com/ekomarket",
+    "image": "images/market.webp",
+    "membershipLevel": 1,
+    "industry": "Retail & Commerce",
+    "founded": 2003
+  },
+  {
+    "name": "Meridian Training & Education Center",
+    "address": "24 Allen Avenue, Ikeja, Lagos",
+    "phone": "+234 803 444 5566",
+    "website": "https://example.com/meridianedu",
+    "image": "images/training.webp",
     "membershipLevel": 2,
     "industry": "Education & Training",
-    "founded": 2017
+    "founded": 2014
+  },
+  {
+    "name": "Express Cargo Logistics",
+    "address": "Murtala Muhammed International Airport Road, Ikeja, Lagos",
+    "phone": "+234 1 765 0099",
+    "website": "https://example.com/expresscargo",
+    "image": "images/logistics.webp",
+    "membershipLevel": 3,
+    "industry": "Transport & Shipping",
+    "founded": 2016
   }
 ]

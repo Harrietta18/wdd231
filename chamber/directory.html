@@ -4,43 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Lagos Chamber of Commerce | Business Directory</title>
-    <meta name="description" content="Explore the official business directory for the Lagos Chamber of Commerce. Connect with top businesses and industries in Lagos, Nigeria.">
+    <title>Eko Business Hub | Chamber Directory</title>
+    <meta name="description" content="Discover premium commercial partners and verified corporate members within the Lagos Chamber network. Connect with industry leaders across Lagos, Nigeria.">
     <meta name="author" content="Erhurhe Harrietta">
 
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
+    
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
-    <meta property="og:title" content="Lagos Chamber of Commerce | Business Directory" />
-    <meta property="og:description" content="Explore the official business directory for the Lagos Chamber of Commerce. Connect with top businesses and industries in Lagos, Nigeria." />
-    <meta property="og:image" content="https://Harrietta18.github.io/wdd231/chamber/images/logo.png" />
+    
+    <meta property="og:title" content="Eko Business Hub | Chamber Directory" />
+    <meta property="og:description" content="Discover premium commercial partners and verified corporate members within the Lagos Chamber network. Connect with industry leaders across Lagos, Nigeria." />
+    <meta property="og:image" content="https://Harrietta18.github.io/wdd231/chamber/images/chamber-hub-logo.png" />
     <meta property="og:url" content="https://Harrietta18.github.io/wdd231/chamber/directory.html" />
     <meta property="og:type" content="website" />
     
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="styles/directory.css">
-    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/larger.css" media="(min-width: 640px)">
 
+    <!-- JavaScript Execution Control -->
     <script src="scripts/directory.js" defer></script> 
-</body>
 </head>
 <body>
 
     <header>
-        <div class="logo-container">
-            <img src="images/logo.png" alt="Lagos Chamber of Commerce Logo">
-            <div class="title-area">
-                <div class="site-title">Lagos Chamber of Commerce</div>
-                <p class="tagline">Driving Business Growth in Nigeria</p>
+        <div class="brand-wrapper">
+            <img src="images/chamber-hub-logo.png" alt="Lagos Chamber Hub Emblem">
+            <div class="brand-text">
+                <div class="main-title">Lagos Chamber Hub</div>
+                <p class="sub-slogan">Driving Commercial Excellence and Innovation</p>
             </div>
         </div>
         
         <nav>
-            <button id="menuButton" aria-label="Toggle Menu">☰</button>
-            <ul class="nav-links">
+            <button id="toggleMenuBtn" aria-label="Open Navigation Menu">☰</button>
+            <ul class="navigation-menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="directory.html" class="active">Directory</a></li>
             </ul>
@@ -48,27 +52,29 @@
     </header>
 
     <main>
-        <h1>Lagos Chamber Business Directory</h1>
+        <h1>Commercial Member Directory</h1>
         
-        <div class="directory-controls">
-            <button id="gridViewBtn" title="Grid View">Grid View 🎚️</button>
-            <button id="listViewBtn" title="List View">List View ☰</button>
+        <div class="display-modifiers">
+            <button id="switchToGrid" class="active-state" title="Show Card Grid">Grid Layout ⊞</button>
+            <button id="switchToList" title="Show Row List">List Layout ⊟</button>
         </div>
 
-        <div id="directoryViewer" class="grid-layout">
-            </div>
+        <!-- Target Container for JS Dynamic Insertion -->
+        <article id="directoryDisplayBox" class="grid-layout-active">
+            <!-- JavaScript will inject member profiles here dynamically -->
+        </article>
     </main>
 
     <footer>
-        <div class="footer-contact">
-            <h3>Lagos Chamber of Commerce & Industry</h3>
-            <p>1 Idowu Taylor Street, Victoria Island, Lagos, Nigeria</p>
-            <p>info@lagoschamber.com | +234 1 234 5678</p>
+        <div class="footer-corporate-details">
+            <h3>Lagos Trade & Commerce Alliance</h3>
+            <p>15 Alfred Rewane Road, Ikoyi, Lagos, Nigeria</p>
+            <p>registry@lagoscommerce.org | +234 1 765 4321</p>
         </div>
-        
-        <div class="footer-dev-info">
-            <p>&copy; <span id="currentYear"></span> | Erhurhe Harrietta | WDD 231</p>
-            <p id="lastModified"></p>
+        <hr>
+        <div class="footer-author-credentials">
+            <p>&copy; <span id="currentYearDisplay"></span> | Erhurhe Harrietta | WDD 231</p>
+            <p id="lastModifiedStamp"></p>
         </div>
     </footer>
 

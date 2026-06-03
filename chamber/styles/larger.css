@@ -9,7 +9,7 @@
     }
 
     /* Hide mobile menu toggle trigger on tablet/desktop viewports */
-    #menuButton {
+    #toggleMenuBtn {
         display: none;
     }
 
@@ -18,12 +18,12 @@
         background: none;
     }
 
-    .nav-links {
+    .navigation-menu {
         display: flex !important;
         gap: 1rem;
     }
 
-    .nav-links li a {
+    .navigation-menu li a {
         border-bottom: none;
         border-radius: 6px;
         padding: 0.6rem 1.2rem;
@@ -33,7 +33,7 @@
         padding: 2.5rem 3rem;
     }
 
-    .footer-contact {
+    .footer-corporate-details {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -41,7 +41,7 @@
     }
 
     /* Responsive grid multi-column system */
-    #directoryViewer.grid-layout {
+    #directoryDisplayBox.grid-layout-active {
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
 }
