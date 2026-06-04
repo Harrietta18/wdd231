@@ -2,7 +2,24 @@
 document.getElementById("currentYearDisplay").textContent = new Date().getFullYear();
 document.getElementById("lastModifiedStamp").textContent = `Last Modification: ${document.lastModified}`;
 
-// --- 2. Data Fetch & Rendering Setup ---
+// --- 2. Mobile Responsive Hamburger Menu Logic ---
+const toggleMenuBtn = document.getElementById("toggleMenuBtn");
+const navigationMenu = document.querySelector(".navigation-menu");
+
+toggleMenuBtn.addEventListener("click", () => {
+    navigationMenu.classList.toggle("open");
+    
+    // Switch button symbol between hamburger (☰) and close (✕) for better UX
+    if (navigationMenu.classList.contains("open")) {
+        toggleMenuBtn.textContent = "✕";
+        toggleMenuBtn.setAttribute("aria-label", "Close Navigation Menu");
+    } else {
+        toggleMenuBtn.textContent = "☰";
+        toggleMenuBtn.setAttribute("aria-label", "Open Navigation Menu");
+    }
+});
+
+// --- 3. Data Fetch & Rendering Setup ---
 const dataUrl = "data/members.json";
 const directoryViewer = document.getElementById("directoryDisplayBox");
 
@@ -48,7 +65,7 @@ function renderDirectory(members) {
     });
 }
 
-// --- 3. View Switcher Toggle System (Grid vs. List) ---
+// --- 4. View Switcher Toggle System (Grid vs. List) ---
 const gridViewBtn = document.getElementById("switchToGrid");
 const listViewBtn = document.getElementById("switchToList");
 
