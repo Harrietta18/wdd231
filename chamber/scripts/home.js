@@ -4,7 +4,7 @@
 
 // 1. OPENWEATHERMAP INTEGRATION VARIABLES
 // Geolocation coordinates for Lagos, Nigeria: Lat 6.5244, Lon 3.3792
-const currentUrl = 'https://api.openweathermap.org/data/2.5/weather?lat=6.5244&lon=3.3792&units=metric&appid=YOUR_OWN_API_KEY_HERE';
+const currentUrl = '6879b67da6cad4b0e9332c94275f8efa';
 const forecastUrl = 'https://api.openweathermap.org/data/2.5/forecast?lat=6.5244&lon=3.3792&units=metric&appid=YOUR_OWN_API_KEY_HERE';
 
 // 2. CHAMBER DIRECTORY SOURCE URL 
