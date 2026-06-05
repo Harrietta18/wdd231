@@ -4,7 +4,7 @@
 :root {
     --brand-dark-moss: #064E3B;     /* Deep Emerald */
     --brand-mint-emerald: #059669;  /* Mint Accent */
-    --brass-accent: #A16207;        /* FIXED: Deep accessible bronze-brass (Passes WCAG AA 4.5:1 ratio) */
+    --brass-accent: #A16207;        /* Deep accessible bronze-brass (Passes WCAG AA 4.5:1 ratio) */
     --charcoal-slate: #1F2937;
     --clay-mist-bg: #F3F4F6;
     --pure-white-card: #FFFFFF;
@@ -35,6 +35,18 @@ main h1 {
     margin-top: 0;
     margin-bottom: 1.75rem;
     letter-spacing: -0.02em;
+}
+
+/* Helper class to visually hide structural titles required for valid documents */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
 }
 
 /* ==========================================================================
@@ -127,7 +139,7 @@ nav {
 }
 
 /* ==========================================================================
-   3. LAYOUT CONTROLS & DYNAMIC CARD VIEWS
+   3. DIRECTORY PAGE SPECIFIC COMPONENTS (Card Grid / List Toggles)
    ========================================================================== */
 .display-modifiers {
     display: flex;
@@ -148,7 +160,6 @@ nav {
     transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* FIXED: Explicitly forces white text color on active/hover states to fix contrast flag */
 .display-modifiers button:hover, 
 .display-modifiers button.active-state {
     background-color: var(--brand-dark-moss) !important;
@@ -156,9 +167,6 @@ nav {
     border-color: var(--brand-dark-moss) !important;
 }
 
-/* --- DYNAMIC VIEW MODES --- */
-
-/* Grid Mode Setup (Mobile: Falls back to individual vertical cards) */
 #directoryDisplayBox.grid-layout-active {
     display: grid;
     grid-template-columns: 1fr;
@@ -175,11 +183,6 @@ nav {
     align-items: center;
     text-align: center;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
-    transition: transform 0.2s ease;
-}
-
-#directoryDisplayBox.grid-layout-active section:hover {
-    transform: translateY(-3px);
 }
 
 #directoryDisplayBox.grid-layout-active section h3 {
@@ -197,7 +200,6 @@ nav {
     object-fit: contain;
 }
 
-/* List Mode Setup */
 #directoryDisplayBox.list-layout-active {
     display: flex;
     flex-direction: column;
@@ -212,7 +214,6 @@ nav {
     padding: 1.2rem 1.5rem;
     border-radius: 6px;
     border-left: 6px solid var(--brand-dark-moss);
-    box-shadow: 0 2px 5px rgba(0,0,0,0.01);
 }
 
 #directoryDisplayBox.list-layout-active section img {
@@ -225,7 +226,154 @@ nav {
 }
 
 /* ==========================================================================
-   4. STRUCTURAL COMPLIANT FOOTER ARCHITECTURE
+   4. HOME LANDING PAGE COMPONENTS (index.html components)
+   ========================================================================== */
+.home-grid-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+}
+
+.hero-block {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+}
+
+.hero-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+}
+
+.hero-cta-box {
+    background-color: var(--brand-dark-moss);
+    color: var(--pure-white-card);
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.hero-cta-box h2 {
+    font-family: 'Work Sans', sans-serif;
+    margin-top: 0;
+    font-size: 1.4rem;
+}
+
+.cta-button-link {
+    display: inline-block;
+    background-color: var(--brass-accent);
+    color: var(--pure-white-card);
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    font-weight: 700;
+    border-radius: 6px;
+    margin-top: 1rem;
+    transition: background 0.2s ease;
+}
+
+.cta-button-link:hover {
+    background-color: #854D0E;
+}
+
+.home-card {
+    background-color: var(--pure-white-card);
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+    border-left: 5px solid var(--brand-mint-emerald);
+}
+
+.home-card h3, .spotlight-block h3 {
+    font-family: 'Work Sans', sans-serif;
+    color: var(--brand-dark-moss);
+    margin-top: 0;
+    border-bottom: 2px solid var(--clay-mist-bg);
+    padding-bottom: 0.5rem;
+}
+
+.event-item {
+    margin-bottom: 1rem;
+}
+
+.event-item h4 { 
+    margin: 0.25rem 0; 
+    color: var(--charcoal-slate); 
+}
+
+.event-date { 
+    font-size: 0.8rem; 
+    color: var(--brass-accent); 
+    font-weight: 700; 
+    margin: 0; 
+}
+
+.weather-info-box { 
+    text-align: center; 
+}
+
+.weather-temp { 
+    font-size: 2.2rem; 
+    font-weight: 800; 
+    color: var(--brand-dark-moss); 
+}
+
+.weather-desc { 
+    margin: 0; 
+    font-weight: 500; 
+    font-style: italic; 
+}
+
+.sub-divider { 
+    border: 0; 
+    height: 1px; 
+    background: #E5E7EB; 
+    margin: 1rem 0; 
+}
+
+.spotlight-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.spotlight-card {
+    background-color: var(--pure-white-card);
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+    border-top: 4px solid var(--brand-dark-moss);
+}
+
+.spotlight-card h4 { 
+    margin: 0; 
+    font-size: 1.15rem; 
+    color: var(--brand-dark-moss); 
+}
+
+.spotlight-industry { 
+    font-size: 0.8rem; 
+    text-transform: uppercase; 
+    font-weight: 700; 
+    color: #6B7280; 
+    margin: 0.25rem 0; 
+}
+
+.spotlight-motto { 
+    font-style: italic; 
+    font-size: 0.9rem; 
+    margin: 0.7rem 0; 
+}
+
+.spotlight-card a { 
+    color: var(--brass-accent); 
+    font-weight: 600; 
+    text-decoration: none; 
+}
+
+/* ==========================================================================
+   5. STRUCTURAL COMPLIANT FOOTER ARCHITECTURE
    ========================================================================== */
 footer {
     background-color: #111827;
@@ -236,7 +384,6 @@ footer {
     text-align: center;
 }
 
-/* FIXED: Changed selector hook to h2 to stay perfectly matched with validated HTML code */
 footer h2 {
     color: var(--pure-white-card);
     margin-top: 0;

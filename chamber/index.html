@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lagos Chamber Hub | Home</title>
+    <meta name="description"
+        content="Welcome to the Lagos Chamber Hub. Driving commercial excellence, business networking, and economic growth across Lagos, Nigeria.">
+    <meta name="author" content="Erhurhe Harrietta">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <meta property="og:title" content="Lagos Chamber Hub | Home" />
+    <meta property="og:description"
+        content="Driving commercial excellence, business networking, and economic growth across Lagos, Nigeria." />
+    <meta property="og:image" content="https://Harrietta18.github.io/wdd231/chamber/images/chamber-hub-logo.png" />
+    <meta property="og:url" content="https://Harrietta18.github.io/wdd231/chamber/index.html" />
+    <meta property="og:type" content="website" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/directory.css">
+    <link rel="stylesheet" href="styles/larger.css" media="(min-width: 768px)">
+
+    <script src="scripts/directory.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="brand-wrapper">
+            <img src="images/chamber-hub-logo.png" alt="Lagos Chamber Hub Emblem">
+            <div class="brand-text">
+                <div class="main-title">Lagos Chamber Hub</div>
+                <p class="sub-slogan">Driving Commercial Excellence and Innovation</p>
+            </div>
+        </div>
+
+        <nav>
+            <button id="toggleMenuBtn" aria-label="Open Navigation Menu">☰</button>
+            <ul class="navigation-menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="home-grid-layout">
+
+        <h1 class="visually-hidden">Lagos Chamber Hub Commerce Portal</h1>
+
+        <section class="hero-block">
+            <picture>
+                <source media="(min-width: 768px)" srcset="images/hero-large.jpg">
+                <img src="images/hero-small.jpg" alt="Lagos Skyline Commercial District Banner" class="hero-image"
+                    loading="eager">
+            </picture>
+            <div class="hero-cta-box">
+                <h2>Empower Your Business Network</h2>
+                <p>Connect with verified market leaders, scale your commercial reach, and drive economic innovation in
+                    Lagos.</p>
+                <a href="join.html" class="cta-button-link">Join the Alliance Today →</a>
+            </div>
+        </section>
+
+        <section class="home-card event-card">
+            <h3>Upcoming Events</h3>
+            <div class="event-item">
+                <p class="event-date">Oct 14</p>
+                <h4>Eko Tech Innovation Summit</h4>
+                <p>Gather with software founders and tech hub representatives at Yaba TechSpace.</p>
+            </div>
+            <div class="event-item">
+                <p class="event-date">Nov 02</p>
+                <h4>Cross-Border Logistics Panel</h4>
+                <p>Streamlining coastal and land trade shipping bottlenecks across West Africa.</p>
+            </div>
+        </section>
+
+        <section class="home-card weather-card">
+            <h3>Lagos Weather Forecast</h3>
+            <div class="weather-info-box">
+                <div class="weather-current">
+                    <!-- Dynamic current conditions inject here -->
+                    <div id="current-weather-wrapper">
+                        <span class="weather-temp" id="current-temp">--°C</span>
+                        <p class="weather-desc" id="weather-description">Loading real-time data...</p>
+                    </div>
+                </div>
+                <hr class="sub-divider">
+                <!-- 3-Day Forecast container target -->
+                <div class="weather-forecast-days" id="forecast-container">
+                    <p>Loading 3-day projections...</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="spotlight-block">
+            <h3>Enterprise Spotlights</h3>
+            <div class="spotlight-wrapper">
+
+                <article class="spotlight-card gold-tier">
+                    <h4>Atlantic Trust Bank</h4>
+                    <p class="spotlight-industry">Banking & Finance</p>
+                    <p class="spotlight-motto">"Securing wealth, expanding retail commercial horizons."</p>
+                    <a href="https://example.com/atlantictrust" target="_blank" rel="noopener">Corporate Site</a>
+                </article>
+
+                <article class="spotlight-card silver-tier">
+                    <h4>Frontline Media & Marketing</h4>
+                    <p class="spotlight-industry">Media & Marketing</p>
+                    <p class="spotlight-motto">"Amplifying local brands across global digital spaces."</p>
+                    <a href="https://example.com/frontlinemedia" target="_blank" rel="noopener">Corporate Site</a>
+                </article>
+
+                <article class="spotlight-card gold-tier">
+                    <h4>Express Cargo Logistics</h4>
+                    <p class="spotlight-industry">Transport & Shipping</p>
+                    <p class="spotlight-motto">"Seamless delivery networks through coastal pathways."</p>
+                    <a href="https://example.com/expresscargo" target="_blank" rel="noopener">Corporate Site</a>
+                </article>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-corporate-details">
+            <h2>Lagos Trade & Commerce Alliance</h2>
+            <p>15 Alfred Rewane Road, Ikoyi, Lagos, Nigeria</p>
+            <p>registry@lagoscommerce.org | +234 1 765 4321</p>
+        </div>
+        <hr>
+        <div class="footer-author-credentials">
+            <p>&copy; <span id="currentYearDisplay"></span> | Erhurhe Harrietta | WDD 231</p>
+            <p id="lastModifiedStamp"></p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
+
+
+
+

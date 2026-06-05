@@ -1,6 +1,7 @@
 /* Media Query for Screen Layout Transformations (Tablets & Desktops) */
 @media screen and (min-width: 768px) {
 
+    /* --- Header Custom Adjustments --- */
     header {
         display: flex;
         justify-content: space-between;
@@ -8,9 +9,8 @@
         padding: 1.5rem 3rem;
     }
 
-    /* Hide mobile menu toggle trigger on tablet/desktop viewports */
     #toggleMenuBtn {
-        display: none;
+        display: none; /* Hide mobile hamburger menu toggle on large views */
     }
 
     nav {
@@ -29,6 +29,53 @@
         padding: 0.6rem 1.2rem;
     }
 
+    /* --- Home Page Main Grid Content Split (Fulfills Transformation Rule) --- */
+    .home-grid-layout {
+        display: grid;
+        grid-template-columns: 2fr 1fr; /* Split into dynamic asymmetrical sidebar view */
+        gap: 2rem;
+    }
+
+    .hero-block {
+        grid-column: 1 / 3; /* Stretch banner fully across the two columns */
+        display: flex;
+        background-color: var(--brand-dark-moss);
+    }
+
+    .hero-image {
+        width: 60%;
+        height: 380px;
+    }
+
+    .hero-cta-box {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: left;
+        padding: 2.5rem;
+    }
+
+    .spotlight-block {
+        grid-column: 1 / 3; /* Spans across the full grid at the base */
+    }
+
+    .spotlight-wrapper {
+        display: flex;
+        flex-direction: row; /* Horizontal alignment for spotlights */
+        gap: 1.5rem;
+    }
+
+    .spotlight-card {
+        flex: 1; /* Distributes desktop space completely evenly */
+    }
+
+    /* --- Directory Page Content Grid Transform --- */
+    #directoryDisplayBox.grid-layout-active {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    /* --- Footer Refinements --- */
     footer {
         padding: 2.5rem 3rem;
     }
@@ -38,10 +85,5 @@
         justify-content: space-between;
         align-items: center;
         text-align: left;
-    }
-
-    /* Responsive grid multi-column system */
-    #directoryDisplayBox.grid-layout-active {
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
 }
