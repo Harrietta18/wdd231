@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Received | Lagos Chamber Hub</title>
+    <meta name="description" content="Your registration entry has been processed securely. Verification parameters displayed below.">
+    <meta name="author" content="Erhurhe Harrietta">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Work+Sans:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/join.css">
+    <link rel="stylesheet" href="styles/larger.css" media="(min-width: 768px)">
+
+    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/thankyou.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <div class="brand-wrapper">
+            <img src="images/chamber-hub-logo.png" alt="Lagos Chamber Hub Emblem">
+            <div class="brand-text">
+                <div class="main-title">Lagos Chamber Hub</div>
+            </div>
+        </div>
+    </header>
+
+    <main class="thankyou-wrapper-box">
+        <section class="receipt-card">
+            <div class="success-icon-badge">✓</div>
+            <h1>Application Submitted Successfully!</h1>
+            <p>Thank you for registering with the Lagos Chamber Hub. Our membership validation division is checking your documents.</p>
+            
+            <hr class="sub-divider">
+            <h3>Registered Core Parameters Baseline</h3>
+            <div id="receipt-data-table" class="receipt-parameters-display">
+                <!-- Data from URL query parameters dynamically renders here -->
+                <p class="loading-placeholder">Formatting parameters transmission matrix...</p>
+            </div>
+
+            <a href="index.html" class="cta-button-link return-btn">&larr; Return to Home Dashboard</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-corporate-details">
+            <h2>Lagos Trade & Commerce Alliance</h2>
+            <p>15 Alfred Rewane Road, Ikoyi, Lagos, Nigeria</p>
+            <p>registry@lagoscommerce.org | +234 1 765 4321</p>
+        </div>
+        <hr>
+        <div class="footer-author-credentials">
+            <p>&copy; <span id="currentYearDisplay"></span> | Erhurhe Harrietta | WDD 231</p>
+            <p id="lastModifiedStamp"></p>
+        </div>
+
+</body>
+</html>

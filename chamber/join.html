@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join the Alliance | Lagos Chamber Hub</title>
+    <meta name="description" content="Submit your organization's credentials to join the Lagos Chamber Hub and select your ecosystem membership tier.">
+    <meta name="author" content="Erhurhe Harrietta">
+
+    <!-- Fonts and Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Cascading Style Sheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/join.css">
+    <link rel="stylesheet" href="styles/larger.css" media="(min-width: 768px)">
+
+    <!-- Defer Navigation Handler Scripts -->
+    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <div class="brand-wrapper">
+            <img src="images/chamber-hub-logo.png" alt="Lagos Chamber Hub Emblem">
+            <div class="brand-text">
+                <div class="main-title">Lagos Chamber Hub</div>
+                <p class="sub-slogan">Driving Commercial Excellence and Innovation</p>
+            </div>
+        </div>
+        <nav>
+            <button id="toggleMenuBtn" aria-label="Open Navigation Menu">☰</button>
+            <ul class="navigation-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html" class="active">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="join-main-layout">
+        <h1>Chamber Membership Application</h1>
+
+        <!-- APPLICATION INPUT INTERFACE SECTION -->
+        <section class="form-container-block">
+            <form method="get" action="thankyou.html">
+                
+                <label title="Applicant First Name">
+                    <span>First Name *</span>
+                    <input type="text" name="firstName" required autocomplete="given-name">
+                </label>
+
+                <label title="Applicant Last Name">
+                    <span>Last Name *</span>
+                    <input type="text" name="lastName" required autocomplete="family-name">
+                </label>
+
+                <label title="Organizational Title (Minimum 7 characters, alphabetic, hyphens, spaces only)">
+                    <span>Organizational Title *</span>
+                    <input type="text" name="orgTitle" required autocomplete="organization-title" 
+                           pattern="[A-Za-z\s\-]{7,}" 
+                           title="Must be at least 7 letters, hyphens, or spaces long.">
+                </label>
+
+                <label title="Primary Corporate Email Address">
+                    <span>Email Address *</span>
+                    <input type="email" name="email" required autocomplete="email" placeholder="executive@company.com.ng">
+                </label>
+
+                <label title="Mobile Contact Phone Number">
+                    <span>Mobile Phone *</span>
+                    <input type="tel" name="phone" required autocomplete="tel">
+                </label>
+
+                <label title="Registered Business Name">
+                    <span>Business/Organization Name *</span>
+                    <input type="text" name="organization" required autocomplete="organization">
+                </label>
+
+                <label title="Select Your Ecosystem Membership Tier">
+                    <span>Membership Level *</span>
+                    <select name="membershipLevel" required>
+                        <option value="" disabled selected>-- Select a Tier --</option>
+                        <option value="np">NP Membership (Non-Profit / No Fee)</option>
+                        <option value="bronze">Bronze Membership</option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="gold">Gold Membership</option>
+                    </select>
+                </label>
+
+                <label title="Brief Business or Core Mission Description">
+                    <span>Organization Description</span>
+                    <textarea name="description" rows="4"></textarea>
+                </label>
+
+                <!-- Hidden submission timestamp parameter hooked via JavaScript -->
+                <input type="hidden" id="formTimestamp" name="timestamp" value="">
+
+                <input type="submit" value="Submit Application" class="form-submit-btn">
+            </form>
+        </section>
+
+        <!-- MEMBERSHIP CARDS GRID WITH TRANSITION ON INITIAL LOAD -->
+        <section class="benefits-cards-sidebar">
+            <h2>Ecosystem Benefit Tiers</h2>
+            
+            <div class="tier-info-card animate-card" id="card-np">
+                <h3>NP Membership</h3>
+                <button type="button" class="modal-open-btn" data-target="modal-np">View Benefits &rarr;</button>
+            </div>
+
+            <div class="tier-info-card animate-card" id="card-bronze">
+                <h3>Bronze Membership</h3>
+                <button type="button" class="modal-open-btn" data-target="modal-bronze">View Benefits &rarr;</button>
+            </div>
+
+            <div class="tier-info-card animate-card" id="card-silver">
+                <h3>Silver Membership</h3>
+                <button type="button" class="modal-open-btn" data-target="modal-silver">View Benefits &rarr;</button>
+            </div>
+
+            <div class="tier-info-card animate-card" id="card-gold">
+                <h3>Gold Membership</h3>
+                <button type="button" class="modal-open-btn" data-target="modal-gold">View Benefits &rarr;</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- ACCESSIBLE OVERLAY MODALS ARCHITECTURE -->
+    <dialog id="modal-np" class="benefit-modal-box">
+        <div class="modal-header">
+            <h3>Non-Profit Membership</h3>
+            <button class="modal-close-btn" aria-label="Close dialog">&times;</button>
+        </div>
+        <p><strong>Cost:</strong> Free (Requires verified NGO registration documentation)</p>
+        <ul>
+            <li>Inclusion in public web directory index listings</li>
+            <li>Access to community training forums</li>
+            <li>Standard regional notification circulars</li>
+        </ul>
+    </dialog>
+
+    <dialog id="modal-bronze" class="benefit-modal-box">
+        <div class="modal-header">
+            <h3>Bronze Membership</h3>
+            <button class="modal-close-btn" aria-label="Close dialog">&times;</button>
+        </div>
+        <p><strong>Cost:</strong> ₦50,000 / Annually</p>
+        <ul>
+            <li>Standard directory index listing placement</li>
+            <li>General admission to standard networking mixers</li>
+            <li>Discount passes to annual business summit events</li>
+        </ul>
+    </dialog>
+
+    <dialog id="modal-silver" class="benefit-modal-box">
+        <div class="modal-header">
+            <h3>Silver Membership</h3>
+            <button class="modal-close-btn" aria-label="Close dialog">&times;</button>
+        </div>
+        <p><strong>Cost:</strong> ₦150,000 / Annually</p>
+        <ul>
+            <li>Priority alphabetical indexing position within directory pages</li>
+            <li>2 Homepage Random Enterprise Spotlight card display allocations</li>
+            <li>Free training credits for staff skills enhancement</li>
+        </ul>
+    </dialog>
+
+    <dialog id="modal-gold" class="benefit-modal-box">
+        <div class="modal-header">
+            <h3>Gold Membership</h3>
+            <button class="modal-close-btn" aria-label="Close dialog">&times;</button>
+        </div>
+        <p><strong>Cost:</strong> ₦300,000 / Annually</p>
+        <ul>
+            <li>Top-tier banner pinning opportunities inside directory viewports</li>
+            <li>Maximum homepage Enterprise Spotlight load frequency eligibility</li>
+            <li>Direct advisory channel lines to trade logistics committees</li>
+            <li>Complimentary VIP multi-pass ticket access vectors to all tech sumits</li>
+        </ul>
+    </dialog>
+
+    <footer>
+        <div class="footer-corporate-details">
+            <h2>Lagos Trade & Commerce Alliance</h2>
+            <p>15 Alfred Rewane Road, Ikoyi, Lagos, Nigeria</p>
+            <p>registry@lagoscommerce.org | +234 1 765 4321</p>
+        </div>
+        <hr>
+        <div class="footer-author-credentials">
+            <p>&copy; <span id="currentYearDisplay"></span> | Erhurhe Harrietta | WDD 231</p>
+            <p id="lastModifiedStamp"></p>
+        </div>
+</body>
+</html>
