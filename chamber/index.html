@@ -30,6 +30,7 @@
     <link rel="stylesheet" href="styles/larger.css" media="(min-width: 768px)">
 
     <script src="scripts/directory.js" defer></script>
+    <script src="scripts/home.js" defer></script>
 </head>
 
 <body>
@@ -72,60 +73,49 @@
         </section>
 
         <section class="home-card event-card">
-            <h3>Upcoming Events</h3>
-            <div class="event-item">
-                <p class="event-date">Oct 14</p>
-                <h4>Eko Tech Innovation Summit</h4>
-                <p>Gather with software founders and tech hub representatives at Yaba TechSpace.</p>
-            </div>
-            <div class="event-item">
-                <p class="event-date">Nov 02</p>
-                <h4>Cross-Border Logistics Panel</h4>
-                <p>Streamlining coastal and land trade shipping bottlenecks across West Africa.</p>
+            <div class="weather-header-title">Upcoming Events</div>
+            <div class="weather-body-content">
+                <div class="event-item">
+                    <p class="event-date">Oct 14</p>
+                    <h4>Eko Tech Innovation Summit</h4>
+                    <p>Gather with software founders and tech hub representatives at Yaba TechSpace.</p>
+                </div>
+                <hr style="border: 0; border-top: 1px dashed #E5E7EB; margin: 1rem 0;">
+                <div class="event-item">
+                    <p class="event-date">Nov 02</p>
+                    <h4>Cross-Border Logistics Panel</h4>
+                    <p>Streamlining coastal and land trade shipping bottlenecks across West Africa.</p>
+                </div>
             </div>
         </section>
 
-        <section class="home-card weather-card">
-            <h3>Lagos Weather Forecast</h3>
-            <div class="weather-info-box">
-                <div class="weather-current">
-                    <div id="current-weather-wrapper">
-                        <span class="weather-temp" id="current-temp">--°C</span>
-                        <p class="weather-desc" id="weather-description">Loading real-time data...</p>
-                    </div>
+        <section class="home-card current-weather-block">
+            <div class="weather-header-title">Current Weather</div>
+            <div class="weather-body-content">
+                <p class="weather-location">Lagos, Nigeria</p>
+                <p class="weather-main-temp"><span id="current-temp">--</span>°F</p>
+                <div class="weather-icon-wrapper">
+                    <img id="weather-icon" src="https://openweathermap.org/img/wn/04d@2x.png"
+                        alt="weather condition icon">
                 </div>
-                <hr class="sub-divider">
-                <div class="weather-forecast-days" id="forecast-container">
-                    <p>Loading 3-day projections...</p>
-                </div>
+
+                <p class="weather-desc" id="weather-description">Connecting API...</p>
+                <p class="weather-details">High: <span id="temp-high">--</span>°F</p>
+                <p class="weather-details">Low: <span id="temp-low">--</span>°F</p>
+                <p class="weather-details">Humidity: <span id="humidity">--</span>%</p>
+            </div>
+        </section>
+        <section class="home-card forecast-block">
+            <div class="weather-header-title">Weather Forecast</div>
+            <div class="weather-body-content" id="forecast-container">
+                <p class="forecast-placeholder">Loading 3-day projection matrix...</p>
             </div>
         </section>
 
         <section class="spotlight-block">
             <h3>Enterprise Spotlights</h3>
-            <div class="spotlight-wrapper">
-
-                <article class="spotlight-card gold-tier">
-                    <h4>Atlantic Trust Bank</h4>
-                    <p class="spotlight-industry">Banking & Finance</p>
-                    <p class="spotlight-motto">"Securing wealth, expanding retail commercial horizons."</p>
-                    <a href="https://www.atlantictrust.com" target="_blank" rel="noopener noreferrer">Corporate Site</a>
-                </article>
-
-                <article class="spotlight-card silver-tier">
-                    <h4>Frontline Media & Marketing</h4>
-                    <p class="spotlight-industry">Media & Marketing</p>
-                    <p class="spotlight-motto">"Amplifying local brands across global digital spaces."</p>
-                    <a href="https://www.frontlinemedia.com" target="_blank" rel="noopener noreferrer">Corporate Site</a>
-                </article>
-
-                <article class="spotlight-card gold-tier">
-                    <h4>Express Cargo Logistics</h4>
-                    <p class="spotlight-industry">Transport & Shipping</p>
-                    <p class="spotlight-motto">"Seamless delivery networks through coastal pathways."</p>
-                    <a href="https://www.expresscargo.com" target="_blank" rel="noopener noreferrer">Corporate Site</a>
-                </article>
-
+            <div class="spotlight-wrapper" id="spotlight-container">
+                <p>Fetching randomized gold and silver partner listings...</p>
             </div>
         </section>
 
@@ -139,7 +129,7 @@
         </div>
         <hr>
         <div class="footer-author-credentials">
-            <p>&copy; <span id="currentYearDisplay"></span> | Erhurhe Harrietta | WDD 231</p>
+            <p>&copy; 2026 | Erhurhe Harrietta | WDD 231</p>
             <p id="lastModifiedStamp"></p>
         </div>
     </footer>

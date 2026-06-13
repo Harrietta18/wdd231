@@ -7,28 +7,23 @@
     <meta name="description" content="Submit your organization's credentials to join the Lagos Chamber Hub and select your ecosystem membership tier.">
     <meta name="author" content="Erhurhe Harrietta">
 
-    <!-- Favicon Code (Fixes the missing favicon error) -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
-    <!-- Open Graph Meta Tags (Fixes all missing content errors) -->
     <meta property="og:title" content="Join the Alliance | Lagos Chamber Hub" />
     <meta property="og:description" content="Register your company with the Lagos Chamber Hub to unlock premium corporate networking, training resources, and trade growth." />
     <meta property="og:image" content="https://Harrietta18.github.io/wdd231/chamber/images/logo.png" />
     <meta property="og:url" content="https://Harrietta18.github.io/wdd231/chamber/join.html" />
     <meta property="og:type" content="website" />
 
-    <!-- Fonts and Typography -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-    <!-- Cascading Style Sheets -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/join.css">
     <link rel="stylesheet" href="styles/larger.css" media="(min-width: 768px)">
 
-    <!-- Defer Navigation Handler Scripts -->
     <script src="scripts/directory.js" defer></script>
     <script src="scripts/join.js" defer></script>
 </head>
@@ -55,45 +50,44 @@
     <main class="join-main-layout">
         <h1>Chamber Membership Application</h1>
 
-        <!-- APPLICATION INPUT INTERFACE SECTION -->
         <section class="form-container-block">
             <form method="get" action="thankyou.html">
                 
-                <label title="Applicant First Name">
+                <label>
                     <span>First Name *</span>
-                    <input type="text" name="firstName" required autocomplete="given-name">
+                    <input type="text" name="firstName" title="Applicant First Name" required autocomplete="given-name">
                 </label>
 
-                <label title="Applicant Last Name">
+                <label>
                     <span>Last Name *</span>
-                    <input type="text" name="lastName" required autocomplete="family-name">
+                    <input type="text" name="lastName" title="Applicant Last Name" required autocomplete="family-name">
                 </label>
 
-                <label title="Organizational Title (Minimum 7 characters, alphabetic, hyphens, spaces only)">
+                <label>
                     <span>Organizational Title *</span>
                     <input type="text" name="orgTitle" required autocomplete="organization-title" 
                            pattern="[A-Za-z\s\-]{7,}" 
-                           title="Must be at least 7 letters, hyphens, or spaces long.">
+                           title="Organizational Title: Must be at least 7 letters, hyphens, or spaces long.">
                 </label>
 
-                <label title="Primary Corporate Email Address">
+                <label>
                     <span>Email Address *</span>
-                    <input type="email" name="email" required autocomplete="email" placeholder="executive@company.com.ng">
+                    <input type="email" name="email" title="Primary Corporate Email Address" required autocomplete="email" placeholder="executive@company.com.ng">
                 </label>
 
-                <label title="Mobile Contact Phone Number">
+                <label>
                     <span>Mobile Phone *</span>
-                    <input type="tel" name="phone" required autocomplete="tel">
+                    <input type="tel" name="phone" title="Mobile Contact Phone Number" required autocomplete="tel">
                 </label>
 
-                <label title="Registered Business Name">
+                <label>
                     <span>Business/Organization Name *</span>
-                    <input type="text" name="organization" required autocomplete="organization">
+                    <input type="text" name="organization" title="Registered Business Name" required autocomplete="organization">
                 </label>
 
-                <label title="Select Your Ecosystem Membership Tier">
+                <label>
                     <span>Membership Level *</span>
-                    <select name="membershipLevel" required>
+                    <select name="membershipLevel" title="Select Your Ecosystem Membership Tier" required>
                         <option value="" disabled selected>-- Select a Tier --</option>
                         <option value="np">NP Membership (Non-Profit / No Fee)</option>
                         <option value="bronze">Bronze Membership</option>
@@ -102,19 +96,17 @@
                     </select>
                 </label>
 
-                <label title="Brief Business or Core Mission Description">
+                <label>
                     <span>Organization Description</span>
-                    <textarea name="description" rows="4"></textarea>
+                    <textarea name="description" rows="4" title="Brief Business or Core Mission Description"></textarea>
                 </label>
 
-                <!-- Hidden submission timestamp parameter hooked via JavaScript -->
                 <input type="hidden" id="formTimestamp" name="timestamp" value="">
 
-                <input type="submit" value="Submit Application" class="form-submit-btn">
+                <button type="submit" class="form-submit-btn">Submit Application</button>
             </form>
         </section>
 
-        <!-- MEMBERSHIP CARDS GRID WITH TRANSITION ON INITIAL LOAD -->
         <section class="benefits-cards-sidebar">
             <h2>Ecosystem Benefit Tiers</h2>
             
@@ -140,7 +132,6 @@
         </section>
     </main>
 
-    <!-- ACCESSIBLE OVERLAY MODALS ARCHITECTURE -->
     <dialog id="modal-np" class="benefit-modal-box">
         <div class="modal-header">
             <h3>Non-Profit Membership</h3>
@@ -205,5 +196,6 @@
             <p>&copy; <span id="currentYearDisplay"></span> | Erhurhe Harrietta | WDD 231</p>
             <p id="lastModifiedStamp"></p>
         </div>
+    </footer>
 </body>
 </html>

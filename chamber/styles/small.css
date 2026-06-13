@@ -309,20 +309,91 @@ nav {
     margin: 0; 
 }
 
-.weather-info-box { 
-    text-align: center; 
+/* Weather Section Main Container */
+.weather-card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: transparent; /* Let individual boxes handle background */
+    padding: 10px;
 }
 
-.weather-temp { 
-    font-size: 2.2rem; 
-    font-weight: 800; 
-    color: var(--brand-dark-moss); 
+/* Individual Card Blocks */
+.weather-box-container {
+    border: 2px solid #D3D3D3; /* Soft grey frame */
+    background-color: #F5F5F5; /* Very light grey outer background */
+    border-radius: 4px;
+    font-family: 'Work Sans', sans-serif;
 }
 
-.weather-desc { 
-    margin: 0; 
-    font-weight: 500; 
-    font-style: italic; 
+/* Red Title Headers */
+.weather-header-title {
+    background-color: #F5F5F5;
+    color: #A31D1D; /* Deep reddish-burgundy tone */
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 12px 0;
+    border-bottom: 2px solid #D3D3D3;
+    text-transform: capitalize;
+}
+
+/* Inner White Content Card */
+.weather-body-content {
+    background-color: #FFFFFF; /* Crisp white background for data */
+    margin: 15px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Typography styles matching screenshot */
+.weather-location {
+    font-size: 1.25rem;
+    color: #333;
+    margin: 0 0 5px 0;
+}
+
+.weather-main-temp {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 0 0 15px 0;
+}
+
+.weather-icon-wrapper img {
+    width: 75px;
+    height: auto;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.weather-desc {
+    font-size: 1.2rem;
+    color: #111;
+    margin: 10px 0;
+}
+
+.weather-details {
+    font-size: 1.15rem;
+    color: #222;
+    margin: 6px 0;
+}
+
+/* Forecast Specific Layout */
+.forecast-box .weather-body-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 25px 20px;
+}
+
+.forecast-day {
+    font-size: 1.35rem;
+    margin: 0;
+    color: #000;
+}
+
+.forecast-day strong {
+    font-weight: 700;
 }
 
 .sub-divider { 
