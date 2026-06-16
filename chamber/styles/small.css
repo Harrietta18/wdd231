@@ -385,13 +385,9 @@ nav {
     flex-direction: column;
 }
 
-.current-weather-block .weather-body-content,
+..current-weather-block .weather-body-content,
 .forecast-block .weather-body-content {
     flex: 1;
-}
-
-.current-weather-block .weather-body-content {
-    padding: 0.8rem 1.2rem;
 }
 
 .weather-location,
