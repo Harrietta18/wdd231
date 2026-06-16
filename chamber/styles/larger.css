@@ -6,7 +6,9 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 1.5rem 3rem;
+        padding: 1.25rem 2.5rem;
+        background-color: var(--brand-dark-moss);
+        color: var(--pure-white-card);
     }
 
     #toggleMenuBtn {
@@ -21,12 +23,18 @@
     .navigation-menu {
         display: flex !important;
         gap: 1rem;
+        align-items: center;
     }
 
     .navigation-menu li a {
         border-bottom: none;
         border-radius: 6px;
         padding: 0.6rem 1.2rem;
+        color: var(--pure-white-card);
+    }
+
+    .navigation-menu li a:hover {
+        opacity: 0.95;
     }
 
     /* --- Home Page Main Grid Content Split (Fulfills Wireframe Rule Exactly) --- */
@@ -143,5 +151,115 @@
         align-items: center;
         text-align: left;
         gap: 2rem;
+    }
+}
+
+/* Desktop overrides for Join page */
+@media screen and (min-width: 992px) {
+    .join-main-layout {
+        display: grid;
+        grid-template-columns: 420px minmax(420px, 1fr);
+        grid-template-areas:
+            "heading heading"
+            "sidebar form";
+        align-items: start;
+        min-height: 640px;
+        gap: 2.5rem;
+        padding: 2rem;
+    }
+
+    .join-main-layout h1 {
+        grid-area: heading;
+        align-self: start;
+        font-size: 2rem;
+        margin: 0;
+        color: var(--brand-dark-moss);
+        padding-bottom: 1rem;
+    }
+
+    .benefits-cards-sidebar {
+        grid-area: sidebar;
+        width: 100%;
+        margin-top: 0;
+        position: relative;
+    }
+
+    .form-container-block {
+        grid-area: form;
+        justify-self: stretch;
+        width: 100%;
+        max-width: 460px;
+        margin-bottom: 0;
+        box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+    }
+
+    .tier-info-card {
+        background-color: #F3F4F6;
+        border-left: none;
+        border-radius: 12px;
+        padding: 1.5rem 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 90px;
+    }
+
+    .tier-info-card + .tier-info-card {
+        margin-top: 1.25rem;
+    }
+
+    .navigation-menu li a.active {
+        background-color: var(--brass-accent);
+        color: var(--pure-white-card);
+        padding: 0.6rem 1rem;
+        border-radius: 8px;
+    }
+}
+
+/* Additional desktop tweaks for join layout and header */
+@media screen and (min-width: 992px) {
+    .join-main-layout {
+        display: grid;
+        grid-template-columns: 1fr 460px;
+        grid-template-areas:
+            "heading heading"
+            "sidebar form";
+        align-items: start;
+        min-height: 640px;
+        gap: 2.5rem;
+        padding: 2rem;
+    }
+
+    .join-main-layout h1 {
+        grid-area: heading;
+        align-self: start;
+        font-size: 2rem;
+        margin: 0;
+        color: var(--brand-dark-moss);
+        padding-bottom: 1rem;
+    }
+
+    .benefits-cards-sidebar {
+        grid-area: sidebar;
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .form-container-block {
+        grid-area: form;
+        justify-self: end;
+        width: 100%;
+        max-width: 420px;
+        margin-bottom: 0;
+        box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+    }
+
+    /* Active nav button style to match wireframe */
+    .navigation-menu li a.active {
+        background-color: var(--brass-accent);
+        color: var(--pure-white-card);
+        padding: 0.6rem 1rem;
+        border-radius: 8px;
     }
 }
