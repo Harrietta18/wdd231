@@ -66,7 +66,8 @@ function renderCurrentWeather(data) {
         const titleCaseDesc = data.weather[0].description.replace(/\b\w/g, c => c.toUpperCase());
         descElement.textContent = titleCaseDesc;
         if (iconElement) {
-            iconElement.src = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+            const useLocalIcon = iconElement.classList.contains('weathei');
+            iconElement.src = useLocalIcon ? 'images/weathei.svg' : `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
             iconElement.alt = titleCaseDesc;
         }
     }
