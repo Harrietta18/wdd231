@@ -355,7 +355,7 @@ nav {
     overflow: hidden;
 }
 
-.home-card h3, .spotlight-block h3 {
+.home-card h2, .spotlight-block h2 {
     font-family: 'Work Sans', sans-serif;
     color: var(--pure-white-card);
     background-color: #374151;
@@ -385,7 +385,7 @@ nav {
     flex-direction: column;
 }
 
-..current-weather-block .weather-body-content,
+.current-weather-block .weather-body-content,
 .forecast-block .weather-body-content {
     flex: 1;
 }
@@ -415,10 +415,6 @@ nav {
 
 .spotlight-block {
     padding-bottom: 1rem;
-}
-
-.weather-body-content {
-    padding: 0.8rem 1.2rem;
 }
 
 .forecast-placeholder {
