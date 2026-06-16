@@ -89,7 +89,7 @@
         min-height: 450px;
     }
 
-    .current-weather-block .weather-body-content {
+    .weather-body-content {
         flex: 1;
     }
 
