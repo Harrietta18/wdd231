@@ -27,6 +27,7 @@ const dataUrl = "data/members.json";
 const directoryViewer = document.getElementById("directoryDisplayBox");
 
 async function fetchMembers() {
+    if (!directoryViewer) return;
     try {
         const response = await fetch(dataUrl);
         if (!response.ok) {
@@ -36,7 +37,9 @@ async function fetchMembers() {
         renderDirectory(data);
     } catch (error) {
         console.error("Failed to load directory data:", error);
-        directoryViewer.innerHTML = `<p class="error-msg">Unable to load business records at this time.</p>`;
+        if (directoryViewer) {
+            directoryViewer.innerHTML = `<p class="error-msg">Unable to load business records at this time.</p>`;
+        }
     }
 }
 
@@ -72,23 +75,27 @@ function renderDirectory(members) {
 const gridViewBtn = document.getElementById("switchToGrid");
 const listViewBtn = document.getElementById("switchToList");
 
-gridViewBtn.addEventListener("click", () => {
-    directoryViewer.classList.add("grid-layout-active");
-    directoryViewer.classList.remove("list-layout-active");
-    
-    // Accessibility & UI updates
-    gridViewBtn.classList.add("active-state");
-    listViewBtn.classList.remove("active-state");
-});
+if (gridViewBtn && listViewBtn && directoryViewer) {
+    gridViewBtn.addEventListener("click", () => {
+        directoryViewer.classList.add("grid-layout-active");
+        directoryViewer.classList.remove("list-layout-active");
+        
+        // Accessibility & UI updates
+        gridViewBtn.classList.add("active-state");
+        listViewBtn.classList.remove("active-state");
+    });
 
-listViewBtn.addEventListener("click", () => {
-    directoryViewer.classList.add("list-layout-active");
-    directoryViewer.classList.remove("grid-layout-active");
-    
-    // Accessibility & UI updates
-    listViewBtn.classList.add("active-state");
-    gridViewBtn.classList.remove("active-state");
-});
+    listViewBtn.addEventListener("click", () => {
+        directoryViewer.classList.add("list-layout-active");
+        directoryViewer.classList.remove("grid-layout-active");
+        
+        // Accessibility & UI updates
+        listViewBtn.classList.add("active-state");
+        gridViewBtn.classList.remove("active-state");
+    });
+}
 
 // Initialize directory load
-fetchMembers();
+if (directoryViewer) {
+    fetchMembers();
+}

@@ -372,8 +372,69 @@ nav {
     font-weight: 700;
 }
 
+.home-card, .spotlight-block {
+    background-color: var(--pure-white-card);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.07);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.event-card {
+    min-height: 450px;
+}
+
+.current-weather-block {
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+}
+
+.current-weather-block .weather-body-content {
+    flex: 1;
+    padding: 0.8rem 1.2rem;
+}
+
+.weather-location,
+.weather-main-temp,
+.weather-details {
+    margin: 3px 0;
+}
+
+.weather-icon-wrapper {
+    margin: 8px auto;
+}
+
+.forecast-block {
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+}
+
+.forecast-block .weather-body-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.spotlight-block {
+    padding-bottom: 1rem;
+}
+
 .weather-body-content {
     padding: 1.5rem;
+}
+
+.forecast-block .weather-body-content {
+    padding-bottom: 1rem;
+}
+
+.forecast-placeholder {
+    margin: 0;
+    color: #4B5563;
+    font-size: 0.95rem;
 }
 
 .event-item {
@@ -424,10 +485,11 @@ nav {
 /* Inner White Content Card */
 .weather-body-content {
     background-color: #FFFFFF; /* Crisp white background for data */
-    margin: 15px;
-    padding: 20px;
+    margin: 0;
+    padding: 0.8rem 1.2rem;
     text-align: center;
 }
+
 
 /* Typography styles matching screenshot */
 .weather-location {
@@ -563,6 +625,30 @@ footer h2 {
 
 footer p {
     margin: 0.35rem 0;
+}
+
+.footer-social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.footer-social-links a {
+    color: var(--pure-white-card);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.08);
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.footer-social-links a:hover {
+    background-color: rgba(255, 255, 255, 0.16);
+    transform: translateY(-1px);
 }
 
 footer hr {
