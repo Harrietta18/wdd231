@@ -40,24 +40,27 @@
     }
 
     .hero-block {
-        grid-column: 1 / 4 !important; /* Stretch banner across all 3 columns at the top */
-        display: flex;
-        background-color: #064E3B;
-    }
-
-    .hero-image {
-        width: 60%;
-        height: 380px;
-        object-fit: cover;
+        height: 450px;
+        margin-bottom: 2rem;
     }
 
     .hero-cta-box {
-        width: 40%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: left;
-        padding: 2.5rem;
+        max-width: 500px;
+        padding: 3rem 2.5rem;
+        margin: 2rem 3rem;
+    }
+
+    .hero-cta-box h2 {
+        font-size: 2.2rem;
+        margin-bottom: 2rem;
+    }
+
+    .cta-button-link {
+        display: block;
+        width: 100%;
+        padding: 1rem;
+        font-size: 1.1rem;
+        text-align: center;
     }
 
     /* --- THE 3-COLUMN MID-ROW MAPPING SHIFT --- */
@@ -95,6 +98,20 @@
     /* --- Directory Page Content Grid Transform --- */
     #directoryDisplayBox.grid-layout-active {
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    /* --- Spotlight Cards Display --- */
+    .spotlight-card {
+        border-top: none;
+        border-left: 6px solid var(--brand-mint-emerald);
+    }
+
+    .spotlight-card.gold-tier {
+        border-left-color: #D97706;
+    }
+
+    .spotlight-card.silver-tier {
+        border-left-color: #A1A1A1;
     }
 
     /* --- Footer Refinements --- */

@@ -29,6 +29,7 @@ async function fetchWeatherData() {
 }
 
 function renderCurrentWeather(data) {
+    const locationElement = document.getElementById('weather-location');
     const tempElement = document.getElementById('current-temp');
     const descElement = document.getElementById('weather-description');
     const iconElement = document.getElementById('weather-icon');
@@ -36,12 +37,13 @@ function renderCurrentWeather(data) {
     const lowElement = document.getElementById('temp-low');
     const humidityElement = document.getElementById('humidity');
 
-    if (tempElement) tempElement.innerHTML = `${Math.round(data.main.temp)}`;
-    if (highElement) highElement.innerHTML = `${Math.round(data.main.temp_max)}`;
-    if (lowElement) lowElement.innerHTML = `${Math.round(data.main.temp_min)}`;
-    if (humidityElement) humidityElement.innerHTML = `${data.main.humidity}`;
+    if (locationElement) locationElement.textContent = `${data.name}, ${data.sys.country}`;
+    if (tempElement) tempElement.textContent = `${Math.round(data.main.temp)}`;
+    if (highElement) highElement.textContent = `${Math.round(data.main.temp_max)}`;
+    if (lowElement) lowElement.textContent = `${Math.round(data.main.temp_min)}`;
+    if (humidityElement) humidityElement.textContent = `${data.main.humidity}`;
 
-    if (descElement) {
+    if (descElement && data.weather && data.weather[0]) {
         const titleCaseDesc = data.weather[0].description.replace(/\b\w/g, c => c.toUpperCase());
         descElement.textContent = titleCaseDesc;
         if (iconElement) {
@@ -56,25 +58,27 @@ function renderThreeDayForecast(data) {
     if (!container) return;
     container.innerHTML = ''; // Clear loading message
 
-    // Robust fall-back filter: if 12:00:00 isn't captured, grab items spaced out every 8 intervals (24 hours)
     let distinctDaysList = data.list.filter(item => item.dt_txt.includes("12:00:00"));
-    if (distinctDaysList.length === 0) {
-        distinctDaysList = [data.list[8], data.list[16], data.list[24]];
+    if (distinctDaysList.length < 3) {
+        distinctDaysList = data.list.filter((item, index) => index % 8 === 0).slice(0, 3);
     }
 
-    distinctDaysList.slice(0, 3).forEach(dayInfo => {
-        if (!dayInfo) return; // Guard clause against missing steps
+    const forecastLabels = ["Tomorrow", "Day 2", "Day 3"];
 
-        const timeCalculated = new Date(dayInfo.dt * 1000);
-        const dayLabel = timeCalculated.toLocaleDateString('en-US', { weekday: 'long' });
+    distinctDaysList.slice(0, 3).forEach((dayInfo, index) => {
+        if (!dayInfo) return;
+
+        const dayLabel = forecastLabels[index] || `Day ${index + 1}`;
         const dayTemp = Math.round(dayInfo.main.temp);
         const dayConditions = dayInfo.weather[0].description.replace(/\b\w/g, c => c.toUpperCase());
 
-        const dayRow = document.createElement('p');
-        dayRow.className = "forecast-day";
-        dayRow.style.margin = "0.75rem 0";
-        dayRow.innerHTML = `<strong>${dayLabel}:</strong> <span>${dayTemp}</span>°C <br><small style="color:#6B7280; font-style:italic;">${dayConditions}</small>`;
-        container.appendChild(dayRow);
+        const dayCard = document.createElement('div');
+        dayCard.className = "forecast-row";
+        dayCard.innerHTML = `
+            <strong>${dayLabel}:</strong> ${dayTemp}°F
+            <span class="forecast-summary">${dayConditions}</span>
+        `;
+        container.appendChild(dayCard);
     });
 }
 
@@ -113,18 +117,30 @@ function renderSpotlightCards(premiumGroup) {
     if (!wrapper) return;
     wrapper.innerHTML = '';
 
-    premiumGroup.forEach(company => {
+    if (!premiumGroup.length) {
+        wrapper.innerHTML = `<p>Currently no gold or silver partners are available for spotlight rotation.</p>`;
+        return;
+    }
+
+    premiumGroup.slice(0, 3).forEach(company => {
         const levelBadge = company.membershipLevel === 3 ? "gold-tier" : "silver-tier";
         const levelText = company.membershipLevel === 3 ? "Gold Member" : "Silver Member";
+        const companyLogo = company.image ? `<img class="spotlight-logo" src="${company.image}" alt="${company.name} logo">` : '';
         const cardElement = document.createElement('article');
         cardElement.className = `spotlight-card ${levelBadge}`;
 
         cardElement.innerHTML = `
-            <h4>${company.name}</h4>
-            <p class="spotlight-industry" style="color: #A16207; font-weight:700; font-size:0.8rem;">${levelText} | ${company.industry}</p>
-            <p class="spotlight-motto">"${company.address}"</p>
-            <p class="spotlight-contact-detail" style="font-size:0.85rem; margin:0.25rem 0;">📞 ${company.phone}</p>
-            <a href="${company.website}" target="_blank" rel="noopener noreferrer" style="display:inline-block; margin-top:0.5rem; font-weight:bold; color:#064E3B; text-decoration:none;">Visit Corporate Site →</a>
+            <div class="spotlight-card-header">
+                ${companyLogo}
+                <div>
+                    <h4>${company.name}</h4>
+                    <p class="spotlight-industry">${levelText} | ${company.industry}</p>
+                </div>
+            </div>
+            <p class="spotlight-address">📍 ${company.address}</p>
+            <p class="spotlight-phone">📞 ${company.phone}</p>
+            <p class="spotlight-membership">Membership Level: ${levelText}</p>
+            <a href="${company.website}" target="_blank" rel="noopener noreferrer">Visit Corporate Site →</a>
         `;
         wrapper.appendChild(cardElement);
     });

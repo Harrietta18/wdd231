@@ -1,23 +1,26 @@
-// --- 1. Dynamic Footer Info Requirements ---
-document.getElementById("currentYearDisplay").textContent = new Date().getFullYear();
-document.getElementById("lastModifiedStamp").textContent = `Last Modification: ${document.lastModified}`;
+// --- 1. Shared Dynamic Footer Info Requirements ---
+const currentYearDisplay = document.getElementById("currentYearDisplay");
+const lastModifiedStamp = document.getElementById("lastModifiedStamp");
+if (currentYearDisplay) currentYearDisplay.textContent = new Date().getFullYear();
+if (lastModifiedStamp) lastModifiedStamp.textContent = `Last Modification: ${document.lastModified}`;
 
 // --- 2. Mobile Responsive Hamburger Menu Logic ---
 const toggleMenuBtn = document.getElementById("toggleMenuBtn");
 const navigationMenu = document.querySelector(".navigation-menu");
 
-toggleMenuBtn.addEventListener("click", () => {
-    navigationMenu.classList.toggle("open");
-    
-    // Switch button symbol between hamburger (☰) and close (✕) for better UX
-    if (navigationMenu.classList.contains("open")) {
-        toggleMenuBtn.textContent = "✕";
-        toggleMenuBtn.setAttribute("aria-label", "Close Navigation Menu");
-    } else {
-        toggleMenuBtn.textContent = "☰";
-        toggleMenuBtn.setAttribute("aria-label", "Open Navigation Menu");
-    }
-});
+if (toggleMenuBtn && navigationMenu) {
+    toggleMenuBtn.addEventListener("click", () => {
+        navigationMenu.classList.toggle("open");
+        
+        if (navigationMenu.classList.contains("open")) {
+            toggleMenuBtn.textContent = "✕";
+            toggleMenuBtn.setAttribute("aria-label", "Close Navigation Menu");
+        } else {
+            toggleMenuBtn.textContent = "☰";
+            toggleMenuBtn.setAttribute("aria-label", "Open Navigation Menu");
+        }
+    });
+}
 
 // --- 3. Data Fetch & Rendering Setup ---
 const dataUrl = "data/members.json";

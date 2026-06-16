@@ -28,13 +28,13 @@ main {
 main h1 {
     font-family: 'Work Sans', sans-serif;
     color: var(--brand-dark-moss);
-    border-bottom: 3px solid var(--brass-accent);
-    padding-bottom: 0.5rem;
+    padding-bottom: 0;
     font-size: 1.5rem;
-    text-align: center;
-    margin-top: 0;
+    text-align: left;
+    margin-top: 2rem;
     margin-bottom: 1.75rem;
     letter-spacing: -0.02em;
+    border: none;
 }
 
 /* Helper class to visually hide structural titles required for valid documents */
@@ -236,61 +236,144 @@ nav {
 
 .hero-block {
     position: relative;
-    border-radius: 12px;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    height: 350px;
     overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
 }
 
 .hero-image {
     width: 100%;
-    height: 300px;
+    height: 100%;
     object-fit: cover;
     display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
 
 .hero-cta-box {
-    background-color: var(--brand-dark-moss);
+    position: relative;
+    z-index: 2;
+    background-color: rgba(6, 78, 59, 0.9);
     color: var(--pure-white-card);
-    padding: 1.5rem;
-    text-align: center;
+    padding: 2rem 1.5rem;
+    border-radius: 12px;
+    margin: 1.5rem;
+    max-width: 450px;
+    text-align: left;
 }
 
 .hero-cta-box h2 {
     font-family: 'Work Sans', sans-serif;
-    margin-top: 0;
-    font-size: 1.4rem;
+    margin: 0 0 1.5rem 0;
+    font-size: 1.65rem;
+    font-weight: 700;
 }
 
 .cta-button-link {
-    display: inline-block;
+    display: block;
+    width: 100%;
     background-color: var(--brass-accent);
     color: var(--pure-white-card);
     text-decoration: none;
-    padding: 0.75rem 1.5rem;
+    padding: 1rem;
     font-weight: 700;
+    font-size: 1.1rem;
     border-radius: 6px;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
+    text-align: center;
     transition: background 0.2s ease;
+    border: none;
 }
 
 .cta-button-link:hover {
     background-color: #854D0E;
 }
 
+.forecast-day-card {
+    background-color: #F9FAFB;
+    border: 1px solid #E5E7EB;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.forecast-day-card h4 {
+    margin: 0 0 0.5rem 0;
+    color: var(--brand-dark-moss);
+    font-size: 1rem;
+}
+
+.forecast-conditions {
+    margin: 0 0 0.75rem 0;
+    color: #374151;
+    font-weight: 600;
+}
+
+.forecast-temp {
+    margin: 0.75rem 0 0;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--brand-mint-emerald);
+}
+
+.spotlight-card-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.spotlight-logo {
+    width: 72px;
+    height: 72px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 1px solid #E5E7EB;
+}
+
+.spotlight-address,
+.spotlight-phone,
+.spotlight-membership {
+    margin: 0.55rem 0 0;
+    color: #334155;
+}
+
+.spotlight-card a {
+    display: inline-block;
+    margin-top: 1rem;
+    color: var(--brass-accent);
+    font-weight: 700;
+}
+
 .home-card {
     background-color: var(--pure-white-card);
-    padding: 1.5rem;
+    padding: 0;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.02);
-    border-left: 5px solid var(--brand-mint-emerald);
+    border: none;
+    overflow: hidden;
 }
 
 .home-card h3, .spotlight-block h3 {
     font-family: 'Work Sans', sans-serif;
-    color: var(--brand-dark-moss);
-    margin-top: 0;
-    border-bottom: 2px solid var(--clay-mist-bg);
-    padding-bottom: 0.5rem;
+    color: var(--pure-white-card);
+    background-color: #374151;
+    margin: 0;
+    padding: 1rem 1.5rem;
+    font-size: 1.15rem;
+    border: none;
+    font-weight: 700;
+}
+
+.weather-body-content {
+    padding: 1.5rem;
 }
 
 .event-item {
@@ -386,14 +469,28 @@ nav {
     padding: 25px 20px;
 }
 
-.forecast-day {
-    font-size: 1.35rem;
-    margin: 0;
-    color: #000;
+.forecast-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.85rem 1rem;
+    background-color: #F8FAFC;
+    border: 1px solid #E5E7EB;
+    border-radius: 10px;
+    margin-bottom: 0.75rem;
+    font-size: 1rem;
+    color: #111827;
 }
 
-.forecast-day strong {
+.forecast-row strong {
     font-weight: 700;
+}
+
+.forecast-summary {
+    color: #4B5563;
+    font-size: 0.95rem;
+    text-align: right;
 }
 
 .sub-divider { 

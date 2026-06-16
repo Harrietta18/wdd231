@@ -24,6 +24,9 @@
     <meta property="og:image" content="https://Harrietta18.github.io/wdd231/chamber/images/logo.png" />
     <meta property="og:url" content="https://Harrietta18.github.io/wdd231/chamber/index.html" />
     <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="theme-color" content="#064E3B">
+    <link rel="canonical" href="https://Harrietta18.github.io/wdd231/chamber/index.html">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="styles/small.css">
@@ -54,26 +57,24 @@
         </nav>
     </header>
 
+    <section class="hero-block">
+        <picture>
+            <source media="(min-width: 768px)" srcset="images/hero.webp">
+            <img src="images/hero-small.webp" alt="Lagos Skyline Commercial District Banner" class="hero-image"
+                loading="eager">
+        </picture>
+        <div class="hero-cta-box">
+            <h2>Lagos Chamber of Commerce</h2>
+            <a href="join.html" class="cta-button-link">Join the Chamber</a>
+        </div>
+    </section>
+
     <main class="home-grid-layout">
 
         <h1 class="visually-hidden">Lagos Chamber Hub Commerce Portal</h1>
 
-        <section class="hero-block">
-            <picture>
-                <source media="(min-width: 768px)" srcset="images/hero-large.webp">
-                <img src="images/hero-small.webp" alt="Lagos Skyline Commercial District Banner" class="hero-image"
-                    loading="eager">
-            </picture>
-            <div class="hero-cta-box">
-                <h2>Empower Your Business Network</h2>
-                <p>Connect with verified market leaders, scale your commercial reach, and drive economic innovation in
-                    Lagos.</p>
-                <a href="join.html" class="cta-button-link">Join the Alliance Today →</a>
-            </div>
-        </section>
-
         <section class="home-card event-card">
-            <div class="weather-header-title">Upcoming Events</div>
+            <h3>Upcoming Events</h3>
             <div class="weather-body-content">
                 <div class="event-item">
                     <p class="event-date">Oct 14</p>
@@ -90,7 +91,7 @@
         </section>
 
         <section class="home-card current-weather-block">
-            <div class="weather-header-title">Current Weather</div>
+            <h3>Current Weather</h3>
             <div class="weather-body-content">
                 <p class="weather-location">Lagos, Nigeria</p>
                 <p class="weather-main-temp"><span id="current-temp">--</span>°F</p>
@@ -106,7 +107,7 @@
             </div>
         </section>
         <section class="home-card forecast-block">
-            <div class="weather-header-title">Weather Forecast</div>
+            <h3>Weather Forecast</h3>
             <div class="weather-body-content" id="forecast-container">
                 <p class="forecast-placeholder">Loading 3-day projection matrix...</p>
             </div>
@@ -129,7 +130,7 @@
         </div>
         <hr>
         <div class="footer-author-credentials">
-            <p>&copy; 2026 | Erhurhe Harrietta | WDD 231</p>
+            <p>&copy; <span id="currentYearDisplay"></span> | Erhurhe Harrietta | WDD 231</p>
             <p id="lastModifiedStamp"></p>
         </div>
     </footer>
