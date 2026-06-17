@@ -263,3 +263,38 @@
         border-radius: 8px;
     }
 }
+
+/* Discover Page Responsive Grid Areas */
+@media screen and (min-width: 641px) {
+    .discover-content { display: grid; grid-template-columns: 260px 1fr; gap: 2rem; align-items: start; }
+    .discover-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "item1 item2"
+            "item3 item3"
+            "item4 item5"
+            "item6 item6"
+            "item7 item8";
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .discover-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "item1 item1 item2 item3"
+            "item4 item4 item4 item4"
+            "item5 item6 item7 item8";
+    }
+    .discover-card h2 { font-size: 1.25rem; }
+}
+
+/* CSS Image Effects on Hover (not for mobile) */
+@media screen and (min-width: 768px) {
+    .discover-card figure { overflow: hidden; }
+    .discover-card figure img { transition: transform 0.4s ease, filter 0.4s ease; }
+    .discover-card figure img:hover {
+        transform: scale(1.1);
+        filter: brightness(1.1) contrast(1.1);
+    }
+}

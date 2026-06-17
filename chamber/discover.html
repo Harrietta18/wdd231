@@ -1,38 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Lagos Chamber Hub | Chamber Directory</title>
-    <meta name="description"
-        content="Discover premium commercial partners and verified corporate members within the Lagos Chamber network. Connect with industry leaders across Lagos, Nigeria.">
+    <title>Discover Lagos | Lagos Chamber Hub</title>
+    <meta name="description" content="Explore the vibrant attractions, demographics, and culture of Lagos, Nigeria.">
     <meta name="author" content="Erhurhe Harrietta">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-
-    <meta property="og:title" content="Lagos Chamber Hub | Chamber Directory" />
-    <meta property="og:description"
-        content="Discover premium commercial partners and verified corporate members within the Lagos Chamber network. Connect with industry leaders across Lagos, Nigeria." />
-    <meta property="og:image" content="https://Harrietta18.github.io/wdd231/chamber/images/logo.png" />
-    <meta property="og:url" content="https://Harrietta18.github.io/wdd231/chamber/directory.html" />
-
-    <meta property="og:type" content="website" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Work+Sans:wght@700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="styles/small.css">
-    <link rel="stylesheet" href="styles/larger.css" media="(min-width: 640px)">
+    <link rel="stylesheet" href="styles/larger.css" media="(min-width: 768px)">
 
     <script src="scripts/directory.js" defer></script>
+    <script src="scripts/discover.js" type="module" defer></script>
 </head>
-
 <body>
 
     <header>
@@ -43,28 +28,31 @@
                 <p class="sub-slogan">Driving Commercial Excellence and Innovation</p>
             </div>
         </div>
-
         <nav>
             <button id="toggleMenuBtn" aria-label="Open Navigation Menu">☰</button>
             <ul class="navigation-menu">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="directory.html" class="active">Directory</a></li>
-                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="discover.html" class="active">Discover</a></li>
                 <li><a href="join.html">Join</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <h1>Commercial Member Directory</h1>
-
-        <div class="display-modifiers">
-            <button id="switchToGrid" class="active-state" title="Show Card Grid">Grid Layout ⊞</button>
-            <button id="switchToList" title="Show Row List">List Layout ⊟</button>
+    <main class="discover-layout">
+        <h1>Discover Lagos</h1>
+        <div class="discover-content">
+            <aside class="sidebar-info">
+                <div class="visitor-message-box"><p id="visitor-msg"></p></div>
+                <section class="demographics">
+                    <h3>Lagos Demographics</h3>
+                    <p><strong>Population:</strong> ~24 Million (Metropolitan)</p>
+                    <p><strong>Economy:</strong> Major financial centre in Africa, highest GDP in Nigeria.</p>
+                    <p><strong>Climate:</strong> Tropical Savanna Climate.</p>
+                </section>
+            </aside>
+            <section class="discover-grid" id="discover-grid-container"></section>
         </div>
-
-        <article id="directoryDisplayBox" class="grid-layout-active">
-        </article>
     </main>
 
     <footer>
@@ -79,7 +67,5 @@
             <p id="lastModifiedStamp"></p>
         </div>
     </footer>
-
 </body>
-
 </html>
