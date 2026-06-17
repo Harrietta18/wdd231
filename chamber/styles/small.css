@@ -7,6 +7,8 @@
     --brass-accent: #A16207;        /* Deep accessible bronze-brass (Passes WCAG AA 4.5:1 ratio) */
     --charcoal-slate: #1F2937;
     --clay-mist-bg: #F3F4F6;
+    --muted-text: #9CA3AF;
+    --border-light: #E5E7EB;
     --pure-white-card: #FFFFFF;
 }
 
@@ -373,16 +375,7 @@ nav {
     overflow: hidden;
     display: flex;
     flex-direction: column;
-}
-
-.event-card {
     min-height: 450px;
-}
-
-.current-weather-block {
-    min-height: 450px;
-    display: flex;
-    flex-direction: column;
 }
 
 .current-weather-block .weather-body-content,
@@ -398,12 +391,6 @@ nav {
 
 .weather-icon-wrapper {
     margin: 8px auto;
-}
-
-.forecast-block {
-    min-height: 450px;
-    display: flex;
-    flex-direction: column;
 }
 
 .forecast-block .weather-body-content {
@@ -517,7 +504,7 @@ nav {
     gap: 0.75rem;
     padding: 0.85rem 1rem;
     background-color: #F8FAFC;
-    border: 1px solid #E5E7EB;
+    border: 1px solid var(--border-light);
     border-radius: 10px;
     margin-bottom: 0.75rem;
     font-size: 1rem;
@@ -537,7 +524,7 @@ nav {
 .sub-divider { 
     border: 0; 
     height: 1px; 
-    background: #E5E7EB; 
+    background: var(--border-light); 
     margin: 1rem 0; 
 }
 
