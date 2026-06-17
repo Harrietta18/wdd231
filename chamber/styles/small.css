@@ -298,8 +298,8 @@ nav {
 }
 
 .forecast-day-card {
-    background-color: #F9FAFB;
-    border: 1px solid #E5E7EB;
+    background-color: var(--light-bg);
+    border: 1px solid var(--border-light);
     border-radius: 10px;
     padding: 1rem;
     margin-bottom: 1rem;
@@ -337,7 +337,7 @@ nav {
     height: 72px;
     object-fit: cover;
     border-radius: 12px;
-    border: 1px solid #E5E7EB;
+    border: 1px solid var(--border-light);
 }
 
 .spotlight-address,
@@ -348,19 +348,10 @@ nav {
 }
 
 
-.home-card {
-    background-color: var(--pure-white-card);
-    padding: 0;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.02);
-    border: none;
-    overflow: hidden;
-}
-
 .home-card h2, .spotlight-block h2 {
     font-family: 'Work Sans', sans-serif;
     color: var(--pure-white-card);
-    background-color: #374151;
+    background-color: var(--charcoal-slate);
     margin: 0;
     padding: 1rem 1.5rem;
     font-size: 1.15rem;
@@ -370,10 +361,10 @@ nav {
 
 .home-card, .spotlight-block {
     background-color: var(--pure-white-card);
+    padding: 0;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.07);
     overflow: hidden;
-    display: flex;
     flex-direction: column;
     min-height: 450px;
 }
@@ -657,9 +648,6 @@ footer hr {
 .form-container-block label {
     width: 100%;
     box-sizing: border-box;
-}
-
-.form-container-block label {
     display: flex;
     flex-direction: column;
     margin-bottom: 1.4rem;
@@ -678,11 +666,11 @@ form input[type="tel"],
 form select,
 form textarea {
     padding: 0.8rem;
-    border: 2px solid #E5E7EB;
+    border: 2px solid var(--border-light);
     border-radius: 6px;
     font-family: inherit;
     font-size: 1rem;
-    background-color: #F9FAFB;
+    background-color: var(--light-bg);
     transition: border-color 0.2s ease;
 }
 
@@ -782,7 +770,7 @@ form input:focus:invalid {
     border: none;
     font-size: 1.75rem;
     cursor: pointer;
-    color: #9CA3AF;
+    color: var(--muted-text);
 }
 
 .thankyou-wrapper-box {

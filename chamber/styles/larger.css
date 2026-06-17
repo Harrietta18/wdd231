@@ -190,7 +190,7 @@
     }
 
     .tier-info-card {
-        background-color: #F3F4F6;
+        background-color: var(--clay-mist-bg);
         border-left: none;
         border-radius: 12px;
         padding: 1.5rem 2rem;
