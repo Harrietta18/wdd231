@@ -17,7 +17,7 @@ export const attractions = [
         name: "The Palms Shopping Mall",
         address: "1 Bisway St, Maroko, Lekki, Lagos",
         description: "A premier retail destination in Lagos. It houses international brands and serves as a major commercial center for the Lekki and Victoria Island business corridors.",
-        image: "images/palms-mall.webp",
+        image: "images/shopping-mall.webp",
         priceRange: "₦5,000 - ₦30,000 (Retail/Food)"
     },
     {

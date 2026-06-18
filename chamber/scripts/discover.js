@@ -1,6 +1,5 @@
 import { attractions } from '../data/discover.mjs';
 
-document.addEventListener("DOMContentLoaded", () => {
     // 1. Handle Visitor Message using localStorage
     const visitorMsgElement = document.getElementById("visitor-msg");
     const lastVisit = localStorage.getItem('lastVisit');
@@ -25,6 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // 2. Render Discovery Cards
     const container = document.getElementById("discover-grid-container");
     if (container) {
+        container.innerHTML = ""; // Clear any placeholders
         attractions.forEach((item, index) => {
             const card = document.createElement("article");
             card.className = "discover-card";
@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             card.innerHTML = `
                 <h2>${item.name}</h2>
-                <figure><img src="${item.image}" alt="${item.name}" loading="lazy" width="300" height="200"></figure>
+                <figure><img src="${item.image || 'images/placeholder.webp'}" alt="${item.name}" loading="lazy" width="300" height="200"></figure>
                 <address>${item.address}</address>
                 <p><strong>Budget:</strong> ${item.priceRange}</p>
                 <p>${item.description}</p>
@@ -41,4 +41,3 @@ document.addEventListener("DOMContentLoaded", () => {
             container.appendChild(card);
         });
     }
-});
