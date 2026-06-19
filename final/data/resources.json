@@ -1,0 +1,126 @@
+{
+  "guides": [
+    {
+      "id": 1,
+      "title": "Budgeting 101: A Student's First Budget",
+      "type": "Guide",
+      "description": "A step-by-step walkthrough of building your first monthly budget as a college student, including a printable template and example calculations.",
+      "topic": "Budgeting",
+      "link": "#",
+      "download": "templates/student-budget-template.pdf"
+    },
+    {
+      "id": 2,
+      "title": "Building Credit From Scratch",
+      "type": "Guide",
+      "description": "Learn what a credit score is, how it's calculated, and the safest ways for students to begin building a strong credit history.",
+      "topic": "Credit",
+      "link": "#",
+      "download": "templates/credit-score-explained.pdf"
+    },
+    {
+      "id": 3,
+      "title": "Investing for Beginners: Index Funds Explained",
+      "type": "Guide",
+      "description": "An accessible introduction to index fund investing, compound growth, and the basics of opening a brokerage account.",
+      "topic": "Investing",
+      "link": "#",
+      "download": "templates/index-funds-starter-guide.pdf"
+    },
+    {
+      "id": 4,
+      "title": "Understanding Student Loans",
+      "type": "Guide",
+      "description": "Federal vs. private loans, interest capitalization, repayment plans, and strategies to minimize what you owe after graduation.",
+      "topic": "Debt",
+      "link": "#",
+      "download": "templates/student-loan-strategies.pdf"
+    },
+    {
+      "id": 5,
+      "title": "Emergency Fund Blueprint",
+      "type": "Guide",
+      "description": "How to size, build, and protect an emergency fund — even on a tight student budget.",
+      "topic": "Saving",
+      "link": "#",
+      "download": "templates/emergency-fund-blueprint.pdf"
+    },
+    {
+      "id": 6,
+      "title": "Taxes for Students",
+      "type": "Guide",
+      "description": "What students need to know about W-2s, 1099s, education credits, and filing a return for the first time.",
+      "topic": "Taxes",
+      "link": "#",
+      "download": "templates/student-tax-basics.pdf"
+    },
+    {
+      "id": 7,
+      "title": "Meal Planning on a Budget",
+      "type": "Guide",
+      "description": "Weekly meal plans, grocery lists, and recipes designed for students who want to eat well for under $50 a week.",
+      "topic": "Budgeting",
+      "link": "#",
+      "download": "templates/weekly-meal-plan.pdf"
+    },
+    {
+      "id": 8,
+      "title": "Side Hustles for College Students",
+      "type": "Guide",
+      "description": "A roundup of realistic ways to earn extra income during the semester, including skill-based gigs and passive income ideas.",
+      "topic": "Income",
+      "link": "#",
+      "download": "templates/side-hustle-ideas.pdf"
+    }
+  ],
+  "external": [
+    {
+      "id": 1,
+      "name": "Investopedia",
+      "url": "https://www.investopedia.com",
+      "description": "Trusted financial education website with thousands of plain-English articles and tutorials."
+    },
+    {
+      "id": 2,
+      "name": "NerdWallet",
+      "url": "https://www.nerdwallet.com",
+      "description": "Comparisons, calculators, and guides covering credit cards, banking, investing, and more."
+    },
+    {
+      "id": 3,
+      "name": "Federal Student Aid",
+      "url": "https://studentaid.gov",
+      "description": "Official U.S. government site for managing federal student loans, FAFSA, and repayment plans."
+    },
+    {
+      "id": 4,
+      "name": "Mint (Intuit Credit Karma)",
+      "url": "https://www.creditkarma.com",
+      "description": "Free tools to track spending, monitor credit scores, and set budget goals."
+    },
+    {
+      "id": 5,
+      "name": "r/personalfinance",
+      "url": "https://www.reddit.com/r/personalfinance",
+      "description": "A large, well-moderated community for personal finance questions and shared experiences."
+    },
+    {
+      "id": 6,
+      "name": "The Plain Bagel (YouTube)",
+      "url": "https://www.youtube.com/@ThePlainBagel",
+      "description": "High-quality, jargon-free videos on investing, economics, and personal finance."
+    },
+    {
+      "id": 7,
+      "name": "Khan Academy – Personal Finance",
+      "url": "https://www.khanacademy.org/college-careers-more/personal-finance",
+      "description": "Free, structured video courses covering saving, budgeting, investing, and more."
+    },
+    {
+      "id": 8,
+      "name": "MyMoney.gov",
+      "url": "https://www.mymoney.gov",
+      "description": "U.S. government hub for trusted financial education resources across all life stages."
+    }
+  ]
+}

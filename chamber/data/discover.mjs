@@ -56,3 +56,19 @@ export const attractions = [
         priceRange: "₦40,000 - ₦90,000 (Dining/Stay)"
     }
 ];
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

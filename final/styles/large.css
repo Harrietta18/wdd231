@@ -1,0 +1,99 @@
+/* =============================================================
+   FinSmart — large.css
+   Enhancements for viewports ≥ 768px
+   ============================================================= */
+
+@media (min-width: 768px) {
+
+  /* ---- Nav: horizontal links, hide hamburger ---- */
+  .hamburger {
+    display: none;
+  }
+
+  .primary-nav {
+    position: static;
+    max-height: none;
+    overflow: visible;
+    background: transparent;
+    width: auto;
+  }
+
+  .primary-nav ul {
+    display: flex;
+    gap: .25rem;
+    padding: 0;
+  }
+
+  .primary-nav a {
+    padding: .5rem 1rem;
+    border-left: 0;
+    border-bottom: 3px solid transparent;
+    border-radius: 4px;
+  }
+
+  .primary-nav a:hover,
+  .primary-nav a:focus-visible {
+    background: #102a5b;
+  }
+
+  .primary-nav a.active {
+    border-bottom-color: #ffbf47;
+    background: transparent;
+  }
+
+  /* ---- Hero: two columns ---- */
+  .hero {
+    grid-template-columns: 1.4fr 1fr;
+    align-items: stretch;
+    margin-top: 2rem;
+  }
+
+  .hero-text {
+    padding: 3rem 2.5rem;
+  }
+
+  .hero-card {
+    padding: 2rem;
+  }
+
+  /* ---- Tips & guides grids ---- */
+  .tips-grid,
+  .guides-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+
+  /* ---- External list: two columns ---- */
+  .external-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* ---- Tools form: side-by-side fieldsets ---- */
+  .tool-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+
+  .tool-form fieldset {
+    margin-bottom: 0;
+  }
+
+  .form-actions {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (min-width: 1024px) {
+
+  /* ---- Three-column tip/guide grids ---- */
+  .tips-grid,
+  .guides-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* ---- External list: three columns ---- */
+  .external-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

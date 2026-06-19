@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>FinSmart – Home | Personal Finance & Budgeting for Students</title>
+  <meta name="description" content="FinSmart helps students build budgeting, saving, and investing skills with daily tips, interactive tools, and a curated resource hub." />
+  <meta name="author" content="FinSmart Project" />
+  <meta name="keywords" content="student finance, budgeting, saving, investing, financial literacy, money tips" />
+  <meta name="theme-color" content="#0a6cff" />
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:title" content="FinSmart – Personal Finance for Students" />
+  <meta property="og:description" content="Daily tips, interactive calculators, and a resource hub to help students master their money." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://example.com/wdd231/final/index.html" />
+  <meta property="og:image" content="images/finsmart-og.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="FinSmart – Personal Finance for Students" />
+  <meta name="twitter:description" content="Daily tips, interactive calculators, and a resource hub to help students master their money." />
+  <meta name="twitter:image" content="images/finsmart-og.png" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+  <link rel="apple-touch-icon" href="images/favicon.svg" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles/small.css" />
+  <link rel="stylesheet" href="styles/large.css" />
+
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="FinSmart home">
+        <span class="brand-mark" aria-hidden="true">💰</span>
+        <span class="brand-name">FinSmart</span>
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu"
+              aria-expanded="false" aria-controls="primary-nav">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="primary-nav" class="primary-nav" aria-label="Primary">
+        <ul>
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="tools.html">Tools</a></li>
+          <li><a href="resources.html">Resources</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Build Money Confidence as a Student</h1>
+        <p>Practical budgeting, smart saving, and no-jargon investing — all in one place.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="tools.html">Try the Calculators</a>
+          <a class="btn btn-secondary" href="resources.html">Explore Resources</a>
+        </div>
+      </div>
+      <div class="hero-card" aria-label="Tip of the day">
+        <p class="hero-card-eyebrow">Tip of the Day</p>
+        <h2 id="tip-title">Loading…</h2>
+        <p id="tip-summary">Fetching today's financial tip…</p>
+        <button class="btn btn-link" id="tip-read-more" type="button">Read full tip →</button>
+      </div>
+    </section>
+
+    <!-- INTRO -->
+    <section class="intro container">
+      <h2>Why FinSmart?</h2>
+      <p>
+        Managing money as a student is tough — limited income, surprise expenses, and a flood of conflicting advice.
+        FinSmart distills the essentials into bite-sized, actionable content. Browse curated tips, run real numbers
+        through our calculators, and bookmark the resources that match your goals.
+      </p>
+    </section>
+
+    <!-- TIPS / BLOG -->
+    <section class="tips-section container" aria-labelledby="tips-heading">
+      <div class="tips-header">
+        <h2 id="tips-heading">Financial Tips & Articles</h2>
+        <p>Filter by topic to find what you need right now.</p>
+      </div>
+
+      <div class="filter-bar" role="group" aria-label="Filter tips by category">
+        <button class="filter-btn active" data-filter="all" type="button">All</button>
+        <button class="filter-btn" data-filter="Budgeting" type="button">Budgeting</button>
+        <button class="filter-btn" data-filter="Saving" type="button">Saving</button>
+        <button class="filter-btn" data-filter="Investing" type="button">Investing</button>
+      </div>
+
+      <p class="favorites-info">
+        <span id="fav-count">0</span> favorite<span id="fav-plural">s</span> saved
+        <button class="btn btn-link" id="show-favs" type="button">Show favorites</button>
+        <button class="btn btn-link hidden" id="show-all" type="button">Show all</button>
+      </p>
+
+      <div id="tips-grid" class="tips-grid" aria-live="polite"></div>
+      <p id="empty-message" class="empty-message hidden">No tips found in this category.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>&copy; <span id="year"></span> FinSmart &middot; Built for students, by a student.</p>
+      <p class="footer-meta">WDD231 Final Project</p>
+    </div>
+  </footer>
+
+  <!-- Tip Modal -->
+  <div class="modal" id="tip-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-content" role="document">
+      <button class="modal-close" type="button" aria-label="Close dialog" data-close-modal>&times;</button>
+      <p class="modal-eyebrow" id="modal-category">Category</p>
+      <h2 id="modal-title">Tip title</h2>
+      <p id="modal-body">Tip body…</p>
+      <div class="modal-actions">
+        <button class="btn btn-secondary" id="modal-fav" type="button">★ Save to favorites</button>
+        <button class="btn btn-primary" type="button" data-close-modal>Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="scripts/main.js"></script>
+</body>
+</html>
