@@ -1,0 +1,40 @@
+STUDENT MONTHLY BUDGET TEMPLATE
+FinSmart – Money Confidence for Students
+==================================================
+
+INCOME
+  Allowance / Salary:        ₦
+  Scholarships / Grants:     ₦
+  Side Hustle:               ₦
+  TOTAL INCOME:              ₦___________________
+
+FIXED EXPENSES
+  Rent / Housing:            ₦
+  Tuition / Fees:            ₦
+  Utilities / Phone:         ₦
+  Transit / Car:             ₦
+  Groceries:                 ₦
+  Subscriptions:             ₦
+  Loan Payments:             ₦
+  Other:                     ₦
+  TOTAL FIXED:               ₦___________________
+
+VARIABLE / DISCRETIONARY
+  Dining Out:                ₦
+  Entertainment:             ₦
+  Clothing:                  ₦
+  Personal Care:             ₦
+  TOTAL VARIABLE:            ₦___________________
+
+SAVINGS GOAL (20% of income)
+  Emergency Fund:            ₦
+  Investments:               ₦
+  Sinking Funds:             ₦
+  TOTAL SAVINGS:             ₦___________________
+
+==================================================
+TOTAL EXPENSES + SAVINGS:   ₦___________________
+REMAINING (Income - Out):   ₦___________________
+
+TIP: Aim for the 50/30/20 rule — 50% needs, 30% wants, 20% savings.
+© FinSmart — https://example.com/wdd231/final

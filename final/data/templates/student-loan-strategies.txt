@@ -1,0 +1,32 @@
+UNDERSTANDING STUDENT LOANS
+FinSmart – Money Confidence for Students
+==================================================
+
+LOAN TYPES
+  Federal / Government    Lower rates, flexible repayment
+  Private / Bank         Credit-based, fewer protections
+
+KEY TERMS
+  Principal      The amount you borrowed
+  Interest       The cost of borrowing
+  Capitalization Unpaid interest added to principal
+
+REPAYMENT STRATEGIES
+  ✦ Pay interest while still in school (if possible)
+  ✦ Make extra payments toward principal
+  ✦ Refinance only when you have stable income
+  ✦ Look into income-driven repayment plans
+  ✦ Avoid loan forbearance unless emergency
+
+LOAN TRACKER
+  Loan 1: ₦________  Rate: ___%  Min Payment: ₦________
+  Loan 2: ₦________  Rate: ___%  Min Payment: ₦________
+  Loan 3: ₦________  Rate: ___%  Min Payment: ₦________
+  TOTAL:   ₦________
+
+DEBT SNOWBALL VS AVALANCHE
+  Snowball:  Pay smallest balance first
+  Avalanche: Pay highest interest rate first
+  Pick the method that keeps you motivated.
+
+© FinSmart — https://example.com/wdd231/final

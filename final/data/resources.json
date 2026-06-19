@@ -7,7 +7,7 @@
       "description": "A step-by-step walkthrough of building your first monthly budget as a college student, including a printable template and example calculations.",
       "topic": "Budgeting",
       "link": "#",
-      "download": "templates/student-budget-template.pdf"
+      "download": "data/templates/student-budget-template.txt"
     },
     {
       "id": 2,
@@ -16,7 +16,7 @@
       "description": "Learn what a credit score is, how it's calculated, and the safest ways for students to begin building a strong credit history.",
       "topic": "Credit",
       "link": "#",
-      "download": "templates/credit-score-explained.pdf"
+      "download": "data/templates/credit-score-explained.txt"
     },
     {
       "id": 3,
@@ -25,7 +25,7 @@
       "description": "An accessible introduction to index fund investing, compound growth, and the basics of opening a brokerage account.",
       "topic": "Investing",
       "link": "#",
-      "download": "templates/index-funds-starter-guide.pdf"
+      "download": "data/templates/index-funds-starter-guide.txt"
     },
     {
       "id": 4,
@@ -34,16 +34,16 @@
       "description": "Federal vs. private loans, interest capitalization, repayment plans, and strategies to minimize what you owe after graduation.",
       "topic": "Debt",
       "link": "#",
-      "download": "templates/student-loan-strategies.pdf"
+      "download": "data/templates/student-loan-strategies.txt"
     },
     {
       "id": 5,
       "title": "Emergency Fund Blueprint",
       "type": "Guide",
-      "description": "How to size, build, and protect an emergency fund â€” even on a tight student budget.",
+      "description": "How to size, build, and protect an emergency fund — even on a tight student budget.",
       "topic": "Saving",
       "link": "#",
-      "download": "templates/emergency-fund-blueprint.pdf"
+      "download": "data/templates/emergency-fund-blueprint.txt"
     },
     {
       "id": 6,
@@ -52,7 +52,7 @@
       "description": "What students need to know about W-2s, 1099s, education credits, and filing a return for the first time.",
       "topic": "Taxes",
       "link": "#",
-      "download": "templates/student-tax-basics.pdf"
+      "download": "data/templates/student-tax-basics.txt"
     },
     {
       "id": 7,
@@ -61,7 +61,7 @@
       "description": "Weekly meal plans, grocery lists, and recipes designed for students who want to eat well for under ₦50,000 a week.",
       "topic": "Budgeting",
       "link": "#",
-      "download": "templates/weekly-meal-plan.pdf"
+      "download": "data/templates/weekly-meal-plan.txt"
     },
     {
       "id": 8,
@@ -70,7 +70,7 @@
       "description": "A roundup of realistic ways to earn extra income during the semester, including skill-based gigs and passive income ideas.",
       "topic": "Income",
       "link": "#",
-      "download": "templates/side-hustle-ideas.pdf"
+      "download": "data/templates/side-hustle-ideas.txt"
     }
   ],
   "external": [
