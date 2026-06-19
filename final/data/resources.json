@@ -1,4 +1,4 @@
-{
+﻿{
   "guides": [
     {
       "id": 1,
@@ -40,7 +40,7 @@
       "id": 5,
       "title": "Emergency Fund Blueprint",
       "type": "Guide",
-      "description": "How to size, build, and protect an emergency fund — even on a tight student budget.",
+      "description": "How to size, build, and protect an emergency fund â€” even on a tight student budget.",
       "topic": "Saving",
       "link": "#",
       "download": "templates/emergency-fund-blueprint.pdf"
@@ -58,7 +58,7 @@
       "id": 7,
       "title": "Meal Planning on a Budget",
       "type": "Guide",
-      "description": "Weekly meal plans, grocery lists, and recipes designed for students who want to eat well for under $50 a week.",
+      "description": "Weekly meal plans, grocery lists, and recipes designed for students who want to eat well for under ₦50,000 a week.",
       "topic": "Budgeting",
       "link": "#",
       "download": "templates/weekly-meal-plan.pdf"
@@ -112,7 +112,7 @@
     },
     {
       "id": 7,
-      "name": "Khan Academy – Personal Finance",
+      "name": "Khan Academy â€“ Personal Finance",
       "url": "https://www.khanacademy.org/college-careers-more/personal-finance",
       "description": "Free, structured video courses covering saving, budgeting, investing, and more."
     },

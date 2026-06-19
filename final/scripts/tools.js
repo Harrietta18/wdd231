@@ -5,6 +5,7 @@
 // =============================================================
 
 import { initNav } from "./nav.js";
+import { populateFooterTimestamps } from "./lastmod.js";
 
 // ---- DOM ----
 const budgetForm = document.querySelector("#budget-form");
@@ -20,8 +21,8 @@ const BUDGET_KEY = "finsmart.budget.v1";
 const SAVINGS_KEY = "finsmart.savings.v1";
 
 // ---- Helpers ----
-const fmt = new Intl.NumberFormat("en-US", { style: "currency", currency: "USD", maximumFractionDigits: 0 });
-const fmtExact = new Intl.NumberFormat("en-US", { style: "currency", currency: "USD", maximumFractionDigits: 2 });
+const fmt = new Intl.NumberFormat("en-NG", { style: "currency", currency: "NGN", maximumFractionDigits: 0 });
+const fmtExact = new Intl.NumberFormat("en-NG", { style: "currency", currency: "NGN", maximumFractionDigits: 2 });
 
 function readNumber(input) {
   const v = parseFloat(input.value);
@@ -154,6 +155,7 @@ savingsResetBtn.addEventListener("click", () => {
 // ---- Init ----
 function init() {
   initNav();
+  populateFooterTimestamps();
   yearEl.textContent = new Date().getFullYear();
   loadForm(budgetForm, BUDGET_KEY);
   loadForm(savingsForm, SAVINGS_KEY);

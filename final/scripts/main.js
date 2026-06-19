@@ -5,6 +5,7 @@
 // =============================================================
 
 import { initNav } from "./nav.js";
+import { populateFooterTimestamps } from "./lastmod.js";
 
 // ---- DOM references ----
 const tipsGrid = document.querySelector("#tips-grid");
@@ -217,6 +218,7 @@ modalFavBtn.addEventListener("click", () => {
 // ---- Init ----
 async function init() {
   initNav();
+  populateFooterTimestamps();
   yearEl.textContent = new Date().getFullYear();
   updateFavCount();
 

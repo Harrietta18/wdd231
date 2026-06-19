@@ -5,6 +5,7 @@
 // =============================================================
 
 import { initNav } from "./nav.js";
+import { populateFooterTimestamps } from "./lastmod.js";
 
 const guidesGrid = document.querySelector("#guides-grid");
 const guidesEmpty = document.querySelector("#guides-empty");
@@ -62,6 +63,7 @@ filterButtons.forEach(btn => {
 
 async function init() {
   initNav();
+  populateFooterTimestamps();
   yearEl.textContent = new Date().getFullYear();
 
   // Restore last filter

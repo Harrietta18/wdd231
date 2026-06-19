@@ -3,6 +3,15 @@
    Mobile-first base styles (320px and up)
    ============================================================= */
 
+:root {
+  --brass-accent: #A16207;        /* WCAG AA accessible bronze-brass */
+  --pure-white-card: #FFFFFF;
+  --charcoal-slate: #1F2937;
+  --muted-text: #9CA3AF;
+  --border-light: #E5E9F2;
+  --brand-dark: #0a1f44;
+}
+
 /* ---- CSS reset / base ---- */
 *, *::before, *::after { box-sizing: border-box; }
 
@@ -483,21 +492,56 @@ a:hover, a:focus-visible { text-decoration: underline; }
 }
 body.modal-open { overflow: hidden; }
 
-/* ---- Footer ---- */
+/* ---- Footer (matches chamber structural pattern) ---- */
 .site-footer {
-  background: #0a1f44;
-  color: #cbd5e1;
-  margin-top: 2rem;
-}
-.footer-inner {
-  width: min(100% - 1.5rem, 1100px);
-  margin-inline: auto;
-  padding: 1.5rem 0;
+  background-color: #111827;
+  color: var(--muted-text);
+  padding: 2.5rem 1.25rem 1.75rem 1.25rem;
+  margin-top: 4rem;
+  font-size: 0.88rem;
   text-align: center;
-  font-size: .9rem;
 }
-.footer-inner p { margin: .25rem 0; }
-.footer-meta { color: #94a3b8; font-size: .8rem; }
+.site-footer h2 {
+  color: var(--pure-white-card);
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  font-size: 1.2rem;
+  letter-spacing: -0.01em;
+}
+.site-footer p { margin: 0.35rem 0; }
+.footer-social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.footer-social-links a {
+  color: var(--pure-white-card);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.08);
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+.footer-social-links a:hover {
+  background-color: rgba(255, 255, 255, 0.16);
+  transform: translateY(-1px);
+}
+.site-footer hr {
+  border: 0;
+  height: 1px;
+  background: #374151;
+  margin: 2rem 0 1.5rem 0;
+}
+.footer-author-credentials p { margin: 0.5rem 0; }
+#currentYearDisplay,
+#lastModifiedStamp {
+  color: var(--brass-accent);
+  font-weight: 600;
+}
 
 /* ---- Thank you page ---- */
 .thankyou { padding: 2rem 0; }
