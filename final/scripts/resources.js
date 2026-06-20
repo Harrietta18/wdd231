@@ -55,8 +55,8 @@ function setFilter(topic) {
   renderGuides();
 }
 
-filterButtons.forEach(fs-action => {
-  fs-action.addEventListener("click", () => setFilter(fs-action.dataset.filter));
+filterButtons.forEach(filterButton => {
+  filterButton.addEventListener("click", () => setFilter(filterButton.dataset.filter));
 });
 
 async function init() {
@@ -69,7 +69,7 @@ async function init() {
   filterButtons.forEach(b => b.classList.toggle("active", b.dataset.filter === currentFilter));
 
   try {
-    const response = await fetch("data/resources.json?v=4");
+    const response = await fetch("data/resources.json?v=5");
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const data = await response.json();
 
