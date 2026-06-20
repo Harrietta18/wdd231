@@ -25,7 +25,6 @@ const modalTitle = document.querySelector("#modal-title");
 const modalBody = document.querySelector("#modal-body");
 const modalCategory = document.querySelector("#modal-category");
 const modalFavBtn = document.querySelector("#modal-fav");
-const yearEl = document.querySelector("#year");
 
 // ---- App state ----
 const STORAGE_KEY = "finsmart.favorites.v1";
@@ -219,7 +218,6 @@ modalFavBtn.addEventListener("click", () => {
 async function init() {
   initNav();
   populateFooterTimestamps();
-  yearEl.textContent = new Date().getFullYear();
   updateFavCount();
 
   try {

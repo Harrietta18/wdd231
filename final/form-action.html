@@ -5,10 +5,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>FinSmart – Thank You | Feedback Received</title>
-  <meta name="description" content="Confirmation page shown after submitting feedback to FinSmart." />
-  <meta name="author" content="FinSmart Project" />
+  <meta name="description" content="Confirmation page showing a summary after students submit feedback to the FinSmart project." />
+  <meta name="author" content="Erhurhe Harrietta" />
   <meta name="theme-color" content="#0a6cff" />
   <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles/small.css" />
   <link rel="stylesheet" href="styles/large.css" />
 </head>
@@ -80,16 +83,7 @@
     </div>
   </footer>
 
-  <script type="module">
-    import { populateFooterTimestamps } from "./scripts/lastmod.js";
-    populateFooterTimestamps();
-    const params = new URLSearchParams(window.location.search);
-    document.getElementById("display-name").textContent = params.get("name") || "friend";
-    document.getElementById("display-name-2").textContent = params.get("name") || "—";
-    document.getElementById("display-email").textContent = params.get("email") || "—";
-    document.getElementById("display-topic").textContent = params.get("topic") || "—";
-    document.getElementById("display-message").textContent = params.get("message") || "—";
-  </script>
+  <script type="module" src="scripts/form-action.js"></script>
 </body>
 
 </html>

@@ -11,7 +11,6 @@ const guidesGrid = document.querySelector("#guides-grid");
 const guidesEmpty = document.querySelector("#guides-empty");
 const externalList = document.querySelector("#external-list");
 const filterButtons = document.querySelectorAll(".filter-btn");
-const yearEl = document.querySelector("#year");
 
 const STORAGE_KEY = "finsmart.guidesFilter.v1";
 let allGuides = [];
@@ -64,7 +63,6 @@ filterButtons.forEach(btn => {
 async function init() {
   initNav();
   populateFooterTimestamps();
-  yearEl.textContent = new Date().getFullYear();
 
   // Restore last filter
   const savedFilter = localStorage.getItem(STORAGE_KEY);

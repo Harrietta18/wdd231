@@ -65,7 +65,7 @@ a:hover, a:focus-visible { text-decoration: underline; }
   padding: 1.5rem 0;
 }
 
-.hidden { display: none !important; }
+.hidden { display: none; }
 
 /* ---- Header / Nav ---- */
 .site-header {
@@ -395,19 +395,33 @@ a:hover, a:focus-visible { text-decoration: underline; }
 .result-row:last-child { border-bottom: 0; }
 .result-row strong { color: #0a1f44; }
 .result-row.warning strong { color: #b91c1c; }
-.result-bar {
+.result-note { margin-top: 1rem; }
+.result-note-tight { margin-top: .5rem; }
+.result-percent {
+  font-size: .85rem;
+  color: #475569;
+}
+.result-meter {
+  display: block;
+  width: 100%;
   height: 14px;
-  background: #e5e9f2;
+  margin-top: .35rem;
+  border: 0;
   border-radius: 999px;
   overflow: hidden;
-  margin-top: .35rem;
+  background: #e5e9f2;
 }
-.result-bar > span {
-  display: block;
-  height: 100%;
+.result-meter::-webkit-progress-bar {
+  background: #e5e9f2;
+  border-radius: 999px;
+}
+.result-meter::-webkit-progress-value {
   background: linear-gradient(90deg, #0a6cff, #2ec4b6);
-  width: 0;
-  transition: width .6s ease;
+  border-radius: 999px;
+}
+.result-meter::-moz-progress-bar {
+  background: linear-gradient(90deg, #0a6cff, #2ec4b6);
+  border-radius: 999px;
 }
 
 /* ---- Resource Hub external list ---- */

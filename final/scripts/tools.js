@@ -12,8 +12,6 @@ const budgetForm = document.querySelector("#budget-form");
 const budgetResults = document.querySelector("#budget-results");
 const savingsForm = document.querySelector("#savings-form");
 const savingsResults = document.querySelector("#savings-results");
-const contactForm = document.querySelector("#contact-form");
-const yearEl = document.querySelector("#year");
 const budgetResetBtn = document.querySelector("#budget-reset");
 const savingsResetBtn = document.querySelector("#savings-reset");
 
@@ -83,12 +81,12 @@ budgetForm.addEventListener("submit", (e) => {
     </div>
     <div class="result-row"><span>Savings target (20%)</span><strong>${fmt.format(savingsTarget)}</strong></div>
 
-    <p style="margin-top:1rem;"><strong>${status.label}</strong></p>
+    <p class="result-note"><strong>${status.label}</strong></p>
 
     <p>Fixed expenses as % of income</p>
-    <div class="result-bar"><span style="width:${pctFixed}%"></span></div>
-    <p style="margin-top:.5rem;">Remaining as % of income</p>
-    <div class="result-bar"><span style="width:${pctRemaining}%"></span></div>
+    <progress class="result-meter" value="${pctFixed}" max="100">${pctFixed.toFixed(1)}%</progress>
+    <p class="result-note-tight">Remaining as % of income</p>
+    <progress class="result-meter" value="${pctRemaining}" max="100">${pctRemaining.toFixed(1)}%</progress>
   `;
   budgetResults.classList.add("visible");
 });
@@ -131,9 +129,9 @@ savingsForm.addEventListener("submit", (e) => {
     <div class="result-row"><span>Months to reach goal</span><strong>${months} month${months === 1 ? "" : "s"} (~${years} yr)</strong></div>
     <div class="result-row"><span>Estimated completion</span><strong>${dateStr}</strong></div>
 
-    <p style="margin-top:1rem;">Progress toward your goal</p>
-    <div class="result-bar"><span style="width:${pctDone}%"></span></div>
-    <p style="font-size:.85rem;color:#475569;">${pctDone.toFixed(1)}% complete</p>
+    <p class="result-note">Progress toward your goal</p>
+    <progress class="result-meter" value="${pctDone}" max="100">${pctDone.toFixed(1)}%</progress>
+    <p class="result-percent">${pctDone.toFixed(1)}% complete</p>
   `;
   savingsResults.classList.add("visible");
 });
@@ -156,7 +154,6 @@ savingsResetBtn.addEventListener("click", () => {
 function init() {
   initNav();
   populateFooterTimestamps();
-  yearEl.textContent = new Date().getFullYear();
   loadForm(budgetForm, BUDGET_KEY);
   loadForm(savingsForm, SAVINGS_KEY);
 }
