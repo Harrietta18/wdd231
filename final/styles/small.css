@@ -95,16 +95,10 @@ a:hover, a:focus-visible { text-decoration: underline; }
   font-size: 1.15rem;
 }
 .brand:hover { text-decoration: none; }
-.brand-mark {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+.brand-logo {
   width: 2rem;
   height: 2rem;
-  border: 2px solid #ffbf47;
   border-radius: 50%;
-  font-size: .8rem;
-  letter-spacing: 0;
 }
 
 .hamburger {

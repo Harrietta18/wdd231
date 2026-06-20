@@ -27,6 +27,12 @@ header, footer {
     text-align: center;
 }
 
+.site-name {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+}
+
 /* Nav styling */
 nav {
     background-color: #3E2723;
@@ -54,7 +60,7 @@ nav a {
 /* Course Section Styling */
 .courses h2 {
     background-color: var(--primary-color);
-    color: var(--white);
+    color: var(--text-on-dark);
     padding: 0.5rem;
     text-align: center;
 }

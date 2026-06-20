@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WDD 231 Course Portfolio | Erhurhe Harrietta</title>
+    <meta name="description" content="Erhurhe Harrietta's WDD 231 course portfolio with projects, learning activities, and web development assignments.">
+    <meta name="author" content="Erhurhe Harrietta">
+
+    <meta property="og:title" content="WDD 231 Course Portfolio | Erhurhe Harrietta">
+    <meta property="og:description" content="Explore Erhurhe Harrietta's WDD 231 portfolio, including course projects, learning activities, and web development work.">
+    <meta property="og:image" content="https://harrietta18.github.io/wdd231/images/erhurhe.jpg">
+    <meta property="og:url" content="https://harrietta18.github.io/wdd231/">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/index-large.css">
+    <script src="scripts/index.js" defer></script>
+</head>
+<body>
+    <header>
+        <p class="site-name">Erhurhe Harrietta</p>
+        <button id="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">Menu</button>
+        <nav aria-label="Primary navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="chamber/index.html">Chamber</a></li>
+                <li><a href="final/index.html">Final Project</a></li>
+                <li><a href="https://github.com/Harrietta18" target="_blank" rel="noopener noreferrer">GitHub Profile</a></li>
+                <li><a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="page-title">WDD 231: Frontend Web Development I</h1>
+
+        <section class="about">
+            <h2>About Me</h2>
+            <p>
+                Welcome to my WDD 231 course portfolio. I am building responsive websites with semantic HTML,
+                custom CSS, JavaScript, accessible navigation, and dynamic content. This page links to my
+                course projects and highlights the assignments I am completing throughout the term.
+            </p>
+        </section>
+
+        <section class="photo">
+            <h2>Student Photo</h2>
+            <img src="images/erhurhe.jpg" alt="Portrait of Erhurhe Harrietta" width="300" height="300">
+        </section>
+
+        <section class="courses">
+            <h2>Web and Computer Programming Certificate</h2>
+            <div class="filters" role="group" aria-label="Filter course list">
+                <button id="all" type="button">All</button>
+                <button id="cse" type="button">CSE</button>
+                <button id="wdd" type="button">WDD</button>
+            </div>
+            <div class="course-list" aria-live="polite"></div>
+            <p id="total-credits"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Erhurhe Harrietta | Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
