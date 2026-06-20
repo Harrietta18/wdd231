@@ -1,0 +1,32 @@
+﻿WEEKLY MEAL PLAN ON A STUDENT BUDGET
+FinSmart - Money Confidence for Nigerian Students
+==================================================
+
+WEEKLY FOOD BUDGET
+  Target amount: Naira ___________
+  Actual amount: Naira ___________
+  Difference:    Naira ___________
+
+LOW-COST MEAL IDEAS
+  - Rice and stew.
+  - Beans and garri.
+  - Yam or potatoes with egg sauce.
+  - Spaghetti with vegetables.
+  - Moi moi or akara.
+  - Oats, pap, or custard.
+
+SHOPPING LIST
+  Staples:      ______________________________
+  Protein:      ______________________________
+  Vegetables:   ______________________________
+  Snacks:       ______________________________
+  Water / Drinks: ____________________________
+
+PLAN BEFORE YOU BUY
+  [ ] Check what you already have.
+  [ ] Write a list before going to the market.
+  [ ] Compare prices.
+  [ ] Cook in batches when possible.
+  [ ] Carry snacks or water on long school days.
+
+FinSmart - https://harrietta18.github.io/wdd231/final/

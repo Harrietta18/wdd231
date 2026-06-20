@@ -1,13 +1,13 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>FinSmart Budget and Savings Calculators</title>
+  <title>FinSmart Nigerian Budget and Savings Calculators</title>
   <meta name="description"
-    content="Interactive budget estimator and emergency savings goal calculator built for students. Get instant visual feedback on your money plan." />
+    content="Interactive Naira budget estimator and emergency savings calculator built for Nigerian students." />
   <meta name="author" content="Erhurhe Harrietta" />
   <meta name="keywords" content="student budget calculator, savings goal calculator, emergency fund, monthly budget" />
   <meta name="theme-color" content="#0a6cff" />
@@ -45,7 +45,7 @@
   <header class="site-header">
     <div class="header-inner">
       <a class="brand" href="index.html" aria-label="FinSmart home">
-        <span class="brand-mark" aria-hidden="true">💰</span>
+        <span class="brand-mark" aria-hidden="true">FS</span>
         <span class="brand-name">FinSmart</span>
       </a>
       <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false"
@@ -65,12 +65,12 @@
   <main id="main">
     <section class="page-hero">
       <h1>Interactive Student Calculators</h1>
-      <p>Run real numbers through your money plan. Your inputs are saved locally so you can pick up where you left off.
+      <p>Run real Naira numbers through your money plan. Your inputs are saved locally so you can pick up where you left off.
       </p>
     </section>
 
     <!-- BUDGET ESTIMATOR -->
-    <section class="tool-section container" aria-labelledby="budget-heading">
+    <section class="tool-section page-shell" aria-labelledby="budget-heading">
       <div class="tool-intro">
         <h2 id="budget-heading">Monthly Budget Estimator</h2>
         <p>Enter your income and a few key expenses. We'll show you what's left over and whether you hit the 50/30/20
@@ -80,37 +80,37 @@
       <form id="budget-form" class="tool-form" novalidate>
         <fieldset>
           <legend>Monthly Income</legend>
-          <label for="income">Take-home income (₦)</label>
+          <label for="income">Take-home income in Naira</label>
           <input type="number" id="income" name="income" min="0" step="0.01" inputmode="decimal" required />
 
-          <label for="scholarship">Scholarships / grants (₦)</label>
+          <label for="scholarship">Scholarships / grants in Naira</label>
           <input type="number" id="scholarship" name="scholarship" min="0" step="0.01" inputmode="decimal" />
         </fieldset>
 
         <fieldset>
           <legend>Fixed Expenses</legend>
-          <label for="rent">Rent / housing (₦)</label>
+          <label for="rent">Rent / housing in Naira</label>
           <input type="number" id="rent" name="rent" min="0" step="0.01" inputmode="decimal" required />
 
-          <label for="tuition">Tuition / fees (₦)</label>
+          <label for="tuition">Tuition / fees in Naira</label>
           <input type="number" id="tuition" name="tuition" min="0" step="0.01" inputmode="decimal" />
 
-          <label for="utilities">Utilities / phone (₦)</label>
+          <label for="utilities">Utilities / phone in Naira</label>
           <input type="number" id="utilities" name="utilities" min="0" step="0.01" inputmode="decimal" />
 
-          <label for="transit">Transit / car (₦)</label>
+          <label for="transit">Transit / car in Naira</label>
           <input type="number" id="transit" name="transit" min="0" step="0.01" inputmode="decimal" />
 
-          <label for="groceries">Groceries (₦)</label>
+          <label for="groceries">Groceries in Naira</label>
           <input type="number" id="groceries" name="groceries" min="0" step="0.01" inputmode="decimal" />
 
-          <label for="other">Other fixed (₦)</label>
+          <label for="other">Other fixed in Naira</label>
           <input type="number" id="other" name="other" min="0" step="0.01" inputmode="decimal" />
         </fieldset>
 
         <div class="form-actions">
-          <button class="btn btn-primary" type="submit">Calculate budget</button>
-          <button class="btn btn-secondary" type="reset" id="budget-reset">Reset</button>
+          <button class="fs-action fs-action-primary" type="submit">Calculate budget</button>
+          <button class="fs-action fs-action-secondary" type="reset" id="budget-reset">Reset</button>
         </div>
       </form>
 
@@ -118,7 +118,7 @@
     </section>
 
     <!-- SAVINGS GOAL -->
-    <section class="tool-section container" aria-labelledby="savings-heading">
+    <section class="tool-section page-shell" aria-labelledby="savings-heading">
       <div class="tool-intro">
         <h2 id="savings-heading">Emergency Savings Goal Calculator</h2>
         <p>How much do you need saved — and how long will it take? Set a target and we'll map the path.</p>
@@ -127,19 +127,19 @@
       <form id="savings-form" class="tool-form" novalidate>
         <fieldset>
           <legend>Your Goal</legend>
-          <label for="target">Target amount (₦)</label>
+          <label for="target">Target amount in Naira</label>
           <input type="number" id="target" name="target" min="1" step="0.01" inputmode="decimal" required />
 
-          <label for="current">Already saved (₦)</label>
+          <label for="current">Already saved in Naira</label>
           <input type="number" id="current" name="current" min="0" step="0.01" inputmode="decimal" />
 
-          <label for="monthly">You can save per month (₦)</label>
+          <label for="monthly">You can save per month in Naira</label>
           <input type="number" id="monthly" name="monthly" min="1" step="0.01" inputmode="decimal" required />
         </fieldset>
 
         <div class="form-actions">
-          <button class="btn btn-primary" type="submit">Calculate timeline</button>
-          <button class="btn btn-secondary" type="reset" id="savings-reset">Reset</button>
+          <button class="fs-action fs-action-primary" type="submit">Calculate timeline</button>
+          <button class="fs-action fs-action-secondary" type="reset" id="savings-reset">Reset</button>
         </div>
       </form>
 
@@ -147,7 +147,7 @@
     </section>
 
     <!-- CONTACT (counts as the form action page reference target) -->
-    <section class="tool-section container" aria-labelledby="contact-heading">
+    <section class="tool-section page-shell" aria-labelledby="contact-heading">
       <div class="tool-intro">
         <h2 id="contact-heading">Send Us Your Feedback</h2>
         <p>Found a bug or have a tip to share? Drop us a quick note.</p>
@@ -176,7 +176,7 @@
         </fieldset>
 
         <div class="form-actions">
-          <button class="btn btn-primary" type="submit">Send feedback</button>
+          <button class="fs-action fs-action-primary" type="submit">Send feedback</button>
         </div>
       </form>
     </section>
@@ -185,8 +185,8 @@
   <footer class="site-footer">
     <div class="footer-corporate-details">
       <h2>FinSmart &mdash; Student Finance &amp; Budgeting</h2>
-      <p>WDD231 Erhurhe Harrietta Final Project &middot; Open-source educational resource</p>
-      <p>hello@finsmart.example | +1 (555) 010-2024</p>
+      <p>WDD231 Erhurhe Harrietta Final Project &middot; Nigerian student finance resource</p>
+      <p>hello@finsmart.example | +234 800 010 2024</p>
     </div>
     <div class="footer-social-links">
       <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
@@ -212,7 +212,7 @@
     </div>
   </footer>
 
-  <script type="module" src="scripts/tools.js"></script>
+  <script type="module" src="scripts/tools.js?v=4"></script>
 </body>
 
 </html>

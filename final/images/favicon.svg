@@ -8,5 +8,5 @@
   </defs>
   <rect width="64" height="64" rx="14" fill="url(#g)"/>
   <text x="50%" y="56%" text-anchor="middle" dominant-baseline="middle"
-        font-family="Segoe UI, Roboto, Arial, sans-serif" font-size="34" font-weight="700" fill="#ffd84a">$</text>
+        font-family="Segoe UI, Roboto, Arial, sans-serif" font-size="24" font-weight="700" fill="#ffd84a">FS</text>
 </svg>

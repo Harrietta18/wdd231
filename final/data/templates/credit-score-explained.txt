@@ -1,36 +1,28 @@
-UNDERSTANDING YOUR CREDIT SCORE
-FinSmart – Money Confidence for Students
+BUILDING A GOOD MONEY REPUTATION
+FinSmart - Money Confidence for Nigerian Students
 ==================================================
 
-WHAT IS A CREDIT SCORE?
-A 3-digit number (300–850) that tells lenders how
-reliable you are at repaying borrowed money.
+WHY IT MATTERS
+A good money reputation helps people and institutions trust you.
+It can affect borrowing, rent, business partnerships, and support from cooperatives or family networks.
 
-SCORE RANGES
-  800–850  Excellent
-  740–799  Very Good
-  670–739  Good
-  580–669  Fair
-  300–579  Poor
-
-FIVE FACTORS THAT BUILD YOUR SCORE
-  1. Payment History        35%
-  2. Amounts Owed            30%
-  3. Length of History       15%
-  4. New Credit              10%
-  5. Credit Mix              10%
+WHAT BUILDS TRUST
+  1. Pay bills and loans on time.
+  2. Keep records of what you borrow and repay.
+  3. Avoid borrowing for wants.
+  4. Communicate early if repayment will be late.
+  5. Do not guarantee another person's loan unless you can pay it yourself.
 
 STUDENT ACTION PLAN
-  [ ] Get a student credit card
-  [ ] Use it for ONE small recurring bill
-  [ ] Pay the FULL statement balance monthly
-  [ ] Keep credit utilization under 30%
-  [ ] Check your free report annually
-  [ ] Never cosign for friends
+  [ ] Track every loan or informal debt.
+  [ ] Record due dates in your calendar.
+  [ ] Keep screenshots or receipts of payments.
+  [ ] Separate school money from spending money.
+  [ ] Borrow only when there is a repayment plan.
 
 WARNINGS
-  ✗ Missing a payment can drop your score 60+ points
-  ✗ Closing old cards shortens your history
-  ✗ Applying for many cards at once hurts
+  - Late repayment can damage trust quickly.
+  - Borrowing from many apps or people at once can become overwhelming.
+  - A loan used for lifestyle spending usually creates stress later.
 
-© FinSmart — https://example.com/wdd231/final
+FinSmart - https://harrietta18.github.io/wdd231/final/

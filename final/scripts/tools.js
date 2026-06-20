@@ -19,8 +19,11 @@ const BUDGET_KEY = "finsmart.budget.v1";
 const SAVINGS_KEY = "finsmart.savings.v1";
 
 // ---- Helpers ----
-const fmt = new Intl.NumberFormat("en-NG", { style: "currency", currency: "NGN", maximumFractionDigits: 0 });
-const fmtExact = new Intl.NumberFormat("en-NG", { style: "currency", currency: "NGN", maximumFractionDigits: 2 });
+const numberFmt = new Intl.NumberFormat("en-NG", { maximumFractionDigits: 0 });
+
+function fmt(amount) {
+  return `Naira ${numberFmt.format(amount)}`;
+}
 
 function readNumber(input) {
   const v = parseFloat(input.value);
@@ -67,19 +70,19 @@ budgetForm.addEventListener("submit", (e) => {
   const savingsShortfall = Math.max(0, savingsTarget - remaining);
   const status = remaining >= savingsTarget
     ? { label: "You're on track with the 50/30/20 rule.", tone: "ok" }
-    : { label: `You need ${fmt.format(savingsShortfall)} more to hit the 20% savings target.`, tone: "warn" };
+    : { label: `You need ${fmt(savingsShortfall)} more to hit the 20% savings target.`, tone: "warn" };
 
   const pctRemaining = income > 0 ? Math.max(0, Math.min(100, (remaining / income) * 100)) : 0;
   const pctFixed = income > 0 ? Math.max(0, Math.min(100, (fixed / income) * 100)) : 0;
 
   budgetResults.innerHTML = `
     <h3>Your Monthly Budget Snapshot</h3>
-    <div class="result-row"><span>Total income</span><strong>${fmt.format(income)}</strong></div>
-    <div class="result-row"><span>Total fixed expenses</span><strong>${fmt.format(fixed)}</strong></div>
+    <div class="result-row"><span>Total income</span><strong>${fmt(income)}</strong></div>
+    <div class="result-row"><span>Total fixed expenses</span><strong>${fmt(fixed)}</strong></div>
     <div class="result-row ${status.tone === "warn" ? "warning" : ""}">
-      <span>Money left over</span><strong>${fmt.format(remaining)}</strong>
+      <span>Money left over</span><strong>${fmt(remaining)}</strong>
     </div>
-    <div class="result-row"><span>Savings target (20%)</span><strong>${fmt.format(savingsTarget)}</strong></div>
+    <div class="result-row"><span>Savings target (20%)</span><strong>${fmt(savingsTarget)}</strong></div>
 
     <p class="result-note"><strong>${status.label}</strong></p>
 
@@ -119,13 +122,13 @@ savingsForm.addEventListener("submit", (e) => {
 
   const targetDate = new Date();
   targetDate.setMonth(targetDate.getMonth() + months);
-  const dateStr = targetDate.toLocaleDateString("en-US", { month: "long", year: "numeric" });
+  const dateStr = targetDate.toLocaleDateString("en-NG", { month: "long", year: "numeric" });
 
   savingsResults.innerHTML = `
     <h3>Your Emergency Savings Plan</h3>
-    <div class="result-row"><span>Target amount</span><strong>${fmt.format(target)}</strong></div>
-    <div class="result-row"><span>Already saved</span><strong>${fmt.format(current)}</strong></div>
-    <div class="result-row"><span>Remaining</span><strong>${fmt.format(remaining)}</strong></div>
+    <div class="result-row"><span>Target amount</span><strong>${fmt(target)}</strong></div>
+    <div class="result-row"><span>Already saved</span><strong>${fmt(current)}</strong></div>
+    <div class="result-row"><span>Remaining</span><strong>${fmt(remaining)}</strong></div>
     <div class="result-row"><span>Months to reach goal</span><strong>${months} month${months === 1 ? "" : "s"} (~${years} yr)</strong></div>
     <div class="result-row"><span>Estimated completion</span><strong>${dateStr}</strong></div>
 

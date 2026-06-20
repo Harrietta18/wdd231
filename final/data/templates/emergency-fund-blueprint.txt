@@ -1,35 +1,35 @@
-EMERGENCY FUND BLUEPRINT
-FinSmart – Money Confidence for Students
+﻿EMERGENCY FUND BLUEPRINT
+FinSmart - Money Confidence for Nigerian Students
 ==================================================
 
 WHY YOU NEED ONE
-A surprise expense shouldn't turn into debt. Even
-a small fund covers 90% of common student emergencies.
+A surprise expense should not immediately become debt.
+Even a small fund can cover urgent transport, health needs, phone repair, or school materials.
 
 SIZING YOUR FUND
-  Beginner:       ₦200,000  (covers most surprises)
-  Starter:        ₦500,000  (recommended first goal)
-  Solid:      1 month of expenses
-  Strong:     3 months of expenses
-  Bulletproof: 6 months of expenses
+  Beginner:  Naira 50,000
+  Starter:   Naira 100,000
+  Solid:     1 month of basic expenses
+  Strong:    3 months of basic expenses
 
 WHERE TO KEEP IT
-  ✓ High-yield savings account (separate from checking)
-  ✓ Easy to access within 1–2 business days
-  ✗ Not in investments that can lose value
-  ✗ Not in a locked fixed deposit
+  - A separate savings account or wallet.
+  - Easy to access within 1 or 2 days.
+  - Not mixed with daily spending.
+  - Not in risky investments.
+  - Not locked if you may need it quickly.
 
 BUILD IT FAST
-  1. Automate a transfer on payday
-  2. Direct all windfalls (gifts, refunds) to the fund
-  3. Sell one unused item per month
-  4. Pick up one extra shift per month
-  5. Re-evaluate your fund size every 6 months
+  1. Save immediately when money enters your account.
+  2. Direct gifts, refunds, and extra income to the fund.
+  3. Sell one unused item.
+  4. Reduce one repeated expense for a month.
+  5. Review your goal every semester.
 
 PROGRESS TRACKER
-  Goal:        ₦___________
-  Saved:       ₦___________
-  Remaining:   ₦___________
-  ETA:         ____________
+  Goal:        Naira ___________
+  Saved:       Naira ___________
+  Remaining:   Naira ___________
+  Target Date: ____________
 
-© FinSmart — https://example.com/wdd231/final
+FinSmart - https://harrietta18.github.io/wdd231/final/

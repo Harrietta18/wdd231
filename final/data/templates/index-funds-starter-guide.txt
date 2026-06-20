@@ -1,35 +1,33 @@
-INVESTING FOR BEGINNERS: INDEX FUNDS EXPLAINED
-FinSmart – Money Confidence for Students
+INVESTING FOR BEGINNERS IN NIGERIA
+FinSmart - Money Confidence for Nigerian Students
 ==================================================
 
-WHAT IS AN INDEX FUND?
-A mutual fund or ETF that tracks a broad market
-index (e.g., S&P 500, NSE All-Share, NGX 30).
+START WITH SAFETY
+Before investing, build a starter emergency fund and avoid using school fees, rent, or borrowed money.
 
-WHY INDEX FUNDS WIN
-  ✦ Low fees (often < 0.10% expense ratio)
-  ✦ Diversified in one purchase
-  ✦ Outperform most actively managed funds long-term
-  ✦ Perfect for passive "set and forget" investors
+QUESTIONS TO ASK BEFORE INVESTING
+  1. What exactly am I buying?
+  2. Can the value go down?
+  3. What fees will I pay?
+  4. Is the platform or operator regulated?
+  5. How long can I leave the money invested?
 
-3-FUND PORTFOLIO (sample)
-  1. Total US Stock Market Index
-  2. Total International Stock Index
-  3. Total Bond Market Index
+BEGINNER OPTIONS TO RESEARCH
+  - Money market funds.
+  - Treasury bills.
+  - Mutual funds.
+  - Exchange-traded funds.
+  - Shares listed on the Nigerian Exchange.
 
-START SMALL
-  • Many brokerages allow fractional shares from ₦1,000
-  • Automate monthly contributions
-  • Reinvest dividends to compound growth
+WARNING SIGNS
+  - Guaranteed high returns.
+  - Pressure to invite friends.
+  - No clear regulator or office.
+  - Promises that there is no risk.
+  - Refusal to explain how profit is made.
 
-COMPOUND EXAMPLE
-  ₦50,000 invested each month for 40 years
-  at 8% average annual return
-  ≈ ₦150,000,000
+COMPOUND GROWTH EXAMPLE
+Saving or investing small amounts regularly can grow over time.
+The earlier you start, the more time your money has to work.
 
-BROKERAGES TO CONSIDER
-  • Local banks with investment arms
-  • International platforms supporting Nigerian users
-  • Always check regulation and fee schedules
-
-© FinSmart — https://example.com/wdd231/final
+FinSmart - https://harrietta18.github.io/wdd231/final/

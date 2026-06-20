@@ -1,24 +1,24 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>FinSmart Student Finance and Budgeting Guide</title>
-  <meta name="description" content="FinSmart helps students build budgeting, saving, and investing skills with daily tips, interactive tools, and a curated resource hub." />
+  <title>FinSmart Nigerian Student Finance Guide Hub</title>
+  <meta name="description" content="FinSmart helps Nigerian students build budgeting, saving, and investing skills with Naira-based tools, tips, and resources." />
   <meta name="author" content="Erhurhe Harrietta" />
   <meta name="keywords" content="student finance, budgeting, saving, investing, financial literacy, money tips" />
   <meta name="theme-color" content="#0a6cff" />
 
   <!-- Open Graph / Social Sharing -->
-  <meta property="og:title" content="FinSmart Student Finance and Budgeting Guide" />
-  <meta property="og:description" content="Daily tips, interactive calculators, and a resource hub help students build better money habits." />
+  <meta property="og:title" content="FinSmart Nigerian Student Finance Guide Hub" />
+  <meta property="og:description" content="Naira-based tips, calculators, and resources help Nigerian students build better money habits." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://harrietta18.github.io/wdd231/final/index.html" />
   <meta property="og:image" content="https://harrietta18.github.io/wdd231/final/images/favicon.svg" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="FinSmart Student Finance and Budgeting Guide" />
-  <meta name="twitter:description" content="Daily tips, interactive calculators, and a resource hub help students build better money habits." />
+  <meta name="twitter:title" content="FinSmart Nigerian Student Finance Guide Hub" />
+  <meta name="twitter:description" content="Naira-based tips, calculators, and resources help Nigerian students build better money habits." />
   <meta name="twitter:image" content="https://harrietta18.github.io/wdd231/final/images/favicon.svg" />
 
   <!-- Favicon -->
@@ -41,7 +41,7 @@
   <header class="site-header">
     <div class="header-inner">
       <a class="brand" href="index.html" aria-label="FinSmart home">
-        <span class="brand-mark" aria-hidden="true">💰</span>
+        <span class="brand-mark" aria-hidden="true">FS</span>
         <span class="brand-name">FinSmart</span>
       </a>
       <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu"
@@ -62,33 +62,33 @@
     <!-- HERO -->
     <section class="hero">
       <div class="hero-text">
-        <h1>Build Money Confidence as a Student</h1>
-        <p>Practical budgeting, smart saving, and no-jargon investing — all in one place.</p>
+        <h1>Build Money Confidence as a Nigerian Student</h1>
+        <p>Practical Naira budgeting, smart saving, and no-jargon investing all in one place.</p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="tools.html">Try the Calculators</a>
-          <a class="btn btn-secondary" href="resources.html">Explore Resources</a>
+          <a class="fs-action fs-action-primary" href="tools.html">Try the Calculators</a>
+          <a class="fs-action fs-action-secondary" href="resources.html">Explore Resources</a>
         </div>
       </div>
-      <div class="hero-card" aria-label="Tip of the day">
-        <p class="hero-card-eyebrow">Tip of the Day</p>
+      <aside class="hero-card" aria-labelledby="tip-card-heading">
+        <p class="hero-card-eyebrow" id="tip-card-heading">Tip of the Day</p>
         <h2 id="tip-title">Loading…</h2>
         <p id="tip-summary">Fetching today's financial tip…</p>
-        <button class="btn btn-link" id="tip-read-more" type="button">Read full tip →</button>
-      </div>
+        <button class="fs-action fs-action-link" id="tip-read-more" type="button">Read full tip</button>
+      </aside>
     </section>
 
     <!-- INTRO -->
-    <section class="intro container">
+    <section class="intro page-shell">
       <h2>Why FinSmart?</h2>
       <p>
-        Managing money as a student is tough — limited income, surprise expenses, and a flood of conflicting advice.
+        Managing money as a Nigerian student is tough: limited income, surprise expenses, and a flood of conflicting advice.
         FinSmart distills the essentials into bite-sized, actionable content. Browse curated tips, run real numbers
         through our calculators, and bookmark the resources that match your goals.
       </p>
     </section>
 
     <!-- TIPS / BLOG -->
-    <section class="tips-section container" aria-labelledby="tips-heading">
+    <section class="tips-section page-shell" aria-labelledby="tips-heading">
       <div class="tips-header">
         <h2 id="tips-heading">Financial Tips & Articles</h2>
         <p>Filter by topic to find what you need right now.</p>
@@ -103,8 +103,8 @@
 
       <p class="favorites-info">
         <span id="fav-count">0</span> favorite<span id="fav-plural">s</span> saved
-        <button class="btn btn-link" id="show-favs" type="button">Show favorites</button>
-        <button class="btn btn-link hidden" id="show-all" type="button">Show all</button>
+        <button class="fs-action fs-action-link" id="show-favs" type="button">Show favorites</button>
+        <button class="fs-action fs-action-link hidden" id="show-all" type="button">Show all</button>
       </p>
 
       <div id="tips-grid" class="tips-grid" aria-live="polite"></div>
@@ -115,8 +115,8 @@
   <footer class="site-footer">
     <div class="footer-corporate-details">
       <h2>FinSmart &mdash; Student Finance &amp; Budgeting</h2>
-      <p>WDD231 Final Project &middot; Open-source educational resource</p>
-      <p>hello@finsmart.example | +1 (555) 010-2024</p>
+      <p>WDD231 Final Project &middot; Nigerian student finance resource</p>
+      <p>hello@finsmart.example | +234 800 010 2024</p>
     </div>
     <div class="footer-social-links">
       <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
@@ -142,26 +142,22 @@
     </div>
   </footer>
 
-  <!-- Tip Modal -->
-  <div class="modal" id="tip-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
-    <div class="modal-backdrop" data-close-modal></div>
-    <div class="modal-content" role="document">
-      <button class="modal-close" type="button" aria-label="Close dialog" data-close-modal>&times;</button>
-      <p class="modal-eyebrow" id="modal-category">Category</p>
+  <!-- Tip tip-dialog -->
+  <div class="tip-dialog" id="tip-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+    <div class="tip-dialog-backdrop" data-close-modal></div>
+    <div class="tip-dialog-content" role="document">
+      <button class="tip-dialog-close" type="button" aria-label="Close dialog" data-close-modal>&times;</button>
+      <p class="tip-dialog-eyebrow" id="modal-category">Category</p>
       <h2 id="modal-title">Tip title</h2>
       <p id="modal-body">Tip body…</p>
-      <div class="modal-actions">
-        <button class="btn btn-secondary" id="modal-fav" type="button">★ Save to favorites</button>
-        <button class="btn btn-primary" type="button" data-close-modal>Close</button>
+      <div class="tip-dialog-actions">
+        <button class="fs-action fs-action-secondary" id="modal-fav" type="button">Save to favorites</button>
+        <button class="fs-action fs-action-primary" type="button" data-close-modal>Close</button>
       </div>
     </div>
   </div>
 
-  <script type="module" src="scripts/main.js"></script>
+  <script type="module" src="scripts/main.js?v=4"></script>
 </body>
 </html>
-
-
-
-
 

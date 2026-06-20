@@ -1,37 +1,37 @@
-﻿{
+{
   "guides": [
     {
       "id": 1,
-      "title": "Budgeting 101: A Student's First Budget",
+      "title": "Budgeting 101: A Nigerian Student's First Budget",
       "type": "Guide",
-      "description": "A step-by-step walkthrough of building your first monthly budget as a college student, including a printable template and example calculations.",
+      "description": "A step-by-step walkthrough for building a monthly Naira budget with allowance, side income, food, data, rent, and transport.",
       "topic": "Budgeting",
       "link": "#",
       "download": "data/templates/student-budget-template.txt"
     },
     {
       "id": 2,
-      "title": "Building Credit From Scratch",
+      "title": "Building a Good Money Reputation",
       "type": "Guide",
-      "description": "Learn what a credit score is, how it's calculated, and the safest ways for students to begin building a strong credit history.",
+      "description": "Learn how on-time payments, clear records, and responsible borrowing help students build trust with money.",
       "topic": "Credit",
       "link": "#",
       "download": "data/templates/credit-score-explained.txt"
     },
     {
       "id": 3,
-      "title": "Investing for Beginners: Index Funds Explained",
+      "title": "Investing for Beginners in Nigeria",
       "type": "Guide",
-      "description": "An accessible introduction to index fund investing, compound growth, and the basics of opening a brokerage account.",
+      "description": "An accessible introduction to risk, regulation, compound growth, and beginner-friendly investing questions.",
       "topic": "Investing",
       "link": "#",
       "download": "data/templates/index-funds-starter-guide.txt"
     },
     {
       "id": 4,
-      "title": "Understanding Student Loans",
+      "title": "Borrowing Wisely as a Student",
       "type": "Guide",
-      "description": "Federal vs. private loans, interest capitalization, repayment plans, and strategies to minimize what you owe after graduation.",
+      "description": "Understand repayment dates, fees, interest, loan apps, informal borrowing, and safer ways to handle debt.",
       "topic": "Debt",
       "link": "#",
       "download": "data/templates/student-loan-strategies.txt"
@@ -40,16 +40,16 @@
       "id": 5,
       "title": "Emergency Fund Blueprint",
       "type": "Guide",
-      "description": "How to size, build, and protect an emergency fund — even on a tight student budget.",
+      "description": "How to size, build, and protect an emergency fund even on a tight Nigerian student budget.",
       "topic": "Saving",
       "link": "#",
       "download": "data/templates/emergency-fund-blueprint.txt"
     },
     {
       "id": 6,
-      "title": "Taxes for Students",
+      "title": "Tax and Income Basics for Students",
       "type": "Guide",
-      "description": "What students need to know about W-2s, 1099s, education credits, and filing a return for the first time.",
+      "description": "A simple overview of income records, side hustles, receipts, and why students should understand basic tax responsibilities.",
       "topic": "Taxes",
       "link": "#",
       "download": "data/templates/student-tax-basics.txt"
@@ -58,16 +58,16 @@
       "id": 7,
       "title": "Meal Planning on a Budget",
       "type": "Guide",
-      "description": "Weekly meal plans, grocery lists, and recipes designed for students who want to eat well for under ₦50,000 a week.",
+      "description": "Weekly meal plans, grocery lists, and simple ideas for students who want to control food spending.",
       "topic": "Budgeting",
       "link": "#",
       "download": "data/templates/weekly-meal-plan.txt"
     },
     {
       "id": 8,
-      "title": "Side Hustles for College Students",
+      "title": "Side Hustles for Nigerian Students",
       "type": "Guide",
-      "description": "A roundup of realistic ways to earn extra income during the semester, including skill-based gigs and passive income ideas.",
+      "description": "Realistic ways to earn extra income during the semester, including tutoring, skills, campus services, and online work.",
       "topic": "Income",
       "link": "#",
       "download": "data/templates/side-hustle-ideas.txt"
@@ -76,51 +76,39 @@
   "external": [
     {
       "id": 1,
-      "name": "Investopedia",
-      "url": "https://www.investopedia.com",
-      "description": "Trusted financial education website with thousands of plain-English articles and tutorials."
+      "name": "Central Bank of Nigeria",
+      "url": "https://www.cbn.gov.ng/",
+      "description": "Official information from Nigeria's central bank, including consumer protection and financial literacy resources."
     },
     {
       "id": 2,
-      "name": "NerdWallet",
-      "url": "https://www.nerdwallet.com",
-      "description": "Comparisons, calculators, and guides covering credit cards, banking, investing, and more."
+      "name": "Securities and Exchange Commission Nigeria",
+      "url": "https://www.sec.gov.ng/",
+      "description": "Official capital market regulator with investor education, scam warnings, and registered operator information."
     },
     {
       "id": 3,
-      "name": "Federal Student Aid",
-      "url": "https://studentaid.gov",
-      "description": "Official U.S. government site for managing federal student loans, FAFSA, and repayment plans."
+      "name": "Nigeria Deposit Insurance Corporation",
+      "url": "https://ndic.gov.ng/",
+      "description": "Official deposit insurance agency that explains bank deposit protection and consumer support."
     },
     {
       "id": 4,
-      "name": "Mint (Intuit Credit Karma)",
-      "url": "https://www.creditkarma.com",
-      "description": "Free tools to track spending, monitor credit scores, and set budget goals."
+      "name": "Nigerian Exchange Group",
+      "url": "https://ngxgroup.com/",
+      "description": "Market information and educational material for learning about listed companies and investing in Nigeria."
     },
     {
       "id": 5,
-      "name": "r/personalfinance",
-      "url": "https://www.reddit.com/r/personalfinance",
-      "description": "A large, well-moderated community for personal finance questions and shared experiences."
+      "name": "Federal Inland Revenue Service",
+      "url": "https://www.firs.gov.ng/",
+      "description": "Official tax information useful for students with side hustles, freelance income, or small businesses."
     },
     {
       "id": 6,
-      "name": "The Plain Bagel (YouTube)",
-      "url": "https://www.youtube.com/@ThePlainBagel",
-      "description": "High-quality, jargon-free videos on investing, economics, and personal finance."
-    },
-    {
-      "id": 7,
-      "name": "Khan Academy â€“ Personal Finance",
-      "url": "https://www.khanacademy.org/college-careers-more/personal-finance",
-      "description": "Free, structured video courses covering saving, budgeting, investing, and more."
-    },
-    {
-      "id": 8,
-      "name": "MyMoney.gov",
-      "url": "https://www.mymoney.gov",
-      "description": "U.S. government hub for trusted financial education resources across all life stages."
+      "name": "Consumer Protection Department, CBN",
+      "url": "https://www.cbn.gov.ng/",
+      "description": "A starting point for understanding banking complaints, consumer rights, and safer financial decisions."
     }
   ]
 }

@@ -1,46 +1,39 @@
-https://harrietta18.github.io/wdd231/finalSIDE HUSTLES FOR COLLEGE STUDENTS
-FinSmart – Money Confidence for Students
+﻿SIDE HUSTLES FOR NIGERIAN STUDENTS
+FinSmart - Money Confidence for Nigerian Students
 ==================================================
 
 SKILL-BASED
-  ✦ Tutoring (school subjects, music, languages)
-  ✦ Freelance writing, design, or video editing
-  ✦ Coding / web development projects
-  ✦ Social media management for small businesses
-  ✦ Translation or transcription
+  - Tutoring school subjects, music, or languages.
+  - Freelance writing, design, or video editing.
+  - Coding or web development projects.
+  - Social media management for small businesses.
+  - Translation or transcription.
 
 SERVICE-BASED
-  ✦ Photography for events
-  ✦ Errand running / personal shopping
-  ✦ Cleaning / home organization
-  ✦ Event planning / decoration
-  ✦ Moving help
+  - Photography for campus events.
+  - Errand running or personal shopping.
+  - Hair, makeup, or fashion services.
+  - Event planning or decoration.
+  - Printing, typing, or assignment formatting.
 
 PRODUCT-BASED
-  ✦ Print-on-demand (T-shirts, mugs)
-  ✦ Reselling thrift finds
-  ✦ Handmade crafts (candles, soap, art)
-  ✦ Snack boxes for hostels
-  ✦ Pre-loved textbooks
-
-PASSIVE / LOW-EFFORT
-  ✦ Cashback apps
-  ✦ Affiliate links (start a niche blog)
-  ✦ Selling lecture notes / past questions
-  ✦ Stock photo sales
-  ✦ YouTube / TikTok educational content
+  - Snacks for hostels.
+  - Thrift clothing.
+  - Handmade items.
+  - Pre-owned textbooks.
+  - Phone accessories.
 
 IDEAL HUSTLE CHECKLIST
-  [ ] Fits your class schedule
-  [ ] Doesn't violate school rules
-  [ ] Builds a marketable skill
-  [ ] Pays at least ₦5,000 per hour equivalent
-  [ ] Scales over time
+  [ ] Fits your class schedule.
+  [ ] Does not violate school rules.
+  [ ] Builds a useful skill.
+  [ ] Has clear pricing.
+  [ ] Does not require risky debt.
 
 INCOME TRACKER
   Month:     ___________
-  Hustle 1:  ₦___________
-  Hustle 2:  ₦___________
-  TOTAL:     ₦___________
+  Hustle 1:  Naira ___________
+  Hustle 2:  Naira ___________
+  TOTAL:     Naira ___________
 
-© FinSmart — https://example.com/wdd231/final
+FinSmart - https://harrietta18.github.io/wdd231/final/

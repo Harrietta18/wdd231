@@ -1,4 +1,4 @@
-// =============================================================
+﻿// =============================================================
 // FinSmart — resources.js
 // Resource Hub page: fetch guides + external links, filter
 // ES Module
@@ -19,13 +19,12 @@ let currentFilter = "all";
 function guideCardHTML(g) {
   return `
     <article class="guide-card" data-topic="${g.topic}">
-      <span class="icon" aria-hidden="true">📘</span>
       <span class="topic">${g.topic}</span>
       <h3>${g.title}</h3>
       <p>${g.description}</p>
       <div class="card-actions">
-        <a class="btn btn-link" href="${g.link}">Read guide →</a>
-        <a class="btn btn-link" href="${g.download}" download>Download template</a>
+        <a class="fs-action fs-action-link" href="${g.link}">Read guide</a>
+        <a class="fs-action fs-action-link" href="${g.download}" download>Download template</a>
       </div>
     </article>
   `;
@@ -34,7 +33,7 @@ function guideCardHTML(g) {
 function externalCardHTML(e) {
   return `
     <article class="external-card">
-      <a href="${e.url}" target="_blank" rel="noopener noreferrer">${e.name} ↗</a>
+      <a href="${e.url}" target="_blank" rel="noopener noreferrer">${e.name}</a>
       <p>${e.description}</p>
     </article>
   `;
@@ -56,8 +55,8 @@ function setFilter(topic) {
   renderGuides();
 }
 
-filterButtons.forEach(btn => {
-  btn.addEventListener("click", () => setFilter(btn.dataset.filter));
+filterButtons.forEach(fs-action => {
+  fs-action.addEventListener("click", () => setFilter(fs-action.dataset.filter));
 });
 
 async function init() {
@@ -70,7 +69,7 @@ async function init() {
   filterButtons.forEach(b => b.classList.toggle("active", b.dataset.filter === currentFilter));
 
   try {
-    const response = await fetch("data/resources.json");
+    const response = await fetch("data/resources.json?v=4");
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const data = await response.json();
 

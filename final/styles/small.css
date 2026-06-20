@@ -1,4 +1,4 @@
-/* =============================================================
+﻿/* =============================================================
    FinSmart — small.css
    Mobile-first base styles (320px and up)
    ============================================================= */
@@ -59,7 +59,7 @@ a:hover, a:focus-visible { text-decoration: underline; }
 .skip-link:focus { left: 0; }
 
 /* ---- Layout helpers ---- */
-.container {
+.page-shell {
   width: min(100% - 2rem, 1100px);
   margin-inline: auto;
   padding: 1.5rem 0;
@@ -95,7 +95,17 @@ a:hover, a:focus-visible { text-decoration: underline; }
   font-size: 1.15rem;
 }
 .brand:hover { text-decoration: none; }
-.brand-mark { font-size: 1.5rem; }
+.brand-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border: 2px solid #ffbf47;
+  border-radius: 50%;
+  font-size: .8rem;
+  letter-spacing: 0;
+}
 
 .hamburger {
   display: inline-flex;
@@ -152,7 +162,7 @@ a:hover, a:focus-visible { text-decoration: underline; }
 }
 
 /* ---- Buttons ---- */
-.btn {
+.fs-action {
   display: inline-block;
   padding: .7rem 1.1rem;
   border-radius: 8px;
@@ -163,19 +173,19 @@ a:hover, a:focus-visible { text-decoration: underline; }
   text-align: center;
   transition: transform .15s ease, background .15s ease, color .15s ease;
 }
-.btn:hover { transform: translateY(-1px); text-decoration: none; }
-.btn-primary { background: #0a6cff; color: #fff; }
-.btn-primary:hover { background: #0858cc; }
-.btn-secondary { background: #fff; color: #0a1f44; border-color: #0a1f44; }
-.btn-secondary:hover { background: #0a1f44; color: #fff; }
-.btn-link {
+.fs-action:hover { transform: translateY(-1px); text-decoration: none; }
+.fs-action-primary { background: #0a6cff; color: #fff; }
+.fs-action-primary:hover { background: #0858cc; }
+.fs-action-secondary { background: #fff; color: #0a1f44; border-color: #0a1f44; }
+.fs-action-secondary:hover { background: #0a1f44; color: #fff; }
+.fs-action-link {
   background: transparent;
   color: #0a6cff;
   padding: .35rem 0;
   border: 0;
   font-weight: 600;
 }
-.btn-link:hover { text-decoration: underline; }
+.fs-action-link:hover { text-decoration: underline; }
 
 /* ---- Hero (Home) ---- */
 .hero {
@@ -193,8 +203,8 @@ a:hover, a:focus-visible { text-decoration: underline; }
 .hero-text h1 { color: #fff; }
 .hero-text p { color: #e6efff; margin-bottom: 1.25rem; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: .75rem; }
-.hero-actions .btn-secondary { background: transparent; color: #fff; border-color: #fff; }
-.hero-actions .btn-secondary:hover { background: #fff; color: #0a1f44; }
+.hero-actions .fs-action-secondary { background: transparent; color: #fff; border-color: #fff; }
+.hero-actions .fs-action-secondary:hover { background: #fff; color: #0a1f44; }
 
 .hero-card {
   background: #fff;
@@ -282,9 +292,6 @@ a:hover, a:focus-visible { text-decoration: underline; }
 }
 .tip-card:hover,
 .guide-card:hover { transform: translateY(-2px); box-shadow: 0 8px 22px rgba(15,23,42,.1); }
-
-.tip-card .icon,
-.guide-card .icon { font-size: 1.75rem; }
 
 .tip-card .category,
 .guide-card .topic {
@@ -445,8 +452,8 @@ a:hover, a:focus-visible { text-decoration: underline; }
 }
 .external-card p { margin: 0; color: #475569; font-size: .92rem; }
 
-/* ---- Modal ---- */
-.modal {
+/* ---- tip-dialog ---- */
+.tip-dialog {
   position: fixed;
   inset: 0;
   z-index: 100;
@@ -455,14 +462,14 @@ a:hover, a:focus-visible { text-decoration: underline; }
   justify-content: center;
   padding: 1rem;
 }
-.modal[hidden] { display: none; }
-.modal-backdrop {
+.tip-dialog[hidden] { display: none; }
+.tip-dialog-backdrop {
   position: absolute;
   inset: 0;
   background: rgba(15, 23, 42, .65);
   backdrop-filter: blur(2px);
 }
-.modal-content {
+.tip-dialog-content {
   position: relative;
   background: #fff;
   max-width: 600px;
@@ -478,7 +485,7 @@ a:hover, a:focus-visible { text-decoration: underline; }
   from { transform: translateY(20px) scale(.97); opacity: 0; }
   to   { transform: translateY(0) scale(1); opacity: 1; }
 }
-.modal-close {
+.tip-dialog-close {
   position: absolute;
   top: .5rem;
   right: .75rem;
@@ -489,8 +496,8 @@ a:hover, a:focus-visible { text-decoration: underline; }
   cursor: pointer;
   color: #475569;
 }
-.modal-close:hover { color: #0f172a; }
-.modal-eyebrow {
+.tip-dialog-close:hover { color: #0f172a; }
+.tip-dialog-eyebrow {
   text-transform: uppercase;
   letter-spacing: .12em;
   font-size: .75rem;
@@ -498,13 +505,13 @@ a:hover, a:focus-visible { text-decoration: underline; }
   color: #0a6cff;
   margin: 0 0 .25rem;
 }
-.modal-actions {
+.tip-dialog-actions {
   display: flex;
   flex-wrap: wrap;
   gap: .5rem;
   margin-top: 1rem;
 }
-body.modal-open { overflow: hidden; }
+body.tip-dialog-open { overflow: hidden; }
 
 /* ---- Footer (matches chamber structural pattern) ---- */
 .site-footer {

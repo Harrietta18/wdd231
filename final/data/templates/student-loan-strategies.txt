@@ -1,32 +1,39 @@
-UNDERSTANDING STUDENT LOANS
-FinSmart – Money Confidence for Students
+﻿BORROWING WISELY AS A NIGERIAN STUDENT
+FinSmart - Money Confidence for Nigerian Students
 ==================================================
 
-LOAN TYPES
-  Federal / Government    Lower rates, flexible repayment
-  Private / Bank         Credit-based, fewer protections
+COMMON BORROWING SOURCES
+  Bank or microfinance loan
+  Cooperative loan
+  Loan app
+  Family or friends
+  School-related support
 
 KEY TERMS
-  Principal      The amount you borrowed
+  Principal      The amount borrowed
   Interest       The cost of borrowing
-  Capitalization Unpaid interest added to principal
+  Fees           Extra charges beyond interest
+  Due Date       The day repayment is expected
+  Penalty        Extra cost for late payment
+
+BEFORE YOU BORROW
+  [ ] Write down the total repayment amount.
+  [ ] Confirm the repayment date.
+  [ ] Check all fees.
+  [ ] Know what happens if you pay late.
+  [ ] Make sure the loan is for a real need.
 
 REPAYMENT STRATEGIES
-  ✦ Pay interest while still in school (if possible)
-  ✦ Make extra payments toward principal
-  ✦ Refinance only when you have stable income
-  ✦ Look into income-driven repayment plans
-  ✦ Avoid loan forbearance unless emergency
+  - Pay on or before the due date.
+  - Pay the most expensive debt first if you can.
+  - Avoid taking a new loan to repay an old one.
+  - Talk early if you know you will be late.
+  - Do not borrow for status or pressure spending.
 
 LOAN TRACKER
-  Loan 1: ₦________  Rate: ___%  Min Payment: ₦________
-  Loan 2: ₦________  Rate: ___%  Min Payment: ₦________
-  Loan 3: ₦________  Rate: ___%  Min Payment: ₦________
-  TOTAL:   ₦________
+  Loan 1: Naira ________  Rate: ___%  Due: __________
+  Loan 2: Naira ________  Rate: ___%  Due: __________
+  Loan 3: Naira ________  Rate: ___%  Due: __________
+  TOTAL:  Naira ________
 
-DEBT SNOWBALL VS AVALANCHE
-  Snowball:  Pay smallest balance first
-  Avalanche: Pay highest interest rate first
-  Pick the method that keeps you motivated.
-
-© FinSmart — https://example.com/wdd231/final
+FinSmart - https://harrietta18.github.io/wdd231/final/

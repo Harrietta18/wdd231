@@ -2,150 +2,129 @@
   "tips": [
     {
       "id": 1,
-      "title": "Track Every Dollar for One Week",
+      "title": "Track Every Naira for One Week",
       "category": "Budgeting",
-      "summary": "Spend a single week writing down every purchase, no matter how small. Awareness is the first step to control.",
-      "body": "Before you can improve your finances, you have to know where the money goes. Use a notes app or a small notebook and log every coffee, snack, or subscription charge. At the end of the week, categorize the spending. You'll often be surprised by how much leaks out on small, frequent purchases. This simple habit builds the foundation for every budget you'll ever create.",
-      "icon": "ðŸ“"
+      "summary": "Spend one week writing down every purchase, no matter how small. Awareness is the first step to control.",
+      "body": "Before you can improve your finances, you have to know where the money goes. Use a notes app or a small notebook and log every snack, transport fare, data bundle, airtime top-up, and subscription. At the end of the week, group the spending into school, food, transport, data, giving, and fun. You may be surprised by how much leaves your account through small frequent purchases."
     },
     {
       "id": 2,
-      "title": "Follow the 50/30/20 Rule",
+      "title": "Use a Simple 50/30/20 Budget",
       "category": "Budgeting",
-      "summary": "Allocate 50% of income to needs, 30% to wants, and 20% to savings or debt repayment.",
-      "body": "The 50/30/20 rule is one of the simplest budgeting frameworks for students. Half of your income covers essentials like rent, groceries, and transit. Thirty percent goes to lifestyle choices like dining out and entertainment. The final twenty percent is non-negotiable â€” it pays future you through savings or by chipping away at student loans. Adjust the ratios as needed, but always protect that 20%.",
-      "icon": "ðŸ“Š"
+      "summary": "Put about 50% toward needs, 30% toward wants, and 20% toward savings or debt repayment.",
+      "body": "The 50/30/20 rule is a simple starting point for Nigerian students. Needs include food, rent, school costs, transport, and data. Wants include hangouts, streaming, fashion, and extra treats. The final 20% goes to savings, emergency funds, or paying off debt. If your income is irregular, adjust the percentages, but still protect a savings amount each time money enters your account."
     },
     {
       "id": 3,
       "title": "Use the 24-Hour Purchase Rule",
       "category": "Budgeting",
-      "summary": "Wait 24 hours before buying anything over ₦25,000 to cut impulse spending.",
-      "body": "Impulse purchases are budget killers. When you see something you want, add it to a wishlist and walk away for a full day. If you still want it tomorrow and you can afford it, go ahead. More often than not, the urge fades. This tiny pause protects your wallet from dozens of small decisions you'll regret later.",
-      "icon": "â³"
+      "summary": "Wait 24 hours before buying anything over Naira 25,000 to reduce impulse spending.",
+      "body": "Impulse purchases can break a student budget quickly. When you see something you want, save it to a wishlist and wait a full day. If you still want it tomorrow and it fits your budget, you can buy it with less regret. This pause is especially useful for online deals, gadgets, clothes, and social pressure spending."
     },
     {
       "id": 4,
-      "title": "Build a ₦500,000 Starter Emergency Fund",
+      "title": "Build a Naira 50,000 Starter Emergency Fund",
       "category": "Saving",
-      "summary": "Before investing or aggressive debt payoff, save a ₦500,000 cushion for small emergencies.",
-      "body": "A small emergency fund prevents life's curveballs from turning into debt. A flat tire, a surprise co-pay, or a broken laptop charger shouldn't blow up your budget. Aim for ₦500,000 first â€” it's reachable in a few months and it covers roughly 90% of common student emergencies. Once you have it, you can grow it toward three months of expenses.",
-      "icon": "ðŸ›Ÿ"
+      "summary": "Start with a Naira 50,000 cushion before chasing bigger savings or investing goals.",
+      "body": "A small emergency fund helps you handle common student surprises without borrowing immediately. It can cover urgent transport, a phone repair, a medical visit, or a school-related expense. Start with Naira 50,000, then grow it toward one month of basic expenses. Keep it in a separate savings wallet or bank account so it does not mix with everyday spending."
     },
     {
       "id": 5,
       "title": "Automate Your Savings",
       "category": "Saving",
-      "summary": "Set up an automatic transfer on payday so you save before you can spend.",
-      "body": "Relying on willpower to save is a losing game. Schedule a recurring transfer from your checking account to a savings account the day after you get paid. Treat it like a non-negotiable bill. Even ₦25,000 per paycheck compounds into hundreds over a year â€” and you barely feel the difference day to day.",
-      "icon": "ðŸ¤–"
+      "summary": "Set an automatic transfer or savings lock so you save before you spend.",
+      "body": "Relying on willpower alone is difficult. If your bank or savings app allows scheduled transfers, move a small amount into savings as soon as allowance, salary, or business income arrives. Treat savings like a bill you pay yourself first. Even Naira 2,000 or Naira 5,000 at a time can build confidence when you do it consistently."
     },
     {
       "id": 6,
-      "title": "Open a High-Yield Savings Account",
+      "title": "Compare Savings Options Carefully",
       "category": "Saving",
-      "summary": "Move idle cash into a high-yield savings account to earn 10â€“20x more interest.",
-      "body": "Most big bank savings accounts pay almost nothing. Online high-yield savings accounts typically offer 4% or more in today's environment, with the same FDIC insurance. The switch takes about ten minutes, and the money earns money while you sleep. Perfect for emergency funds and short-term goals.",
-      "icon": "ðŸ¦"
+      "summary": "Check interest, access rules, fees, and safety before keeping money in any savings product.",
+      "body": "Some Nigerian savings wallets and bank products offer interest, but the highest rate is not always the best choice. Read the withdrawal rules, fees, lock period, and provider details before you deposit. For emergency money, choose safety and easy access. For goals you will not touch soon, a locked savings plan may help you stay disciplined."
     },
     {
       "id": 7,
-      "title": "Start Investing With Just ₦5,000",
+      "title": "Start Investing Only After Learning the Basics",
       "category": "Investing",
-      "summary": "Use fractional shares and low-fee brokers to begin investing with pocket change.",
-      "body": "You don't need thousands to start investing. Many modern brokerages allow you to buy fractional shares of index funds for as little as ₦5,000. The earlier you start, the more time compound growth has to work in your favor. A 22-year-old who invests ₦50,000/month can have over ₦100,000,000 by age 62, even with conservative returns.",
-      "icon": "ðŸ“ˆ"
+      "summary": "Learn about risk, regulation, and time horizon before putting money into an investment.",
+      "body": "Investing can grow money over time, but it is not the same as saving. Before you invest, understand what you are buying, how you can lose money, and whether the platform or operator is regulated. Be careful with promises of guaranteed high returns. Start small, ask questions, and avoid using rent, school fees, or emergency savings for risky investments."
     },
     {
       "id": 8,
-      "title": "Understand the Power of Compound Interest",
+      "title": "Understand Compound Growth",
       "category": "Investing",
-      "summary": "Interest earns interest â€” time in the market beats timing the market.",
-      "body": "Compound interest is interest earned on your interest. A single ₦1,000,000 investment at 8% annual return grows to over ₦10,000,000 in 30 years without adding a single dollar. Time is the most powerful variable in investing. Start embarrassingly small if you must â€” just start.",
-      "icon": "ðŸ§¬"
+      "summary": "Money can grow faster when returns are reinvested and given enough time.",
+      "body": "Compound growth means your returns can start earning returns too. Time matters more than trying to find a perfect moment. A student who invests a small amount regularly and stays consistent may do better than someone who waits for a large lump sum. The key is patience, low fees, and choosing investments you understand."
     },
     {
       "id": 9,
-      "title": "Prefer Low-Cost Index Funds",
+      "title": "Avoid Get-Rich-Quick Schemes",
       "category": "Investing",
-      "summary": "Index funds outperform most actively managed funds over the long run â€” and cost less.",
-      "body": "Index funds track the whole market instead of trying to beat it. Their expense ratios are often under 0.10%, compared to 1%+ for actively managed funds. Lower fees mean more of your money stays invested and compounds. For most students, a simple three-fund portfolio is more than enough.",
-      "icon": "ðŸ§º"
+      "summary": "If an offer promises fast, guaranteed profit with no risk, treat it as a warning sign.",
+      "body": "Many students lose money to fake investments because the offer sounds urgent and exciting. Be careful with pressure to recruit friends, screenshots of huge profits, secret trading groups, and promises that you cannot lose. Check whether the company is registered with the right Nigerian regulator and never invest money you cannot afford to lose."
     },
     {
       "id": 10,
       "title": "Avoid Lifestyle Inflation",
       "category": "Budgeting",
-      "summary": "When income rises, hold the line on spending and bank the difference.",
-      "body": "A raise, a stipend increase, or a new job can quietly destroy your finances if every dollar gets spent. Commit to keeping your lifestyle stable for at least 6 months after any income jump. Direct the extra money to savings, debt, or investments. This single habit separates people who build wealth from people who just earn more.",
-      "icon": "ðŸŽˆ"
+      "summary": "When your income rises, increase savings before increasing spending.",
+      "body": "A new job, business sale, stipend, or allowance increase can disappear quickly if every extra naira becomes extra spending. Decide in advance what percentage of any income increase will go to savings or debt repayment. You can still enjoy part of the increase, but make sure your future self benefits too."
     },
     {
       "id": 11,
-      "title": "Know the Difference Between Good and Bad Debt",
+      "title": "Borrow Carefully",
       "category": "Saving",
-      "summary": "Not all debt is equal â€” student loans for a degree are not the same as credit card debt.",
-      "body": "Debt that funds an appreciating asset (education, a small business) can be considered good debt. Debt for depreciating items or consumption (credit card balances, luxury goods) almost always costs more than it's worth. Before taking on debt, ask: will this purchase be worth more to me in five years than the interest I'll pay?",
-      "icon": "âš–ï¸"
+      "summary": "Before taking a loan, calculate the total repayment and know the due date.",
+      "body": "Debt is not always bad, but it can become stressful fast. Before borrowing from an app, bank, friend, or cooperative, write down the amount, interest, fees, repayment date, and what happens if you are late. Avoid borrowing for wants. If you borrow for school or a small business, make sure there is a realistic repayment plan."
     },
     {
       "id": 12,
-      "title": "Build Credit Early and Carefully",
+      "title": "Build a Good Money Reputation",
       "category": "Saving",
-      "summary": "A student credit card used responsibly is one of the fastest ways to build credit history.",
-      "body": "Landlords, car loans, and even some employers look at your credit score. Get a student credit card, use it for one small recurring bill (like a streaming service), and pay it off in full every month. After a year of on-time payments, your score will thank you. Never charge more than you can pay off that same month.",
-      "icon": "ðŸ’³"
+      "summary": "Pay bills and loans on time so people and institutions can trust you with money.",
+      "body": "Your financial reputation matters. Paying on time, keeping records, and communicating early when there is a problem can help you build trust with family, friends, landlords, cooperatives, and financial institutions. A good reputation can make future opportunities easier to access."
     },
     {
       "id": 13,
-      "title": "Cook at Home More Often",
+      "title": "Cook More and Plan Food Spending",
       "category": "Budgeting",
-      "summary": "Cutting dining out to once a week can save the average student over ₦1,500,000 per year.",
-      "body": "Restaurant and delivery costs add up fast. A ₦15,000 lunch five days a week is ₦3,900,000 a year. A homemade lunch using ₦4,000 of ingredients is just ₦1,040,000 â€” saving nearly ₦2,900,000. You don't have to give up eating out entirely, but being intentional about it is one of the fastest ways to free up cash for goals that actually matter.",
-      "icon": "ðŸ³"
+      "summary": "Planning meals and snacks can reduce expensive daily food purchases.",
+      "body": "Food spending adds up quickly on campus. A few unplanned meals, snacks, and delivery orders can take a large part of your weekly allowance. Plan simple meals, buy shared groceries where possible, and carry water or snacks when you know you will be out for long. You do not have to stop eating out, but you should decide the limit before the week starts."
     },
     {
       "id": 14,
-      "title": "Use Student Discounts Everywhere",
+      "title": "Use Student Discounts and Shared Plans",
       "category": "Saving",
-      "summary": "Your student ID can save you 10â€“50% on software, transit, food, and entertainment.",
-      "body": "Many companies offer student pricing that's barely advertised. From Spotify and Apple Music to Adobe Creative Cloud, Microsoft 365, and even Amazon Prime Student, the savings stack up fast. Always check before you buy â€” and don't forget local businesses near campus that offer student rates on gym memberships, food, and services.",
-      "icon": "ðŸŽ“"
+      "summary": "Check for student pricing, shared subscriptions, and campus deals before paying full price.",
+      "body": "Some services, events, software tools, gyms, and transport options offer student-friendly prices. Ask before you pay. You can also reduce costs by sharing approved plans with roommates or classmates where the service allows it. Small discounts on repeated expenses can free up money for savings."
     },
     {
       "id": 15,
-      "title": "Review Subscriptions Quarterly",
+      "title": "Review Subscriptions Monthly",
       "category": "Budgeting",
-      "summary": "Cancel or downgrade at least one subscription every three months.",
-      "body": "Subscriptions are silent budget leaks. Pick a date every three months to audit what you're paying for. Cancel anything you haven't used in the last 30 days. Most services offer annual plans at a discount if you genuinely need them â€” but only commit to annual pricing if you already know you use them regularly.",
-      "icon": "ðŸ”"
+      "summary": "Cancel or pause subscriptions you are not using before they renew.",
+      "body": "Subscriptions can quietly drain your account, especially when renewals happen automatically. Review streaming, cloud storage, data plans, app subscriptions, and paid communities once a month. Cancel anything you have not used recently. If you need a service only during school projects, pay for the month you need and pause afterward."
     },
     {
       "id": 16,
       "title": "Set Specific Financial Goals",
       "category": "Saving",
-      "summary": "Vague goals fail. Replace 'I should save more' with 'I will save ₦1,200,000 by May.'",
-      "body": "Goals that lack a number and a deadline are wishes. Use the SMART framework: Specific, Measurable, Achievable, Relevant, and Time-bound. 'Save ₦1,200,000 for a summer internship travel fund by May 15' tells you exactly what to do every month. Track progress visibly â€” a thermometer chart on your wall works wonders.",
-      "icon": "ðŸŽ¯"
+      "summary": "Replace vague goals with a clear amount, reason, and deadline.",
+      "body": "A goal like 'I want to save more' is easy to forget. A goal like 'I will save Naira 120,000 for course materials by May 15' tells you exactly what to do. Divide the amount by the number of weeks left and track your progress. Clear goals make sacrifice feel purposeful."
     },
     {
       "id": 17,
-      "title": "Negotiate Your Bills",
+      "title": "Negotiate Bills and Compare Prices",
       "category": "Budgeting",
-      "summary": "Call your phone, internet, and insurance providers once a year to ask for lower rates.",
-      "body": "Most service providers would rather give you a discount than lose you as a customer. A 15-minute phone call once a year can knock 10â€“25% off your cell phone, internet, and insurance bills. Be polite, mention competitor offers, and ask what they can do. The worst they can say is no â€” but they rarely do.",
-      "icon": "ðŸ“ž"
+      "summary": "Compare data, transport, printing, and service costs before choosing the easiest option.",
+      "body": "You can save money by asking questions and comparing options. Check different data bundles, transport routes, printing shops, repair vendors, and food prices near campus. Be polite when negotiating and do not be afraid to walk away. A few better choices each week can make your budget stretch further."
     },
     {
       "id": 18,
-      "title": "Build a Sinking Fund for Big Purchases",
+      "title": "Create a Sinking Fund for Big Expenses",
       "category": "Saving",
-      "summary": "Save monthly for known future expenses (laptop, textbooks, travel) instead of using credit.",
-      "body": "A sinking fund is a small savings pool earmarked for a future expense. Divide the cost by the months until you need it, and set that amount aside automatically. When the purchase date arrives, you pay cash â€” no debt, no stress. This works for laptops, textbooks, conference fees, and even holiday gifts.",
-      "icon": "ðŸª™"
+      "summary": "Save monthly for known future costs like textbooks, laptop repairs, travel, or project materials.",
+      "body": "A sinking fund is money you set aside for a specific future expense. If you know you will need Naira 90,000 in three months, save Naira 30,000 each month instead of panicking later. This works for school projects, textbooks, travel, gadgets, birthdays, and professional exams."
     }
   ]
 }
-
-
-

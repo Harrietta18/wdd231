@@ -1,40 +1,42 @@
-STUDENT MONTHLY BUDGET TEMPLATE
-FinSmart – Money Confidence for Students
+﻿NIGERIAN STUDENT MONTHLY BUDGET TEMPLATE
+FinSmart - Money Confidence for Nigerian Students
 ==================================================
 
 INCOME
-  Allowance / Salary:        ₦
-  Scholarships / Grants:     ₦
-  Side Hustle:               ₦
-  TOTAL INCOME:              ₦___________________
+  Allowance:                 Naira 
+  Salary / Internship:       Naira 
+  Side Hustle:               Naira 
+  Gifts / Support:           Naira 
+  TOTAL INCOME:              Naira ___________________
 
 FIXED EXPENSES
-  Rent / Housing:            ₦
-  Tuition / Fees:            ₦
-  Utilities / Phone:         ₦
-  Transit / Car:             ₦
-  Groceries:                 ₦
-  Subscriptions:             ₦
-  Loan Payments:             ₦
-  Other:                     ₦
-  TOTAL FIXED:               ₦___________________
+  Rent / Hostel:             Naira 
+  School Fees / Dues:        Naira 
+  Data / Airtime:            Naira 
+  Transport:                 Naira 
+  Food / Groceries:          Naira 
+  Subscriptions:             Naira 
+  Loan Payments:             Naira 
+  Other:                     Naira 
+  TOTAL FIXED:               Naira ___________________
 
-VARIABLE / DISCRETIONARY
-  Dining Out:                ₦
-  Entertainment:             ₦
-  Clothing:                  ₦
-  Personal Care:             ₦
-  TOTAL VARIABLE:            ₦___________________
+VARIABLE SPENDING
+  Eating Out:                Naira 
+  Entertainment:             Naira 
+  Clothing:                  Naira 
+  Personal Care:             Naira 
+  Giving / Family Support:   Naira 
+  TOTAL VARIABLE:            Naira ___________________
 
-SAVINGS GOAL (20% of income)
-  Emergency Fund:            ₦
-  Investments:               ₦
-  Sinking Funds:             ₦
-  TOTAL SAVINGS:             ₦___________________
+SAVINGS GOALS
+  Emergency Fund:            Naira 
+  Sinking Funds:             Naira 
+  Investments:               Naira 
+  TOTAL SAVINGS:             Naira ___________________
 
 ==================================================
-TOTAL EXPENSES + SAVINGS:   ₦___________________
-REMAINING (Income - Out):   ₦___________________
+TOTAL EXPENSES + SAVINGS:   Naira ___________________
+REMAINING:                  Naira ___________________
 
-TIP: Aim for the 50/30/20 rule — 50% needs, 30% wants, 20% savings.
-© FinSmart — https://example.com/wdd231/final
+TIP: Start with a simple rule: needs first, savings second, wants last.
+FinSmart - https://harrietta18.github.io/wdd231/final/

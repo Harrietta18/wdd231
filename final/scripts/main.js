@@ -1,6 +1,6 @@
-// =============================================================
+﻿// =============================================================
 // FinSmart — main.js
-// Home page: nav toggle, tip fetching, filtering, modal, localStorage
+// Home page: nav toggle, tip fetching, filtering, tip-dialog, localStorage
 // ES Module
 // =============================================================
 
@@ -20,7 +20,7 @@ const favPluralEl = document.querySelector("#fav-plural");
 const showFavsBtn = document.querySelector("#show-favs");
 const showAllBtn = document.querySelector("#show-all");
 
-const modal = document.querySelector("#tip-modal");
+const tip-dialog = document.querySelector("#tip-modal");
 const modalTitle = document.querySelector("#modal-title");
 const modalBody = document.querySelector("#modal-body");
 const modalCategory = document.querySelector("#modal-category");
@@ -34,8 +34,6 @@ let showingFavorites = false;
 let currentModalTip = null;
 
 // ---- Helpers ----
-const fmt = new Intl.NumberFormat("en-US", { style: "currency", currency: "USD", maximumFractionDigits: 0 });
-
 function getFavorites() {
   try {
     return JSON.parse(localStorage.getItem(STORAGE_KEY)) || [];
@@ -81,15 +79,14 @@ function tipCardHTML(tip) {
   const fav = isFavorite(tip.id);
   return `
     <article class="tip-card" data-id="${tip.id}" data-category="${tip.category}">
-      <span class="icon" aria-hidden="true">${tip.icon}</span>
       <span class="category">${tip.category}</span>
       <h3>${tip.title}</h3>
       <p>${tip.summary}</p>
       <div class="card-actions">
-        <button class="btn btn-link" data-action="read" type="button">Read more →</button>
-        <button class="btn btn-link" data-action="fav" type="button"
+        <button class="fs-action fs-action-link" data-action="read" type="button">Read more</button>
+        <button class="fs-action fs-action-link" data-action="fav" type="button"
                 aria-pressed="${fav}">
-          ${fav ? "★ Saved" : "☆ Save"}
+          ${fav ? "Saved" : "Save"}
         </button>
       </div>
     </article>
@@ -114,33 +111,33 @@ function renderTips() {
   showFavsBtn.classList.toggle("hidden", showingFavorites);
 }
 
-// ---- Modal ----
+// ---- tip-dialog ----
 function openModal(tip) {
   currentModalTip = tip;
   modalTitle.textContent = tip.title;
   modalBody.textContent = tip.body;
   modalCategory.textContent = tip.category;
-  modal.hidden = false;
-  document.body.classList.add("modal-open");
+  tip-dialog.hidden = false;
+  document.body.classList.add("tip-dialog-open");
   syncModalFavButton();
-  modal.querySelector(".modal-close").focus();
+  tip-dialog.querySelector(".tip-dialog-close").focus();
 }
 
 function closeModal() {
-  modal.hidden = true;
-  document.body.classList.remove("modal-open");
+  tip-dialog.hidden = true;
+  document.body.classList.remove("tip-dialog-open");
   currentModalTip = null;
 }
 
 function syncModalFavButton() {
   if (!currentModalTip) return;
   const fav = isFavorite(currentModalTip.id);
-  modalFavBtn.textContent = fav ? "★ Remove from favorites" : "★ Save to favorites";
+  modalFavBtn.textContent = fav ? "Remove from favorites" : "Save to favorites";
 }
 
 function trapFocus(e) {
-  if (modal.hidden) return;
-  const focusable = modal.querySelectorAll('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])');
+  if (tip-dialog.hidden) return;
+  const focusable = tip-dialog.querySelectorAll('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])');
   if (!focusable.length) return;
   const first = focusable[0];
   const last = focusable[focusable.length - 1];
@@ -159,8 +156,8 @@ function trapFocus(e) {
 function setFilter(category) {
   currentFilter = category;
   showingFavorites = false;
-  filterButtons.forEach(btn => {
-    btn.classList.toggle("active", btn.dataset.filter === category);
+  filterButtons.forEach(fs-action => {
+    fs-action.classList.toggle("active", fs-action.dataset.filter === category);
   });
   renderTips();
 }
@@ -181,8 +178,8 @@ tipsGrid.addEventListener("click", (e) => {
 });
 
 // ---- Filter buttons ----
-filterButtons.forEach(btn => {
-  btn.addEventListener("click", () => setFilter(btn.dataset.filter));
+filterButtons.forEach(fs-action => {
+  fs-action.addEventListener("click", () => setFilter(fs-action.dataset.filter));
 });
 
 // ---- Tip of the day + read more ----
@@ -202,12 +199,12 @@ showAllBtn.addEventListener("click", () => {
   setFilter("all");
 });
 
-// ---- Modal close handlers ----
-modal.addEventListener("click", (e) => {
+// ---- tip-dialog close handlers ----
+tip-dialog.addEventListener("click", (e) => {
   if (e.target.matches("[data-close-modal]")) closeModal();
 });
 document.addEventListener("keydown", (e) => {
-  if (e.key === "Escape" && !modal.hidden) closeModal();
+  if (e.key === "Escape" && !tip-dialog.hidden) closeModal();
   trapFocus(e);
 });
 modalFavBtn.addEventListener("click", () => {
@@ -221,7 +218,7 @@ async function init() {
   updateFavCount();
 
   try {
-    const response = await fetch("data/tips.json");
+    const response = await fetch("data/tips.json?v=4");
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const data = await response.json();
     allTips = Array.isArray(data.tips) ? data.tips : [];
