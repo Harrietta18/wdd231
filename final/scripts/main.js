@@ -218,20 +218,28 @@ async function init() {
   updateFavCount();
 
   try {
+    // VIDEO MARKER: API/Data integration + async try block.
+    // This fetches local JSON data asynchronously, waits for the response,
+    // converts it to JavaScript data, then displays it on the home page.
     const response = await fetch("data/tips.json?v=5");
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const data = await response.json();
     allTips = Array.isArray(data.tips) ? data.tips : [];
 
-    // Set tip of the day
+    // VIDEO MARKER: Output from the data integration.
+    // The JSON tip data is used to fill the "Tip of the Day" card.
     const today = pickTipOfTheDay(allTips);
     if (today) {
       tipTitleEl.textContent = today.title;
       tipSummaryEl.textContent = today.summary;
     }
 
+    // VIDEO MARKER: More output from the same JSON data.
+    // This renders the tips into the cards below the filter buttons.
     renderTips();
   } catch (err) {
+    // VIDEO MARKER: Error handling for asynchronous functionality.
+    // If the JSON file cannot load, this catch block shows a friendly message.
     console.error("Failed to load tips:", err);
     tipsGrid.innerHTML = `<p class="empty-message">Sorry, we couldn't load tips right now. Please try again later.</p>`;
   }
